@@ -1,0 +1,16 @@
+INFO  13:40:27,241 - Compiling source file: /Users/racicaleksa/Projects/Semestar-7/PP1/MicroJava-Compiler/MJCompiler/test/program.mj
+INFO  13:40:27,243 - #1 program
+INFO  13:40:27,243 - #4 MJProgram
+INFO  13:40:27,243 - #4 int
+INFO  13:40:27,243 - #4 x
+INFO  13:40:27,243 - #8 ,
+INFO  13:40:27,243 - #4 y
+INFO  13:40:27,243 - #9 ;
+INFO  13:40:27,243 - #12 {
+INFO  13:40:27,243 - #15 void
+INFO  13:40:27,243 - #4 main
+INFO  13:40:27,243 - #10 (
+INFO  13:40:27,243 - #11 )
+INFO  13:40:27,243 - #12 {
+INFO  13:40:27,243 - #13 }
+INFO  13:40:27,243 - #13 }
