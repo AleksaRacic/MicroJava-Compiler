@@ -2,13 +2,31 @@
 <project name="MJCompiler" default="compile" basedir=".">
 
 	<target name="delete">
-		<delete>
-			<fileset dir="src/rs/ac/bg/etf/pp1">
-				<exclude name="sym.java"/>
-				<exclude name="util/Log4JUtils.java"/>
-			</fileset>
-		</delete>
-	</target>
+			<delete>
+				<fileset dir="src/rs/ac/bg/etf/pp1">
+					<exclude name="sym_old.java" />
+					<exclude name="util/Log4JUtils.java" />
+					<exclude name="Yylex.java" />
+					<exclude name="RuleVisitor.java" />
+					<exclude name="SemanticAnalyzer.java" />
+					<exclude name="TabExtension.java" />
+					<exclude name="CodeGenerator.java" />
+					<exclude name="CounterVisitor.java" />
+				</fileset>
+			</delete>
+			<delete>
+				<fileset dir="src/rs/ac/bg/etf/pp1/ast">
+				</fileset>
+			</delete>
+			<delete>
+				<fileset dir="spec">
+					<exclude name="mjlexer.flex" />
+					<exclude name="mjparser.cup" />
+					<exclude name="mjlexer_eric.flex" />
+					<exclude name="mjparser_eric.cup" />
+				</fileset>
+			</delete>
+		</target>
 	
 	<target name="lexerGen" depends="delete">
 		<java jar="lib/JFlex.jar" fork="true">
@@ -17,6 +35,20 @@
 	    	<arg value="spec/mjlexer.flex"/>
 		</java>
 	</target>
+	
+	<target name="parserGen" depends="delete">
+		<java jar="lib/cup_v10k.jar" fork="true">
+			<arg value="-destdir" />
+			<arg value="src/rs/ac/bg/etf/pp1" />
+			<arg value="-ast" />
+			<arg value="src.rs.ac.bg.etf.pp1.ast" />
+			<arg value="-parser" />
+			<arg value="MJParser" />
+			<arg value="-buildtree" />
+			<arg value="spec/mjparser.cup" />
+		</java>
+	</target>
+	
 	
 	<target name="compile" depends="lexerGen">
 		<javac srcdir="src/rs/ac/bg/etf/pp1" includeantruntime="false">

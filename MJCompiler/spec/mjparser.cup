@@ -1,0 +1,203 @@
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+
+// import java.io.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+
+parser code {:
+	
+	boolean errorDetected = false;
+	
+	Logger log = Logger.getLogger(getClass());
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	errorDetected = true;
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+    
+    public void report_info(String message, Object info) {
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.info(msg.toString());
+    }
+    
+:}
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+// KEYWORDS
+terminal PROG, PRINT, RETURN, CLASS, ENUM, ELSE, CONST, IF, DO, WHILE, NEW, READ, VOID, EXTENDS, CONTINUE, FOREACH, BREAK;
+
+// OPERATORS
+terminal PLUS, MINUS, MUL, DIV, MOD, EQ, NEQ, GR, GRE, LESS, LEQ, AND, OR, ASSIGN, INC, DEC, SEMI, COLON, COMMA, DOT, LPAREN, RPAREN, LBRACKET, RBRACKET, LBRACE, RBRACE, LAMBDA;
+
+// CHARACTERS AND BOOLEAN
+terminal Character CHAR;
+terminal Boolean BOOLEAN;
+
+//NUMBERS AND INDENTIFICATORS
+terminal Integer NUMBER;
+terminal String IDENT;
+
+// Program
+nonterminal Program;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName;
+
+// Decl
+
+nonterminal DecList;
+
+nonterminal VarDecl, ConstDecl, ClassDecl;
+
+	//ConstDecl
+	nonterminal ConstDecList, ConstDecElement, ConstDecLastElement;
+
+	//VarDecl
+	nonterminal VarDecList, VarDecElement, VarDecLastElement;
+	
+		//Element
+		nonterminal OptionalBrackets;
+		
+	//ClassDecl
+	nonterminal Extended, ClassBody;
+	nonterminal ListOfVarDecl, ListOfConstructorDecl, ConstructorDecl;
+	
+	//Method
+	nonterminal MethodDecl, ListOfMethodDecl;
+	
+	//FormPairs
+	nonterminal FormPairsList, FormPairsElement;
+	
+
+
+//Type
+
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
+
+
+//---ListOf... - 0 or more  ...List - 1 or more
+
+
+precedence left ELSE;
+
+
+Program ::= (ProgramClass) PROG ProgName:program DecList LBRACE MethodDeclList RBRACE;
+
+ProgName ::= (ProgNameClass) IDENT:name1;
+
+
+DecList ::=	(VarDecListClass) DecList VarDecl  
+		|	(ConstDecListClass) DecList ConstDecl  
+		|	(ClassDecListClass) DecList ClassDecl 
+		|	(NoDecListClass)/* epsilon */ 
+		;
+			
+
+ConstDecl ::= (ConstDeclClass) CONST Type:varType ConstDecList;	
+
+ConstDecList ::=	(ConstDecListClass) ConstDecElement ConstDecList
+				|	(ConstDecLastElementClass) ConstDecLastElement		
+				;
+
+ConstDecElement ::=	(ConstElementBoolean) IDENT:constName ASSIGN BOOLEAN:value COMMA
+				|	(ConstElementNumber) IDENT:constName ASSIGN NUMBER:value COMMA
+				|	(ConstElementChar) IDENT:constName ASSIGN CHAR:value COMMA
+				;
+				
+ConstDecLastElement ::=	(ConstElementBoolean) IDENT:constName ASSIGN BOOLEAN:value SEMI
+					|	(ConstElementNumber) IDENT:constName ASSIGN NUMBER:value SEMI
+					|	(ConstElementChar) IDENT:constName ASSIGN CHAR:value SEMI
+					;
+
+Type ::= (TypeClass) IDENT:nameType;
+
+VarDecl ::= (VarDeclClass) Type:type VarDecList;
+
+
+VarDecList ::=	(VarDecListClass) VarDecElement VarDecList
+			|	(VarDecLastElementClass) VarDecLastElement
+			;
+				
+VarDecElement ::= 	(VarDecElementClass) IDENT:varName OptionalBrackets COMMA
+				|	(VarDecElementErrClass) error COMMA:l
+					{: parser.report_error("Izvrsen oporavak do , u liniji " + lleft, null); :}
+				;
+
+OptionalBrackets ::=		(ArrayBracketsClass) LBRACKET RBRACKET
+					|	(NoArrayBracketsClass) /* epsilon */	
+					; 
+					
+
+VarDecLastElement ::= 	(VarDecLastElementClass) IDENT:varName OptionalBrackets SEMI
+					|	(VarDecLastElementErrClass) error SEMI:l
+						{: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null); :}
+		    		;
+			    
+ClassDecl ::= 	(ClassDeclClass) CLASS IDENT:className Extended ClassBody;
+
+Extended ::=	(ExtendedClass) EXTENDS Type:type LBRACE
+			|	(NotExtendedClass) /*epsilon*/ LBRACE
+			|	(ErrorExtendedClass) error LBRACE:l
+				{: parser.report_error("Izvrsen oporavak do { u liniji " + lleft, null); :}
+			;
+			
+ClassBody ::=	(ClassBodyVarClass) ListOfVarDecl RBRACE
+			|	(ClassBodyAllClass) ListOfVarDecl LBRACE ListOfMethodDecl ListOfClassDecl RBRACE RBRACE
+			;
+			
+ListOfVarDecl ::= (ListOfVarDeclClass) ListOfVarDecl VarDecl
+				|	(EmptyListOfVarDeclClass) /*epsilon*/
+				;
+		
+ListOfMethodDecl ::=	(ListOfMethodDeclClass) ListOfMethodDecl MethodDecl
+					|	(EmptyListOfMethodDeclClass) /*epsilon*/
+					;
+				
+ListOfConstructorDecl ::=	(ListOfConstructorDecl) ListOfConstructorDecl ConstructorDecl
+						|	(ListOfConstructorDecl)	/*epsilon*/		
+						;
+ConstructorDecl ::= (ConstructorDeclClass) IDENT:nameConst LPAREN FormParsList ListOfVarDecl LBRACE ListOfStatements RBRACE;
+			
+MethodDecl ::= (MethodDeclClass) MethodType LPAREN FormParsList ListOfVarDecl LBRACE ListOfStatements RBRACE;
+
+FormParsList ::=	(FormParsStartClass) FormParsElement FormParsList
+				|	(FormParsNextElementClass) COMMA FormParsElement
+			 	|	(FormParsEnd) /* epsilon */ RPAREN //----mora ovde zbog opravka od greske
+		     	|	(FormParsCommaErrorClass) error COMMA:l 
+	    		 	{: parser.report_error("Izvrsen oporavak do , u liniji " + lleft, null); :} 
+			    |
+	    		 	(FormParsRparenErrorClass) error RPAREN:l
+	    		 	{: parser.report_error("Izvrsen oporavak do ) u liniji " + lleft, null); :}
+				;
+
+FormParsElement ::=	(FormParsElement) Type:type IDENT:nameForm OptionalBrackets;
+
+
+
