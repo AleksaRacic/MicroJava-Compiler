@@ -103,10 +103,19 @@ nonterminal VarDecl, ConstDecl, ClassDecl;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
 
 //Statement
-nonterminal ListOfStatements, Statement, IfCond, Condition;
+nonterminal ListOfStatements, Statement;
 
 //Designator
-nonterminal DesignatorStatement, Expr, ActPars, OptDesignatorList, DesignatorOrEpsilon, Designator;
+nonterminal DesignatorStatement, ActPars, ListOfActPars, OptDesignatorList, DesignatorOrEpsilon, Designator;
+
+//Condition
+nonterminal IfCond, Condition, CondTerm, CondFact;
+
+//Expr
+nonterminal Expr, Term, Factor;
+
+//Operators
+nonterminal Relop, Mulop;
 
 //---ListOf... - 0 or more  ...List - 1 or more
 
@@ -220,11 +229,38 @@ ListOfStatements ::= (ListOfStatementsClass) ListOfStatements Statement
 					|	(EmptyListOfStatementsClass) /*epsilon*/
 					;
 
+
+Statement ::= 
+			  |
+			  (StatementRead) READ LPAREN Designator RPAREN SEMI
+			  |
+			  (StatementPrintWithoutWidth) PrintEmpty PRINT LPAREN Expr RPAREN SEMI
+			  |
+			  (StatementPrintWithWidth) PrintEmpty PRINT LPAREN Expr COMMA NUMBER:width RPAREN SEMI
+			  |
+			  (StatementForeach) ForEachLoop ForEachIdent LAMBDA Statement CheckForeach2 RPAREN SEMI
+			  |
+			  (StatementBlock) LBRACE StatementList RBRACE
+			  ;  
+
+
 Statement ::= 	(DesignatorStatementClass) DesignatorStatement SEMI
 			|	(IfStatementClass) IF SEMI IfCond Statement
 			|	(IfElseStatementClass) IF SEMI IfCond Statement ELSE Statement
+			|	(WhileStatementClass) WHILE LPAREN Condition RPAREN Statement
+			|	(BreakStatementClass) BREAK SEMI
+			|	(ContinueStatementClass) CONTINUE SEMI
+			|	(ReturnStatementClass) RETURN SEMI
+			|	(ReturnExprStatementClass) RETURN Expr SEMI
+			|	(ReadStatementClass) READ LPAREN Designator RPAREN SEMI
+			|	(PrintStatementClass) PRINT LPAREN Expr RPAREN SEMI
+			|	(PrintStatementWidthClass) PRINT LPAREN Expr COMMA NUMBER:width RPAREN SEMI
+			|	(ForEachStatementClass) Designator DOT FOREACH LPAREN IDENT:feIdent LAMBDA Statement RPAREN SEMI
+			|	(StatementBlock) LBRACE ListOfStatements RBRACE
 			;
-			
+
+
+	
 IfCond ::= 	(IfCondClass) Condition RPAREN
 		|	(ErrIfCondClass) error RPAREN:l 
 			{: parser.report_error("Izvrsen oporavak do ) u liniji " + lleft, null); :}
@@ -247,7 +283,46 @@ DesignatorOrEpsilon ::=	(DesignArrAssignmentClass) Designator
 					|	(DesignatorEpsilonClass) /* epsilon */
 					;
 
-Condition ::= NEQ;
-ActPars ::= EQ;
-Expr ::= LEQ;
+Condition ::= 	(ConditionClass) Condition OR CondTerm
+			|	(SingleConditionClass) CondTerm
+			;
+			
+CondTerm ::= 	(CondTermClass) CondTerm AND CondFact
+			|	(SingleCondTermClass) CondFact
+			;
+
+CondFact ::=	(CondFactClass) Expr Relop Expr
+			|	(SingleCondFactClass) Expr
+			;
+
+Expr ::=	(ExprClass) Expr Addop Term
+		|	(PositiveExprClass) Term
+		|	(NegativeExprClass) MINUS Term
+		;
+		
+Term ::= 	(MultipleFactors) Term Mulop Factor
+		|	(SingleFactor) Factor
+		;
+
+Factor ::= 	(DesignatorFactorClass) Designator
+		|	(FuncCallDesignatorClass) Designator LPAREN ActPars RPAREN
+		|	(NumberFactorClass) NUMBER:value
+		|	(CharFactorClass) CHAR:value
+		|	(BoolFactorClass) BOOLEAN:value
+		|	(ExpFactorClass) LPAREN Expr RPAREN
+		|	(ArrayFactorClass) NEW Type LBRACKET Expr RBRACKET
+		|	(MatrixFactorClass) NEW Type LPAREN ActPars RPAREN
+		;
+	
+Mulop ::=	(MulClass) MUL
+		|	(DivClass) DIV
+		|	(ModClass) MOD
+		;	
+ActPars ::= (ActualParsClass) Expr ListOfActParExpr;
+
+ListOfActPars ::= 	(ListOfActParExprClass) ListOfActParExpr COMMA Expr
+				|	(EmptyListOfActParClass) /*epsilon*/
+				;
+					
 Designator ::= ASSIGN;
+Relop ::= NEQ
