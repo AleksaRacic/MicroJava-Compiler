@@ -56,7 +56,7 @@ scan with {:
 terminal PROG, PRINT, RETURN, CLASS, ENUM, ELSE, CONST, IF, DO, WHILE, NEW, READ, VOID, EXTENDS, CONTINUE, FOREACH, BREAK;
 
 // OPERATORS
-terminal PLUS, MINUS, MUL, DIV, MOD, EQ, NEQ, GR, GRE, LESS, LEQ, AND, OR, ASSIGN, INC, DEC, SEMI, COLON, COMMA, DOT, LPAREN, RPAREN, LBRACKET, RBRACKET, LBRACE, RBRACE, LAMBDA;
+terminal PLUS, MINUS, MUL, DIV, MOD, EQ, NEQ, GRT, GRE, LESS, LEQ, AND, OR, ASSIGN, INC, DEC, SEMI, COLON, COMMA, DOT, LPAREN, RPAREN, LBRACKET, RBRACKET, LBRACE, RBRACE, LAMBDA;
 
 // CHARACTERS AND BOOLEAN
 terminal Character CHAR;
@@ -115,7 +115,7 @@ nonterminal IfCond, Condition, CondTerm, CondFact;
 nonterminal Expr, Term, Factor;
 
 //Operators
-nonterminal Relop, Mulop;
+nonterminal Relop, Mulop, Addop;
 
 //---ListOf... - 0 or more  ...List - 1 or more
 
@@ -137,7 +137,7 @@ DecList ::=	(VarDecListClass) DecList VarDecl
 
 ConstDecl ::= (ConstDeclClass) CONST Type:varType ConstDecList;	
 
-ConstDecList ::=	(ConstDecListClass) ConstDecElement ConstDecList
+ConstDecList ::=	(ConstDecListElementClass) ConstDecElement ConstDecList
 				|	(ConstDecLastElementClass) ConstDecLastElement		
 				;
 
@@ -146,9 +146,9 @@ ConstDecElement ::=	(ConstElementBoolean) IDENT:constName ASSIGN BOOLEAN:value C
 				|	(ConstElementChar) IDENT:constName ASSIGN CHAR:value COMMA
 				;
 				
-ConstDecLastElement ::=	(ConstElementBoolean) IDENT:constName ASSIGN BOOLEAN:value SEMI
-					|	(ConstElementNumber) IDENT:constName ASSIGN NUMBER:value SEMI
-					|	(ConstElementChar) IDENT:constName ASSIGN CHAR:value SEMI
+ConstDecLastElement ::=	(ConstElementBooleanLast) IDENT:constName ASSIGN BOOLEAN:value SEMI
+					|	(ConstElementNumberLast) IDENT:constName ASSIGN NUMBER:value SEMI
+					|	(ConstElementCharLast) IDENT:constName ASSIGN CHAR:value SEMI
 					;
 
 Type ::= (TypeClass) IDENT:name;
@@ -156,8 +156,8 @@ Type ::= (TypeClass) IDENT:name;
 VarDecl ::= (VarDeclClass) Type:type VarDecList;
 
 
-VarDecList ::=	(VarDecListClass) VarDecElement VarDecList
-			|	(VarDecLastElementClass) VarDecLastElement
+VarDecList ::=	(VarDecListElementClass) VarDecElement VarDecList
+			|	(VarDecLastListElementClass) VarDecLastElement
 			;
 				
 VarDecElement ::= 	(VarDecElementClass) IDENT:varName OptionalBrackets COMMA
@@ -213,8 +213,8 @@ MethodType ::= 	(ReturnMethodTypeName) Type:retType IDENT:name
 		   |	(VoidMethodTypeName) VOID IDENT:name
 		   ;
 
-FormParsList ::=	(FormParsStartClass) FormParsElement FormParsList
-				|	(FormParsNextElementClass) COMMA FormParsElement
+FormParsList ::=	(FormParsStartClass) FormParsElement COMMA FormParsList
+				|	(FormParsNextElementClass) FormParsElement RPAREN
 			 	|	(FormParsEnd) /* epsilon */ RPAREN //----mora ovde zbog opravka od greske
 		     	|	(FormParsCommaErrorClass) error COMMA:l 
 	    		 	{: parser.report_error("Izvrsen oporavak do , u liniji " + lleft, null); :} 
@@ -230,23 +230,9 @@ ListOfStatements ::= (ListOfStatementsClass) ListOfStatements Statement
 					;
 
 
-Statement ::= 
-			  |
-			  (StatementRead) READ LPAREN Designator RPAREN SEMI
-			  |
-			  (StatementPrintWithoutWidth) PrintEmpty PRINT LPAREN Expr RPAREN SEMI
-			  |
-			  (StatementPrintWithWidth) PrintEmpty PRINT LPAREN Expr COMMA NUMBER:width RPAREN SEMI
-			  |
-			  (StatementForeach) ForEachLoop ForEachIdent LAMBDA Statement CheckForeach2 RPAREN SEMI
-			  |
-			  (StatementBlock) LBRACE StatementList RBRACE
-			  ;  
-
-
-Statement ::= 	(DesignatorStatementClass) DesignatorStatement SEMI
-			|	(IfStatementClass) IF SEMI IfCond Statement
-			|	(IfElseStatementClass) IF SEMI IfCond Statement ELSE Statement
+Statement ::= 	(DesignatorStatementClass) DesignatorStatement
+			|	(IfStatementClass) IF LPAREN IfCond Statement
+			|	(IfElseStatementClass) IF LPAREN IfCond Statement ELSE Statement
 			|	(WhileStatementClass) WHILE LPAREN Condition RPAREN Statement
 			|	(BreakStatementClass) BREAK SEMI
 			|	(ContinueStatementClass) CONTINUE SEMI
@@ -306,9 +292,9 @@ Term ::= 	(MultipleFactors) Term Mulop Factor
 
 Factor ::= 	(DesignatorFactorClass) Designator
 		|	(FuncCallDesignatorClass) Designator LPAREN ActPars RPAREN
-		|	(NumberFactorClass) NUMBER:value
-		|	(CharFactorClass) CHAR:value
-		|	(BoolFactorClass) BOOLEAN:value
+		|	(NumberFactorClass) NUMBER:NumValue
+		|	(CharFactorClass) CHAR:CharValue
+		|	(BoolFactorClass) BOOLEAN:BoolValue
 		|	(ExpFactorClass) LPAREN Expr RPAREN
 		|	(ArrayFactorClass) NEW Type LBRACKET Expr RBRACKET
 		|	(MatrixFactorClass) NEW Type LPAREN ActPars RPAREN
@@ -318,11 +304,26 @@ Mulop ::=	(MulClass) MUL
 		|	(DivClass) DIV
 		|	(ModClass) MOD
 		;	
-ActPars ::= (ActualParsClass) Expr ListOfActParExpr;
+ActPars ::= (ActualParsClass) ListOfActPars
+			| (NoActualParsClass) /* epsilon */;
 
-ListOfActPars ::= 	(ListOfActParExprClass) ListOfActParExpr COMMA Expr
-				|	(EmptyListOfActParClass) /*epsilon*/
+ListOfActPars ::= 	(ListOfActParExprClass) ListOfActPars COMMA Expr
+				|	(EmptyListOfActParClass) Expr
 				;
 					
-Designator ::= ASSIGN;
-Relop ::= NEQ
+Addop ::= 	(PlusOpClass) PLUS
+		|	(MinusOpClass) MINUS
+		;
+		
+Designator ::=	(ClassDesignatorClass) Designator DOT IDENT:name
+			|	(ArrayDesignatorClass) Designator LBRACKET Expr RBRACKET
+			|	(DesignatorClass) IDENT:name 
+			;
+
+Relop ::= 	(EqOpClass) EQ
+		| 	(NeqOpClass) NEQ
+		| 	(GrOpClass) GRT
+		| 	(GreOpClass) GRE
+		| 	(LessOpClass) LESS
+		| 	(LeqOpClass) LEQ
+		;
