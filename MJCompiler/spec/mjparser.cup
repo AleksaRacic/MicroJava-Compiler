@@ -87,13 +87,14 @@ nonterminal VarDecl, ConstDecl, ClassDecl;
 		
 	//ClassDecl
 	nonterminal Extended, ClassBody;
-	nonterminal ListOfVarDecl, ListOfConstructorDecl, ConstructorDecl;
+	nonterminal ListOfVarDecl, ConstructorDecList, ConstructorDecl;
 	
 	//Method
-	nonterminal MethodDecl, ListOfMethodDecl;
+	nonterminal MethodDecl, MethodDecList, ListOfMethodDecl, MethodType;
 	
 	//FormPairs
-	nonterminal FormPairsList, FormPairsElement;
+	nonterminal FormParsList, FormParsElement;
+	
 	
 
 
@@ -101,6 +102,11 @@ nonterminal VarDecl, ConstDecl, ClassDecl;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
 
+//Statement
+nonterminal ListOfStatements, Statement, IfCond, Condition;
+
+//Designator
+nonterminal DesignatorStatement, Expr, ActPars, OptDesignatorList, DesignatorOrEpsilon, Designator;
 
 //---ListOf... - 0 or more  ...List - 1 or more
 
@@ -108,7 +114,7 @@ nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
 precedence left ELSE;
 
 
-Program ::= (ProgramClass) PROG ProgName:program DecList LBRACE MethodDeclList RBRACE;
+Program ::= (ProgramClass) PROG ProgName:program DecList LBRACE ListOfMethodDecl RBRACE;
 
 ProgName ::= (ProgNameClass) IDENT:name1;
 
@@ -136,7 +142,7 @@ ConstDecLastElement ::=	(ConstElementBoolean) IDENT:constName ASSIGN BOOLEAN:val
 					|	(ConstElementChar) IDENT:constName ASSIGN CHAR:value SEMI
 					;
 
-Type ::= (TypeClass) IDENT:nameType;
+Type ::= (TypeClass) IDENT:name;
 
 VarDecl ::= (VarDeclClass) Type:type VarDecList;
 
@@ -169,23 +175,34 @@ Extended ::=	(ExtendedClass) EXTENDS Type:type LBRACE
 			;
 			
 ClassBody ::=	(ClassBodyVarClass) ListOfVarDecl RBRACE
-			|	(ClassBodyAllClass) ListOfVarDecl LBRACE ListOfMethodDecl ListOfClassDecl RBRACE RBRACE
+			|	(ClassBodyVarEmptyClass) ListOfVarDecl LBRACE RBRACE RBRACE
+			|	(ClassBodyVarMethodClass) ListOfVarDecl LBRACE MethodDecList RBRACE RBRACE
+			|	(ClassBodyVarConstructorClass) ListOfVarDecl LBRACE ConstructorDecList RBRACE RBRACE
+			|	(ClassBodyAllClass) ListOfVarDecl LBRACE MethodDecList ConstructorDecList RBRACE RBRACE
 			;
 			
 ListOfVarDecl ::= (ListOfVarDeclClass) ListOfVarDecl VarDecl
 				|	(EmptyListOfVarDeclClass) /*epsilon*/
 				;
 		
+MethodDecList ::=	(MethodDecListClass) MethodDecList MethodDecl
+				|	(SingleMethodDecListClass) MethodDecl
+				;
+
 ListOfMethodDecl ::=	(ListOfMethodDeclClass) ListOfMethodDecl MethodDecl
 					|	(EmptyListOfMethodDeclClass) /*epsilon*/
 					;
-				
-ListOfConstructorDecl ::=	(ListOfConstructorDecl) ListOfConstructorDecl ConstructorDecl
-						|	(ListOfConstructorDecl)	/*epsilon*/		
-						;
-ConstructorDecl ::= (ConstructorDeclClass) IDENT:nameConst LPAREN FormParsList ListOfVarDecl LBRACE ListOfStatements RBRACE;
+
+ConstructorDecList ::=	(ConstructorDecListClass) ConstructorDecList ConstructorDecl
+					|	(SingleConstructorDecListClass)	ConstructorDecl	
+					;
+ConstructorDecl ::= (ConstructorDeclClass) IDENT:name LPAREN FormParsList ListOfVarDecl LBRACE ListOfStatements RBRACE;
 			
 MethodDecl ::= (MethodDeclClass) MethodType LPAREN FormParsList ListOfVarDecl LBRACE ListOfStatements RBRACE;
+
+MethodType ::= 	(ReturnMethodTypeName) Type:retType IDENT:name
+		   |	(VoidMethodTypeName) VOID IDENT:name
+		   ;
 
 FormParsList ::=	(FormParsStartClass) FormParsElement FormParsList
 				|	(FormParsNextElementClass) COMMA FormParsElement
@@ -199,5 +216,38 @@ FormParsList ::=	(FormParsStartClass) FormParsElement FormParsList
 
 FormParsElement ::=	(FormParsElement) Type:type IDENT:nameForm OptionalBrackets;
 
+ListOfStatements ::= (ListOfStatementsClass) ListOfStatements Statement
+					|	(EmptyListOfStatementsClass) /*epsilon*/
+					;
 
+Statement ::= 	(DesignatorStatementClass) DesignatorStatement SEMI
+			|	(IfStatementClass) IF SEMI IfCond Statement
+			|	(IfElseStatementClass) IF SEMI IfCond Statement ELSE Statement
+			;
+			
+IfCond ::= 	(IfCondClass) Condition RPAREN
+		|	(ErrIfCondClass) error RPAREN:l 
+			{: parser.report_error("Izvrsen oporavak do ) u liniji " + lleft, null); :}
+		;
 
+DesignatorStatement ::=	(DesignatorStatementAssignClass) Designator ASSIGN Expr SEMI
+					|	(ErrDesignatorStatementAssignClass) error SEMI:l
+						{: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null); :}
+					|	(DesignatorStatementFunctionClass) Designator LPAREN ActPars RPAREN SEMI
+					|	(DesignatorStatementIncClass) Designator INC SEMI
+					|	(DesignatorStatementDecClass) Designator DEC SEMI
+					|	(DesignatorStatementArrayClass) LBRACKET OptDesignatorList RBRACKET ASSIGN Designator SEMI
+					;
+					
+OptDesignatorList ::= 	(OptDesignatorListClass) OptDesignatorList COMMA DesignatorOrEpsilon
+				   |	(SingleOrEndOfListDesignatorClass) DesignatorOrEpsilon
+				   ;
+
+DesignatorOrEpsilon ::=	(DesignArrAssignmentClass) Designator
+					|	(DesignatorEpsilonClass) /* epsilon */
+					;
+
+Condition ::= NEQ;
+ActPars ::= EQ;
+Expr ::= LEQ;
+Designator ::= ASSIGN;
