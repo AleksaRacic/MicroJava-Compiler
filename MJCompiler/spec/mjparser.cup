@@ -89,7 +89,7 @@ nonterminal VarDecl, ConstDecl, ClassDecl;
 	nonterminal ListOfVarDecl, ConstructorDecList, ConstructorDecl;
 	
 	//Method
-	nonterminal MethodDecl, MethodDecList, ListOfMethodDecl, MethodType;
+	nonterminal MethodDecl, MethodDecList, ListOfMethodDecl, MethodTypeName;
 	
 	//FormPairs
 	nonterminal FormParsList, FormParsElement;
@@ -164,7 +164,7 @@ VarDecElement ::= 	(VarDecElementClass) IDENT:varName OptionalBrackets COMMA
 					{: parser.report_error("Izvrsen oporavak do , u liniji " + lleft, null); :}
 				;
 
-OptionalBrackets ::=		(ArrayBracketsClass) LBRACKET RBRACKET
+OptionalBrackets ::=	(ArrayBracketsClass) LBRACKET RBRACKET
 					|	(NoArrayBracketsClass) /* epsilon */	
 					; 
 					
@@ -206,11 +206,11 @@ ConstructorDecList ::=	(ConstructorDecListClass) ConstructorDecList ConstructorD
 					;
 ConstructorDecl ::= (ConstructorDeclClass) IDENT:name LPAREN FormParsList ListOfVarDecl LBRACE ListOfStatements RBRACE;
 			
-MethodDecl ::= (MethodDeclClass) MethodType LPAREN FormParsList ListOfVarDecl LBRACE ListOfStatements RBRACE;
+MethodDecl ::= (MethodDeclClass) MethodTypeName LPAREN FormParsList ListOfVarDecl LBRACE ListOfStatements RBRACE;
 
-MethodType ::= 	(ReturnMethodTypeName) Type:retType IDENT:name
-		   |	(VoidMethodTypeName) VOID IDENT:name
-		   ;
+MethodTypeName ::= 	(ReturnMethodClass) Type:retType IDENT:name
+		   		|	(VoidMethodClass) VOID IDENT:name
+		   		;
 
 FormParsList ::=	(FormParsStartClass) FormParsElement COMMA FormParsList
 				|	(FormParsNextElementClass) FormParsElement RPAREN

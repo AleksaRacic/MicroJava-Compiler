@@ -1,0 +1,267 @@
+INFO  19:52:49,842 - Compiling source file: /Users/racicaleksa/Projects/Semestar-7/PP1/MicroJava-Compiler/MJCompiler/test/test302.mj
+INFO  19:52:49,854 - #2 program
+INFO  19:52:49,854 - #49 test302
+INFO  19:52:49,854 - #8 const
+INFO  19:52:49,855 - #49 int
+INFO  19:52:49,855 - #49 jedan
+INFO  19:52:49,855 - #32 =
+INFO  19:52:49,855 - #48 1
+INFO  19:52:49,855 - #35 ;
+INFO  19:52:49,855 - #49 int
+INFO  19:52:49,855 - #49 i
+INFO  19:52:49,855 - #35 ;
+INFO  19:52:49,855 - #49 bool
+INFO  19:52:49,855 - #49 ibool
+INFO  19:52:49,856 - #35 ;
+INFO  19:52:49,856 - #49 int
+INFO  19:52:49,856 - #49 niz2
+INFO  19:52:49,856 - #35 ;
+INFO  19:52:49,856 - #49 int
+INFO  19:52:49,856 - #49 niz
+INFO  19:52:49,856 - #41 [
+INFO  19:52:49,856 - #42 ]
+INFO  19:52:49,856 - #35 ;
+INFO  19:52:49,856 - #49 int
+INFO  19:52:49,856 - #49 a
+INFO  19:52:49,856 - #37 ,
+INFO  19:52:49,856 - #49 curr
+INFO  19:52:49,856 - #35 ;
+INFO  19:52:49,856 - #43 {
+INFO  19:52:49,856 - #49 int
+INFO  19:52:49,856 - #49 inkrement
+INFO  19:52:49,856 - #39 (
+INFO  19:52:49,856 - #49 int
+INFO  19:52:49,856 - #49 a
+INFO  19:52:49,857 - #37 ,
+INFO  19:52:49,857 - #49 int
+INFO  19:52:49,857 - #49 inc
+INFO  19:52:49,857 - #40 )
+INFO  19:52:49,857 - #49 int
+INFO  19:52:49,857 - #49 pom
+INFO  19:52:49,857 - #35 ;
+INFO  19:52:49,857 - #43 {
+INFO  19:52:49,857 - #9 if
+INFO  19:52:49,857 - #39 (
+ERROR 19:52:49,857 - 
+Sintaksna greska na liniji 20
+INFO  19:52:49,857 - #49 inc
+INFO  19:52:49,857 - #24 ==
+INFO  19:52:49,857 - #49 jedan
+INFO  19:52:49,858 - #40 )
+INFO  19:52:49,858 - #49 pom
+INFO  19:52:49,858 - #32 =
+INFO  19:52:49,858 - #48 1
+INFO  19:52:49,858 - #35 ;
+INFO  19:52:49,859 - #7 else
+INFO  19:52:49,859 - #9 if
+INFO  19:52:49,859 - #39 (
+INFO  19:52:49,859 - #49 inc
+INFO  19:52:49,859 - #24 ==
+INFO  19:52:49,859 - #48 2
+INFO  19:52:49,859 - #40 )
+INFO  19:52:49,859 - #49 pom
+INFO  19:52:49,859 - #32 =
+INFO  19:52:49,859 - #49 a
+INFO  19:52:49,859 - #35 ;
+INFO  19:52:49,859 - #4 return
+INFO  19:52:49,859 - #49 sum
+INFO  19:52:49,859 - #39 (
+ERROR 19:52:49,859 - Izvrsen oporavak do ; u liniji 20
+INFO  19:52:49,859 - #49 a
+INFO  19:52:49,859 - #37 ,
+INFO  19:52:49,860 - #49 pom
+INFO  19:52:49,860 - #40 )
+INFO  19:52:49,860 - #35 ;
+INFO  19:52:49,860 - #44 }
+INFO  19:52:49,860 - #44 }
+INFO  19:52:49,861 - ProgramClass(
+  ProgNameClass(
+   test302
+  ) [ProgNameClass]
+  VarDecListClass(
+    VarDecListClass(
+      VarDecListClass(
+        VarDecListClass(
+          VarDecListClass(
+            ConstDecListClass(
+              NoDecListClass(
+              ) [NoDecListClass]
+              ConstDeclClass(
+                TypeClass(
+                 int
+                ) [TypeClass]
+                ConstDecLastElementClass(
+                  ConstElementNumberLast(
+                   jedan
+                   1
+                  ) [ConstElementNumberLast]
+                ) [ConstDecLastElementClass]
+              ) [ConstDeclClass]
+            ) [ConstDecListClass]
+            VarDeclClass(
+              TypeClass(
+               int
+              ) [TypeClass]
+              VarDecLastListElementClass(
+                VarDecLastElementClass(
+                 i
+                  NoArrayBracketsClass(
+                  ) [NoArrayBracketsClass]
+                ) [VarDecLastElementClass]
+              ) [VarDecLastListElementClass]
+            ) [VarDeclClass]
+          ) [VarDecListClass]
+          VarDeclClass(
+            TypeClass(
+             bool
+            ) [TypeClass]
+            VarDecLastListElementClass(
+              VarDecLastElementClass(
+               ibool
+                NoArrayBracketsClass(
+                ) [NoArrayBracketsClass]
+              ) [VarDecLastElementClass]
+            ) [VarDecLastListElementClass]
+          ) [VarDeclClass]
+        ) [VarDecListClass]
+        VarDeclClass(
+          TypeClass(
+           int
+          ) [TypeClass]
+          VarDecLastListElementClass(
+            VarDecLastElementClass(
+             niz2
+              NoArrayBracketsClass(
+              ) [NoArrayBracketsClass]
+            ) [VarDecLastElementClass]
+          ) [VarDecLastListElementClass]
+        ) [VarDeclClass]
+      ) [VarDecListClass]
+      VarDeclClass(
+        TypeClass(
+         int
+        ) [TypeClass]
+        VarDecLastListElementClass(
+          VarDecLastElementClass(
+           niz
+            ArrayBracketsClass(
+            ) [ArrayBracketsClass]
+          ) [VarDecLastElementClass]
+        ) [VarDecLastListElementClass]
+      ) [VarDeclClass]
+    ) [VarDecListClass]
+    VarDeclClass(
+      TypeClass(
+       int
+      ) [TypeClass]
+      VarDecListElementClass(
+        VarDecElementClass(
+         a
+          NoArrayBracketsClass(
+          ) [NoArrayBracketsClass]
+        ) [VarDecElementClass]
+        VarDecLastListElementClass(
+          VarDecLastElementClass(
+           curr
+            NoArrayBracketsClass(
+            ) [NoArrayBracketsClass]
+          ) [VarDecLastElementClass]
+        ) [VarDecLastListElementClass]
+      ) [VarDecListElementClass]
+    ) [VarDeclClass]
+  ) [VarDecListClass]
+  ListOfMethodDeclClass(
+    EmptyListOfMethodDeclClass(
+    ) [EmptyListOfMethodDeclClass]
+    MethodDeclClass(
+      ReturnMethodTypeName(
+        TypeClass(
+         int
+        ) [TypeClass]
+       inkrement
+      ) [ReturnMethodTypeName]
+      FormParsStartClass(
+        FormParsElement(
+          TypeClass(
+           int
+          ) [TypeClass]
+         a
+          NoArrayBracketsClass(
+          ) [NoArrayBracketsClass]
+        ) [FormParsElement]
+        FormParsNextElementClass(
+          FormParsElement(
+            TypeClass(
+             int
+            ) [TypeClass]
+           inc
+            NoArrayBracketsClass(
+            ) [NoArrayBracketsClass]
+          ) [FormParsElement]
+        ) [FormParsNextElementClass]
+      ) [FormParsStartClass]
+      ListOfVarDeclClass(
+        EmptyListOfVarDeclClass(
+        ) [EmptyListOfVarDeclClass]
+        VarDeclClass(
+          TypeClass(
+           int
+          ) [TypeClass]
+          VarDecLastListElementClass(
+            VarDecLastElementClass(
+             pom
+              NoArrayBracketsClass(
+              ) [NoArrayBracketsClass]
+            ) [VarDecLastElementClass]
+          ) [VarDecLastListElementClass]
+        ) [VarDeclClass]
+      ) [ListOfVarDeclClass]
+      ListOfStatementsClass(
+        ListOfStatementsClass(
+          EmptyListOfStatementsClass(
+          ) [EmptyListOfStatementsClass]
+          DesignatorStatementClass(
+            ErrDesignatorStatementAssignClass(
+            ) [ErrDesignatorStatementAssignClass]
+          ) [DesignatorStatementClass]
+        ) [ListOfStatementsClass]
+        ReturnExprStatementClass(
+          PositiveExprClass(
+            SingleFactor(
+              FuncCallDesignatorClass(
+                DesignatorClass(
+                 sum
+                ) [DesignatorClass]
+                ActualParsClass(
+                  PositiveExprClass(
+                    SingleFactor(
+                      DesignatorFactorClass(
+                        DesignatorClass(
+                         a
+                        ) [DesignatorClass]
+                      ) [DesignatorFactorClass]
+                    ) [SingleFactor]
+                  ) [PositiveExprClass]
+                  ListOfActParExprClass(
+                    EmptyListOfActParClass(
+                    ) [EmptyListOfActParClass]
+                    PositiveExprClass(
+                      SingleFactor(
+                        DesignatorFactorClass(
+                          DesignatorClass(
+                           pom
+                          ) [DesignatorClass]
+                        ) [DesignatorFactorClass]
+                      ) [SingleFactor]
+                    ) [PositiveExprClass]
+                  ) [ListOfActParExprClass]
+                ) [ActualParsClass]
+              ) [FuncCallDesignatorClass]
+            ) [SingleFactor]
+          ) [PositiveExprClass]
+        ) [ReturnExprStatementClass]
+      ) [ListOfStatementsClass]
+    ) [MethodDeclClass]
+  ) [ListOfMethodDeclClass]
+) [ProgramClass]
+ERROR 19:52:49,862 - Parsiranje NIJE uspesno zavrseno!

@@ -1,0 +1,4 @@
+INFO  22:20:59,231 - Compiling source file: /Users/racicaleksa/Projects/Semestar-7/PP1/MicroJava-Compiler/MJCompiler/test/test1.mj
+ERROR 22:20:59,250 - 
+Sintaksna greska na liniji 1
+ERROR 22:20:59,251 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 1
