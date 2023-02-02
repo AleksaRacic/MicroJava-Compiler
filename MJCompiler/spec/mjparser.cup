@@ -67,8 +67,7 @@ terminal Integer NUMBER;
 terminal String IDENT;
 
 // Program
-nonterminal Program;
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program;
 
 // Decl
 
@@ -125,7 +124,7 @@ precedence left ELSE;
 
 Program ::= (ProgramClass) PROG ProgName:program DecList LBRACE ListOfMethodDecl RBRACE;
 
-ProgName ::= (ProgNameClass) IDENT:name1;
+ProgName ::= (ProgNameClass) IDENT:name;
 
 
 DecList ::=	(VarDecListClass) DecList VarDecl  
@@ -187,7 +186,7 @@ ClassBody ::=	(ClassBodyVarClass) ListOfVarDecl RBRACE
 			|	(ClassBodyVarEmptyClass) ListOfVarDecl LBRACE RBRACE RBRACE
 			|	(ClassBodyVarMethodClass) ListOfVarDecl LBRACE MethodDecList RBRACE RBRACE
 			|	(ClassBodyVarConstructorClass) ListOfVarDecl LBRACE ConstructorDecList RBRACE RBRACE
-			|	(ClassBodyAllClass) ListOfVarDecl LBRACE MethodDecList ConstructorDecList RBRACE RBRACE
+			|	(ClassBodyAllClass) ListOfVarDecl LBRACE ConstructorDecList MethodDecList RBRACE RBRACE
 			;
 			
 ListOfVarDecl ::= (ListOfVarDeclClass) ListOfVarDecl VarDecl
