@@ -38,6 +38,26 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		log.info(msg.toString());
 	}
 	
+	String getCurType() {
+		int i = curType.getKind();
+		switch(i) {
+		case 0:
+			return "NONE";
+		case 1:
+			return "INT";
+		case 2:
+			return "CHAR";
+		case 3:
+			return "ARRAY";
+		case 4:
+			return "CLASS";
+		case 5:
+			return "BOOL";
+		default:
+			return "ERROR";	
+		}
+	}
+	
 	
 	public SemanticAnalyzer() {
 		Tab.currentScope.addToLocals(new Obj(Obj.Type, "bool", MyTab.boolType));
@@ -94,11 +114,11 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			report_error("SEMANTICKA GRESKA[" + constDecl.getLine() + "]: Ime " + constDecl.getConstName() + " je vec deklarisano", constDecl);
 		} else {
 			if(!nodeStruct.equals(curType)) {
-				report_error("SEMANTICKA GRESKA[" + constDecl.getLine() + "]: Tip " + tableUtils.typeOfStructNode(nodeStruct.getKind()) + " nije isti tip vrednosti kao i " + tableUtils.typeOfStructNode(curType.getKind()), constDecl);
+				report_error("SEMANTICKA GRESKA[" + constDecl.getLine() + "]: Tip " + tableUtils.typeOfStructNode(nodeStruct.getKind()) + " nije isti tip vrednosti kao i " + getCurType(), constDecl);
 			}else {
 				constObj = Tab.insert(Obj.Con, constDecl.getConstName(), nodeStruct);
 				constObj.setAdr((constDecl.getValue() == true)? 1:0);
-				report_info("Kreirana je konstanta " + tableUtils.typeOfStructNode(curType.getKind()) + " " +constDecl.getConstName(), constDecl);
+				report_info("Kreirana je konstanta " + getCurType() + " " +constDecl.getConstName(), constDecl);
 			}
 		}
 		
@@ -114,11 +134,11 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			report_error("SEMANTICKA GRESKA[" + constDecl.getLine() + "]: Ime " + constDecl.getConstName() + " je vec deklarisano", constDecl);
 		} else {
 			if(!nodeStruct.equals(curType)) {
-				report_error("SEMANTICKA GRESKA[" + constDecl.getLine() + "]: Tip " + tableUtils.typeOfStructNode(nodeStruct.getKind()) + " nije isti tip vrednosti kao i " + tableUtils.typeOfStructNode(curType.getKind()), constDecl);
+				report_error("SEMANTICKA GRESKA[" + constDecl.getLine() + "]: Tip " + tableUtils.typeOfStructNode(nodeStruct.getKind()) + " nije isti tip vrednosti kao i " + getCurType(), constDecl);
 			}else {
 				constObj = Tab.insert(Obj.Con, constDecl.getConstName(), nodeStruct);
 				constObj.setAdr(constDecl.getValue());
-				report_info("Kreirana je konstanta " + tableUtils.typeOfStructNode(curType.getKind()) + " " +constDecl.getConstName(), constDecl);
+				report_info("Kreirana je konstanta " + getCurType() + " " +constDecl.getConstName(), constDecl);
 			}
 		}
 		
@@ -134,11 +154,11 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			report_error("SEMANTICKA GRESKA[" + constDecl.getLine() + "]: Ime " + constDecl.getConstName() + " je vec deklarisano", constDecl);
 		} else {
 			if(!nodeStruct.equals(curType)) {
-				report_error("SEMANTICKA GRESKA[" + constDecl.getLine() + "]: Tip " + tableUtils.typeOfStructNode(nodeStruct.getKind()) + " nije isti tip vrednosti kao i " + tableUtils.typeOfStructNode(curType.getKind()), constDecl);
+				report_error("SEMANTICKA GRESKA[" + constDecl.getLine() + "]: Tip " + tableUtils.typeOfStructNode(nodeStruct.getKind()) + " nije isti tip vrednosti kao i " + getCurType(), constDecl);
 			}else {
 				constObj = Tab.insert(Obj.Con, constDecl.getConstName(), nodeStruct);
 				constObj.setAdr(constDecl.getValue());
-				report_info("Kreirana je konstanta " + tableUtils.typeOfStructNode(curType.getKind()) + " " +constDecl.getConstName(), constDecl);
+				report_info("Kreirana je konstanta " + getCurType() + " " +constDecl.getConstName(), constDecl);
 			}
 		}
 		
@@ -154,11 +174,11 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			report_error("SEMANTICKA GRESKA[" + constDecl.getLine() + "]: Ime " + constDecl.getConstName() + " je vec deklarisano", constDecl);
 		} else {
 			if(!nodeStruct.equals(curType)) {
-				report_error("SEMANTICKA GRESKA[" + constDecl.getLine() + "]: Tip " + tableUtils.typeOfStructNode(nodeStruct.getKind()) + " nije isti tip vrednosti kao i " + tableUtils.typeOfStructNode(curType.getKind()), constDecl);
+				report_error("SEMANTICKA GRESKA[" + constDecl.getLine() + "]: Tip " + tableUtils.typeOfStructNode(nodeStruct.getKind()) + " nije isti tip vrednosti kao i " + getCurType(), constDecl);
 			}else {
 				constObj = Tab.insert(Obj.Con, constDecl.getConstName(), nodeStruct);
 				constObj.setAdr((constDecl.getValue() == true)? 1:0);
-				report_info("Kreirana je konstanta " + tableUtils.typeOfStructNode(curType.getKind()) + " " +constDecl.getConstName(), constDecl);
+				report_info("Kreirana je konstanta " + getCurType() + " " +constDecl.getConstName(), constDecl);
 			}
 		}
 		
@@ -174,11 +194,11 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			report_error("SEMANTICKA GRESKA[" + constDecl.getLine() + "]: Ime " + constDecl.getConstName() + " je vec deklarisano", constDecl);
 		} else {
 			if(!nodeStruct.equals(curType)) {
-				report_error("SEMANTICKA GRESKA[" + constDecl.getLine() + "]: Tip " + tableUtils.typeOfStructNode(nodeStruct.getKind()) + " nije isti tip vrednosti kao i " + tableUtils.typeOfStructNode(curType.getKind()), constDecl);
+				report_error("SEMANTICKA GRESKA[" + constDecl.getLine() + "]: Tip " + tableUtils.typeOfStructNode(nodeStruct.getKind()) + " nije isti tip vrednosti kao i " + getCurType(), constDecl);
 			}else {
 				constObj = Tab.insert(Obj.Con, constDecl.getConstName(), nodeStruct);
 				constObj.setAdr(constDecl.getValue());
-				report_info("Kreirana je konstanta " + tableUtils.typeOfStructNode(curType.getKind()) + " " +constDecl.getConstName(), constDecl);
+				report_info("Kreirana je konstanta " + getCurType() + " " +constDecl.getConstName(), constDecl);
 			}
 		}
 		
@@ -194,11 +214,11 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			report_error("SEMANTICKA GRESKA[" + constDecl.getLine() + "]: Ime " + constDecl.getConstName() + " je vec deklarisano", constDecl);
 		} else {
 			if(!nodeStruct.equals(curType)) {
-				report_error("SEMANTICKA GRESKA[" + constDecl.getLine() + "]: Tip " + tableUtils.typeOfStructNode(nodeStruct.getKind()) + " nije isti tip vrednosti kao i " + tableUtils.typeOfStructNode(curType.getKind()), constDecl);
+				report_error("SEMANTICKA GRESKA[" + constDecl.getLine() + "]: Tip " + tableUtils.typeOfStructNode(nodeStruct.getKind()) + " nije isti tip vrednosti kao i " + getCurType(), constDecl);
 			}else {
 				constObj = Tab.insert(Obj.Con, constDecl.getConstName(), nodeStruct);
 				constObj.setAdr(constDecl.getValue());
-				report_info("Kreirana je konstanta " + tableUtils.typeOfStructNode(curType.getKind()) + " " +constDecl.getConstName(), constDecl);
+				report_info("Kreirana je konstanta " + getCurType() + " " +constDecl.getConstName(), constDecl);
 			}
 		}
 		
@@ -224,7 +244,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			Struct tmp;
 			tmp = isArray ? new Struct(Struct.Array, curType) : curType;
 			Tab.insert(Obj.Var, varDecl.getVarName(), tmp);
-			report_info("Kreirana je promenjiva " + tableUtils.typeOfStructNode(curType.getKind()) + " " + varDecl.getVarName()+ (isArray?"[]":""), varDecl);
+			report_info("Kreirana je promenjiva " + getCurType() + " " + varDecl.getVarName()+ (isArray?"[]":""), varDecl);
 		}
 	}
 		
@@ -236,7 +256,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			Struct tmp;
 			tmp = isArray ? new Struct(Struct.Array, curType) : curType;
 			Tab.insert(Obj.Var, varDecl.getVarName(), tmp);
-			report_info("Kreirana je promenjiva " + tableUtils.typeOfStructNode(curType.getKind()) + " " + varDecl.getVarName() + (isArray?"[]":""), varDecl);
+			report_info("Kreirana je promenjiva " + getCurType() + " " + varDecl.getVarName() + (isArray?"[]":""), varDecl);
 		}
 	}
 	
@@ -269,7 +289,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			
 			methods.put(node, new ArrayList<>());
 			curMethod = node;
-			report_info("Definicija " + (curClass.equals(MyTab.noObj)?"funkcije ":"metode ") + tableUtils.typeOfStructNode(curType.getKind()) + name, methDecl);
+			report_info("Definicija " + (curClass.equals(MyTab.noObj)?"funkcije ":"metode ") + getCurType() + " " + name, methDecl);
 		}
 	}
 	
@@ -291,7 +311,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			
 			methods.put(node, new ArrayList<>());
 			curMethod = node;
-			report_info("Definicija " + (curClass.equals(MyTab.noObj)?"funkcije ":"metode ") + tableUtils.typeOfStructNode(curType.getKind()) + name, methDecl);
+			report_info("Definicija " + (curClass.equals(MyTab.noObj)?"funkcije ":"metode ") + getCurType() + " " + name, methDecl);
 		}
 	}
 	
@@ -319,11 +339,155 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		numOfFormPars = 0;
 	}
 	
+	@Override
+	public void visit(FormParsElement formPar) {
+		numOfFormPars++;
+		if (MyTab.currentScope.findSymbol(formPar.getNameForm()) != null){
+			report_error("SEMANTICKA GRESKA: Ime formalnog parametra " + getCurType() + " " + formPar.getNameForm() + " je vec deklarisano", formPar);
+		}else {
+			
+			//TODO Treba za konstruktor
+			Struct tmp;
+			tmp = isArray ? new Struct(Struct.Array, curType) : curType;
+			Tab.insert(Obj.Var, formPar.getNameForm(), tmp);
+			report_info("Kreirana je lokalna promenjiva " + getCurType() + " " + formPar.getNameForm() + (isArray?"[]":""), formPar);
+			
+			methods.get(curMethod).add(tmp);
+		}
+		isArray = false;
+	}
 	
+	
+	@Override
+	public void visit(DesignatorClass designator) {
+		designator.obj = MyTab.find(designator.getName());
+		if(designator.obj == MyTab.noObj) {
+			report_error("SEMANTICKA GRESKA: Nije deklarisana promenljiva " + designator.getName() , designator);
+		}else {
+			if(designator.obj.getKind() == Obj.Con) {
+				report_info("Detektovan je pristup simbolickoj konstantni " + designator.obj.getName(), designator);
+			}
+		}
+		
+	}
+	
+	@Override
+	public void visit(ArrayDesignatorClass designator) {
+		Obj arrObj = designator.getDesignator().obj;
+		if(arrObj.getType().getKind() != Struct.Array) {
+			report_error("SEMANTICKA GRESKA: " + arrObj.getName() + " mora bit niz nekog tipa", designator);
+			designator.obj = Tab.noObj;
+		}else {
+			if(designator.getExpr().struct != MyTab.intType) {
+				designator.obj = Tab.noObj;
+				report_error("SEMANTICKA GRESKA: Index niza mora bit tipa INT", designator);
+			}
+		}
+		designator.obj = new Obj(Obj.Elem, arrObj.getName(), arrObj.getType().getElemType());
+		report_info("Detektovan je pristup elemntu niza " + arrObj.getName(), designator);
+		
+	}
+	
+	//TODO ClassDesignatorClass
+	
+	@Override
+	public void visit(MultipleFactorsTermClass term) {
+		if(term.getFactor().struct != MyTab.intType || term.getTerm().struct != MyTab.intType) {
+			report_error("SEMANTICKA GRESKA: Tip term i factor mora biti INT", term);
+			term.struct = MyTab.noType;
+		}else {
+			term.struct = Tab.intType;
+		}
+	}
+	
+	@Override
+	public void visit(SingleFactorTermClass term) {
+		term.struct = term.getFactor().struct;
+	}
+	
+	@Override
+	public void visit(DesignatorFactorClass factor) {
+		factor.struct = factor.getDesignator().obj.getType();
+	}
+	
+	@Override
+	public void visit(FuncCallDesignatorClass factor) {
+		if(factor.getDesignator().obj.getKind() != Obj.Meth) {
+    		report_error("SEMANTICKA GRESKA: " + factor.getDesignator().obj.getName() + " nije funkcija", factor);        	    		
+    		factor.struct =  MyTab.noType;
+    	}else {
+    		factor.struct =  factor.getDesignator().obj.getType();
+    	}
+	}
+	
+	@Override
+	public void visit(NumberFactorClass factor) {
+		factor.struct = MyTab.intType;
+	}
+	
+	@Override
+	public void visit(CharFactorClass factor) {
+		factor.struct = MyTab.charType;
+	}
+	
+	@Override
+	public void visit(BoolFactorClass factor) {
+		factor.struct = MyTab.boolType;
+	}
+	
+	@Override
+	public void visit(ExpFactorClass factor) {
+		factor.struct = factor.getExpr().struct;
+		
+	}
+	
+	@Override
+	public void visit(ArrayFactorClass factor) {
+		if(factor.getExpr().struct != Tab.intType) {
+			report_error("SEMANTICKA GRESKA: Index mora biti INT", factor);        	    		
+			factor.struct =  MyTab.noType;
+		}else {
+			factor.struct = new Struct(Struct.Array, factor.getType().struct);
+		}
+	}
+	
+	//TODO class Factor
+	
+	@Override
+	public void visit(ExprClass expr) {
+		if(expr.getExpr().struct.compatibleWith(expr.getTerm().struct)) {
+			expr.struct = Tab.noType;
+			report_error("SEMANTICKA GRESKA: Sabirci nisu kompatibilni ", expr);
+		}else {
+			if(!expr.getExpr().struct.equals(MyTab.intType) || !expr.getTerm().struct.equals(MyTab.intType)) {
+				report_error("SEMANTICKA GRESKA: Sabirci nisu INT ", expr);
+			}else {
+				expr.struct = MyTab.intType;
+			}
+		}
+	}
+	
+	@Override
+	public void visit(PositiveExprClass expr) {
+		expr.struct = expr.getTerm().struct;
+	}
+	
+	@Override
+	public void visit(NegativeExprClass expr) {
+		if(expr.getTerm().struct != Tab.intType) {
+			report_error("SEMANTICKA GRESKA: Moguca je samo negacija izraza tipa INT", expr);
+			expr.struct = Tab.noType;
+		}else {
+			//otherwise it must be int type
+			expr.struct = Tab.intType;
+		}
+	}
 	
 	
 	public boolean errorDetected() {
 		return errorDetected;
 	}
+	
+	
 
 }

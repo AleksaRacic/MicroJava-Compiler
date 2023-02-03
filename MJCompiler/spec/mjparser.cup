@@ -105,13 +105,15 @@ nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
 nonterminal ListOfStatements, Statement;
 
 //Designator
-nonterminal DesignatorStatement, ActPars, ListOfActPars, OptDesignatorList, DesignatorOrEpsilon, Designator;
+nonterminal DesignatorStatement, ActPars, ListOfActPars, OptDesignatorList, DesignatorOrEpsilon;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator;
 
 //Condition
 nonterminal IfCond, Condition, CondTerm, CondFact;
 
 //Expr
-nonterminal Expr, Term, Factor;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Expr, Term, Factor;
+
 
 //Operators
 nonterminal Relop, Mulop, Addop;
@@ -285,8 +287,8 @@ Expr ::=	(ExprClass) Expr Addop Term
 		|	(NegativeExprClass) MINUS Term
 		;
 		
-Term ::= 	(MultipleFactors) Term Mulop Factor
-		|	(SingleFactor) Factor
+Term ::= 	(MultipleFactorsTermClass) Term Mulop Factor
+		|	(SingleFactorTermClass) Factor
 		;
 
 Factor ::= 	(DesignatorFactorClass) Designator
@@ -296,7 +298,7 @@ Factor ::= 	(DesignatorFactorClass) Designator
 		|	(BoolFactorClass) BOOLEAN:BoolValue
 		|	(ExpFactorClass) LPAREN Expr RPAREN
 		|	(ArrayFactorClass) NEW Type LBRACKET Expr RBRACKET
-		|	(MatrixFactorClass) NEW Type LPAREN ActPars RPAREN
+		|	(ClassFactorClass) NEW Type LPAREN ActPars RPAREN
 		;
 	
 Mulop ::=	(MulClass) MUL
@@ -304,7 +306,11 @@ Mulop ::=	(MulClass) MUL
 		|	(ModClass) MOD
 		;	
 ActPars ::= (ActualParsClass) ListOfActPars
-			| (NoActualParsClass) /* epsilon */;
+		| 	(NoActualParsClass) /* epsilon */
+		;
+
+
+//dodaj nove akcije da detektujes parametre u func call
 
 ListOfActPars ::= 	(ListOfActParExprClass) ListOfActPars COMMA Expr
 				|	(EmptyListOfActParClass) Expr
