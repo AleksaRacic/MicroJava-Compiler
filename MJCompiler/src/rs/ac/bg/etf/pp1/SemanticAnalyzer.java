@@ -455,6 +455,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	
 	@Override
 	public void visit(ExprClass expr) {
+		//TODO ovo kompatibilno ne valja nesto
 		if(expr.getExpr().struct.compatibleWith(expr.getTerm().struct)) {
 			expr.struct = Tab.noType;
 			report_error("SEMANTICKA GRESKA: Sabirci nisu kompatibilni ", expr);
