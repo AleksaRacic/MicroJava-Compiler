@@ -1,0 +1,112 @@
+INFO  01:59:28,658 - Compiling source file: /Users/racicaleksa/Projects/Semestar-7/PP1/MicroJava-Compiler/MJCompiler/test/testDevelop.mj
+INFO  01:59:28,687 - #2 program
+INFO  01:59:28,687 - #49 test302
+INFO  01:59:28,687 - #49 int
+INFO  01:59:28,688 - #49 niz
+INFO  01:59:28,688 - #41 [
+INFO  01:59:28,688 - #42 ]
+INFO  01:59:28,688 - #35 ;
+INFO  01:59:28,688 - #49 int
+INFO  01:59:28,689 - #49 a
+INFO  01:59:28,689 - #37 ,
+INFO  01:59:28,689 - #49 curr
+INFO  01:59:28,689 - #35 ;
+INFO  01:59:28,689 - #43 {
+INFO  01:59:28,690 - #14 void
+INFO  01:59:28,690 - #49 main
+INFO  01:59:28,690 - #39 (
+INFO  01:59:28,690 - #40 )
+INFO  01:59:28,690 - #43 {
+INFO  01:59:28,690 - #49 niz
+INFO  01:59:28,690 - #38 .
+INFO  01:59:28,691 - #17 foreach
+ERROR 01:59:28,691 - 
+Sintaksna greska na liniji 17
+INFO  01:59:28,691 - #39 (
+INFO  01:59:28,691 - #49 curr
+INFO  01:59:28,691 - #45 =>
+INFO  01:59:28,691 - #43 {
+INFO  01:59:28,691 - #49 niz2
+INFO  01:59:28,691 - #32 =
+INFO  01:59:28,691 - #49 niz2
+INFO  01:59:28,691 - #19 +
+INFO  01:59:28,691 - #49 curr
+INFO  01:59:28,691 - #21 *
+INFO  01:59:28,691 - #49 curr
+INFO  01:59:28,691 - #35 ;
+INFO  01:59:28,691 - #44 }
+INFO  01:59:28,691 - #40 )
+INFO  01:59:28,691 - #35 ;
+INFO  01:59:28,692 - #44 }
+INFO  01:59:28,692 - #44 }
+ERROR 01:59:28,692 - Izvrsen oporavak do ; u liniji 17
+INFO  01:59:28,694 - ProgramClass(
+  ProgNameClass(
+   test302
+  ) [ProgNameClass]
+  VarDecListClass(
+    VarDecListClass(
+      NoDecListClass(
+      ) [NoDecListClass]
+      VarDeclClass(
+        TypeClass(
+         int
+        ) [TypeClass]
+        VarDecLastListElementClass(
+          VarDecLastElementClass(
+           niz
+            ArrayBracketsClass(
+            ) [ArrayBracketsClass]
+          ) [VarDecLastElementClass]
+        ) [VarDecLastListElementClass]
+      ) [VarDeclClass]
+    ) [VarDecListClass]
+    VarDeclClass(
+      TypeClass(
+       int
+      ) [TypeClass]
+      VarDecListElementClass(
+        VarDecElementClass(
+         a
+          NoArrayBracketsClass(
+          ) [NoArrayBracketsClass]
+        ) [VarDecElementClass]
+        VarDecLastListElementClass(
+          VarDecLastElementClass(
+           curr
+            NoArrayBracketsClass(
+            ) [NoArrayBracketsClass]
+          ) [VarDecLastElementClass]
+        ) [VarDecLastListElementClass]
+      ) [VarDecListElementClass]
+    ) [VarDeclClass]
+  ) [VarDecListClass]
+  ListOfMethodDeclClass(
+    EmptyListOfMethodDeclClass(
+    ) [EmptyListOfMethodDeclClass]
+    MethodDeclClass(
+      VoidMethodClass(
+       main
+      ) [VoidMethodClass]
+      FormParsEnd(
+      ) [FormParsEnd]
+      EmptyListOfVarDeclClass(
+      ) [EmptyListOfVarDeclClass]
+      ListOfStatementsClass(
+        EmptyListOfStatementsClass(
+        ) [EmptyListOfStatementsClass]
+        DesignatorStatementClass(
+          ErrDesignatorStatementAssignClass(
+          ) [ErrDesignatorStatementAssignClass]
+        ) [DesignatorStatementClass]
+      ) [ListOfStatementsClass]
+    ) [MethodDeclClass]
+  ) [ListOfMethodDeclClass]
+) [ProgramClass]
+INFO  01:59:28,694 - ====================================
+INFO  01:59:28,697 - Kreirana je promenjiva INT niz[] na liniji 9
+INFO  01:59:28,697 - Kreirana je promenjiva INT a na liniji 10
+INFO  01:59:28,697 - Kreirana je promenjiva INT curr na liniji 10
+INFO  01:59:28,697 - Definicija funkcije NONE main na liniji 14
+INFO  01:59:28,697 - ====================================
+ERROR 01:59:28,697 - Parsiranje NIJE uspesno zavrseno!

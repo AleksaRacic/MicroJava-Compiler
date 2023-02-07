@@ -1,0 +1,2273 @@
+INFO  02:54:25,002 - Compiling source file: /Users/racicaleksa/Projects/Semestar-7/PP1/MicroJava-Compiler/MJCompiler/test/test302.mj
+INFO  02:54:25,033 - #2 program
+INFO  02:54:25,033 - #49 test302
+INFO  02:54:25,033 - #8 const
+INFO  02:54:25,033 - #49 int
+INFO  02:54:25,034 - #49 jedan
+INFO  02:54:25,034 - #32 =
+INFO  02:54:25,034 - #48 1
+INFO  02:54:25,034 - #35 ;
+INFO  02:54:25,034 - #49 int
+INFO  02:54:25,034 - #49 i
+INFO  02:54:25,034 - #35 ;
+INFO  02:54:25,035 - #49 bool
+INFO  02:54:25,035 - #49 ibool
+INFO  02:54:25,036 - #35 ;
+INFO  02:54:25,036 - #49 int
+INFO  02:54:25,036 - #49 niz2
+INFO  02:54:25,036 - #35 ;
+INFO  02:54:25,036 - #49 int
+INFO  02:54:25,036 - #49 niz
+INFO  02:54:25,036 - #41 [
+INFO  02:54:25,036 - #42 ]
+INFO  02:54:25,036 - #35 ;
+INFO  02:54:25,037 - #49 int
+INFO  02:54:25,037 - #49 a
+INFO  02:54:25,037 - #37 ,
+INFO  02:54:25,037 - #49 curr
+INFO  02:54:25,037 - #35 ;
+INFO  02:54:25,037 - #43 {
+INFO  02:54:25,037 - #49 int
+INFO  02:54:25,039 - #49 sum
+INFO  02:54:25,039 - #39 (
+INFO  02:54:25,039 - #49 int
+INFO  02:54:25,039 - #49 z
+INFO  02:54:25,039 - #37 ,
+INFO  02:54:25,040 - #49 int
+INFO  02:54:25,040 - #49 d
+INFO  02:54:25,040 - #40 )
+INFO  02:54:25,041 - #43 {
+INFO  02:54:25,041 - #4 return
+INFO  02:54:25,042 - #49 z
+INFO  02:54:25,042 - #19 +
+INFO  02:54:25,042 - #49 d
+INFO  02:54:25,043 - #35 ;
+INFO  02:54:25,043 - #44 }
+INFO  02:54:25,043 - #49 int
+INFO  02:54:25,043 - #49 inkrement
+INFO  02:54:25,043 - #39 (
+INFO  02:54:25,043 - #49 int
+INFO  02:54:25,043 - #49 a
+INFO  02:54:25,043 - #37 ,
+INFO  02:54:25,043 - #49 int
+INFO  02:54:25,043 - #49 inc
+INFO  02:54:25,043 - #40 )
+INFO  02:54:25,044 - #49 int
+INFO  02:54:25,044 - #49 pom
+INFO  02:54:25,044 - #35 ;
+INFO  02:54:25,044 - #43 {
+INFO  02:54:25,044 - #9 if
+INFO  02:54:25,044 - #39 (
+INFO  02:54:25,044 - #49 inc
+INFO  02:54:25,044 - #24 ==
+INFO  02:54:25,044 - #49 jedan
+INFO  02:54:25,045 - #40 )
+INFO  02:54:25,046 - #49 pom
+INFO  02:54:25,046 - #32 =
+INFO  02:54:25,046 - #48 1
+INFO  02:54:25,047 - #35 ;
+INFO  02:54:25,047 - #7 else
+INFO  02:54:25,048 - #9 if
+INFO  02:54:25,048 - #39 (
+INFO  02:54:25,048 - #49 inc
+INFO  02:54:25,048 - #24 ==
+INFO  02:54:25,048 - #48 2
+INFO  02:54:25,048 - #40 )
+INFO  02:54:25,048 - #49 pom
+INFO  02:54:25,048 - #32 =
+INFO  02:54:25,048 - #49 a
+INFO  02:54:25,048 - #35 ;
+INFO  02:54:25,048 - #4 return
+INFO  02:54:25,048 - #49 sum
+INFO  02:54:25,048 - #39 (
+INFO  02:54:25,048 - #49 a
+INFO  02:54:25,048 - #37 ,
+INFO  02:54:25,049 - #49 pom
+INFO  02:54:25,049 - #40 )
+INFO  02:54:25,049 - #35 ;
+INFO  02:54:25,049 - #44 }
+INFO  02:54:25,049 - #49 bool
+INFO  02:54:25,049 - #49 verify
+INFO  02:54:25,049 - #39 (
+INFO  02:54:25,049 - #40 )
+INFO  02:54:25,049 - #43 {
+INFO  02:54:25,050 - #3 print
+INFO  02:54:25,050 - #39 (
+INFO  02:54:25,050 - #46 v
+INFO  02:54:25,050 - #40 )
+INFO  02:54:25,050 - #35 ;
+INFO  02:54:25,050 - #4 return
+INFO  02:54:25,050 - #47 false
+INFO  02:54:25,050 - #35 ;
+INFO  02:54:25,050 - #44 }
+INFO  02:54:25,050 - #14 void
+INFO  02:54:25,050 - #49 main
+INFO  02:54:25,050 - #39 (
+INFO  02:54:25,051 - #40 )
+INFO  02:54:25,051 - #43 {
+INFO  02:54:25,051 - #9 if
+INFO  02:54:25,051 - #39 (
+INFO  02:54:25,051 - #48 1
+INFO  02:54:25,051 - #25 !=
+INFO  02:54:25,051 - #48 1
+INFO  02:54:25,051 - #40 )
+INFO  02:54:25,051 - #3 print
+INFO  02:54:25,051 - #39 (
+INFO  02:54:25,051 - #20 -
+INFO  02:54:25,051 - #48 6
+INFO  02:54:25,051 - #40 )
+INFO  02:54:25,051 - #35 ;
+INFO  02:54:25,051 - #7 else
+INFO  02:54:25,051 - #3 print
+INFO  02:54:25,051 - #39 (
+INFO  02:54:25,051 - #48 0
+INFO  02:54:25,051 - #40 )
+INFO  02:54:25,051 - #35 ;
+INFO  02:54:25,051 - #49 ibool
+INFO  02:54:25,051 - #32 =
+INFO  02:54:25,051 - #47 false
+INFO  02:54:25,051 - #35 ;
+INFO  02:54:25,051 - #49 i
+INFO  02:54:25,051 - #32 =
+INFO  02:54:25,052 - #48 0
+INFO  02:54:25,052 - #35 ;
+INFO  02:54:25,052 - #11 while
+INFO  02:54:25,052 - #39 (
+INFO  02:54:25,052 - #49 i
+INFO  02:54:25,052 - #28 <
+INFO  02:54:25,052 - #48 5
+INFO  02:54:25,052 - #40 )
+INFO  02:54:25,052 - #43 {
+INFO  02:54:25,052 - #9 if
+INFO  02:54:25,052 - #39 (
+INFO  02:54:25,052 - #49 i
+INFO  02:54:25,052 - #24 ==
+INFO  02:54:25,052 - #48 2
+INFO  02:54:25,052 - #40 )
+INFO  02:54:25,052 - #49 ibool
+INFO  02:54:25,052 - #32 =
+INFO  02:54:25,052 - #47 true
+INFO  02:54:25,052 - #35 ;
+INFO  02:54:25,052 - #49 i
+INFO  02:54:25,052 - #33 ++
+INFO  02:54:25,052 - #35 ;
+INFO  02:54:25,052 - #44 }
+INFO  02:54:25,053 - #9 if
+INFO  02:54:25,053 - #39 (
+INFO  02:54:25,053 - #49 ibool
+INFO  02:54:25,053 - #40 )
+INFO  02:54:25,053 - #9 if
+INFO  02:54:25,053 - #39 (
+INFO  02:54:25,053 - #49 i
+INFO  02:54:25,053 - #24 ==
+INFO  02:54:25,053 - #48 5
+INFO  02:54:25,053 - #40 )
+INFO  02:54:25,053 - #3 print
+INFO  02:54:25,053 - #39 (
+INFO  02:54:25,053 - #48 1
+INFO  02:54:25,053 - #40 )
+INFO  02:54:25,053 - #35 ;
+INFO  02:54:25,054 - #7 else
+INFO  02:54:25,054 - #3 print
+INFO  02:54:25,054 - #39 (
+INFO  02:54:25,054 - #20 -
+INFO  02:54:25,054 - #48 1
+INFO  02:54:25,054 - #40 )
+INFO  02:54:25,054 - #35 ;
+INFO  02:54:25,054 - #49 a
+INFO  02:54:25,054 - #32 =
+INFO  02:54:25,054 - #48 2
+INFO  02:54:25,054 - #35 ;
+INFO  02:54:25,054 - #49 niz
+INFO  02:54:25,054 - #32 =
+INFO  02:54:25,054 - #12 new
+INFO  02:54:25,054 - #49 int
+INFO  02:54:25,054 - #41 [
+INFO  02:54:25,054 - #48 3
+INFO  02:54:25,054 - #42 ]
+INFO  02:54:25,054 - #35 ;
+INFO  02:54:25,054 - #49 niz
+INFO  02:54:25,054 - #41 [
+INFO  02:54:25,054 - #48 0
+INFO  02:54:25,054 - #42 ]
+INFO  02:54:25,054 - #32 =
+INFO  02:54:25,054 - #48 1
+INFO  02:54:25,054 - #21 *
+INFO  02:54:25,054 - #49 a
+INFO  02:54:25,055 - #35 ;
+INFO  02:54:25,055 - #49 niz
+INFO  02:54:25,055 - #41 [
+INFO  02:54:25,055 - #48 1
+INFO  02:54:25,055 - #42 ]
+INFO  02:54:25,055 - #32 =
+INFO  02:54:25,055 - #48 2
+INFO  02:54:25,055 - #21 *
+INFO  02:54:25,055 - #49 a
+INFO  02:54:25,055 - #35 ;
+INFO  02:54:25,055 - #49 niz
+INFO  02:54:25,055 - #41 [
+INFO  02:54:25,055 - #48 2
+INFO  02:54:25,055 - #42 ]
+INFO  02:54:25,055 - #32 =
+INFO  02:54:25,055 - #49 sum
+INFO  02:54:25,055 - #39 (
+INFO  02:54:25,055 - #49 niz
+INFO  02:54:25,055 - #41 [
+INFO  02:54:25,055 - #48 1
+INFO  02:54:25,055 - #42 ]
+INFO  02:54:25,055 - #37 ,
+INFO  02:54:25,055 - #49 niz
+INFO  02:54:25,055 - #41 [
+INFO  02:54:25,055 - #48 0
+INFO  02:54:25,055 - #42 ]
+INFO  02:54:25,055 - #40 )
+INFO  02:54:25,055 - #21 *
+INFO  02:54:25,055 - #49 a
+INFO  02:54:25,055 - #19 +
+INFO  02:54:25,055 - #48 1
+INFO  02:54:25,055 - #35 ;
+INFO  02:54:25,055 - #9 if
+INFO  02:54:25,055 - #39 (
+INFO  02:54:25,055 - #49 verify
+INFO  02:54:25,055 - #39 (
+INFO  02:54:25,055 - #40 )
+INFO  02:54:25,055 - #31 ||
+INFO  02:54:25,056 - #49 niz
+INFO  02:54:25,056 - #41 [
+INFO  02:54:25,056 - #48 2
+INFO  02:54:25,056 - #42 ]
+INFO  02:54:25,056 - #24 ==
+INFO  02:54:25,056 - #48 4
+INFO  02:54:25,056 - #40 )
+INFO  02:54:25,056 - #3 print
+INFO  02:54:25,056 - #39 (
+INFO  02:54:25,056 - #49 ord
+INFO  02:54:25,056 - #39 (
+INFO  02:54:25,056 - #46 A
+INFO  02:54:25,056 - #40 )
+INFO  02:54:25,056 - #40 )
+INFO  02:54:25,056 - #35 ;
+INFO  02:54:25,056 - #7 else
+INFO  02:54:25,056 - #3 print
+INFO  02:54:25,056 - #39 (
+INFO  02:54:25,056 - #49 ord
+INFO  02:54:25,056 - #39 (
+INFO  02:54:25,056 - #46 a
+INFO  02:54:25,056 - #40 )
+INFO  02:54:25,056 - #40 )
+INFO  02:54:25,056 - #35 ;
+INFO  02:54:25,056 - #3 print
+INFO  02:54:25,056 - #39 (
+INFO  02:54:25,056 - #49 eol
+INFO  02:54:25,056 - #40 )
+INFO  02:54:25,056 - #35 ;
+INFO  02:54:25,056 - #49 i
+INFO  02:54:25,056 - #32 =
+INFO  02:54:25,057 - #48 0
+INFO  02:54:25,057 - #35 ;
+INFO  02:54:25,057 - #11 while
+INFO  02:54:25,057 - #39 (
+INFO  02:54:25,057 - #49 i
+INFO  02:54:25,057 - #28 <
+INFO  02:54:25,057 - #48 10
+INFO  02:54:25,057 - #40 )
+INFO  02:54:25,057 - #43 {
+INFO  02:54:25,057 - #9 if
+INFO  02:54:25,057 - #39 (
+INFO  02:54:25,057 - #49 i
+INFO  02:54:25,057 - #24 ==
+INFO  02:54:25,057 - #48 3
+INFO  02:54:25,057 - #40 )
+INFO  02:54:25,057 - #43 {
+INFO  02:54:25,057 - #49 i
+INFO  02:54:25,057 - #33 ++
+INFO  02:54:25,057 - #35 ;
+INFO  02:54:25,057 - #16 continue
+INFO  02:54:25,057 - #35 ;
+INFO  02:54:25,057 - #44 }
+INFO  02:54:25,057 - #9 if
+INFO  02:54:25,058 - #39 (
+INFO  02:54:25,058 - #49 i
+INFO  02:54:25,058 - #24 ==
+INFO  02:54:25,058 - #48 4
+INFO  02:54:25,058 - #40 )
+INFO  02:54:25,058 - #18 break
+INFO  02:54:25,058 - #35 ;
+INFO  02:54:25,058 - #49 i
+INFO  02:54:25,059 - #32 =
+INFO  02:54:25,059 - #49 inkrement
+INFO  02:54:25,059 - #39 (
+INFO  02:54:25,059 - #49 i
+INFO  02:54:25,059 - #37 ,
+INFO  02:54:25,059 - #48 1
+INFO  02:54:25,059 - #40 )
+INFO  02:54:25,059 - #35 ;
+INFO  02:54:25,059 - #44 }
+INFO  02:54:25,059 - #9 if
+INFO  02:54:25,059 - #39 (
+INFO  02:54:25,059 - #49 i
+INFO  02:54:25,059 - #24 ==
+INFO  02:54:25,059 - #48 3
+INFO  02:54:25,059 - #30 &&
+INFO  02:54:25,059 - #49 verify
+INFO  02:54:25,059 - #39 (
+INFO  02:54:25,059 - #40 )
+INFO  02:54:25,059 - #40 )
+INFO  02:54:25,060 - #3 print
+INFO  02:54:25,060 - #39 (
+INFO  02:54:25,060 - #20 -
+INFO  02:54:25,060 - #48 4
+INFO  02:54:25,060 - #40 )
+INFO  02:54:25,061 - #35 ;
+INFO  02:54:25,061 - #7 else
+INFO  02:54:25,061 - #3 print
+INFO  02:54:25,061 - #39 (
+INFO  02:54:25,061 - #48 4
+INFO  02:54:25,061 - #40 )
+INFO  02:54:25,061 - #35 ;
+INFO  02:54:25,061 - #13 read
+INFO  02:54:25,061 - #39 (
+INFO  02:54:25,061 - #49 niz
+INFO  02:54:25,061 - #41 [
+INFO  02:54:25,061 - #48 0
+INFO  02:54:25,061 - #42 ]
+INFO  02:54:25,061 - #40 )
+INFO  02:54:25,061 - #35 ;
+INFO  02:54:25,062 - #13 read
+INFO  02:54:25,062 - #39 (
+INFO  02:54:25,062 - #49 niz
+INFO  02:54:25,062 - #41 [
+INFO  02:54:25,062 - #48 1
+INFO  02:54:25,062 - #42 ]
+INFO  02:54:25,062 - #40 )
+INFO  02:54:25,062 - #35 ;
+INFO  02:54:25,062 - #13 read
+INFO  02:54:25,062 - #39 (
+INFO  02:54:25,062 - #49 niz
+INFO  02:54:25,062 - #41 [
+INFO  02:54:25,062 - #48 2
+INFO  02:54:25,062 - #42 ]
+INFO  02:54:25,062 - #40 )
+INFO  02:54:25,062 - #35 ;
+INFO  02:54:25,062 - #3 print
+INFO  02:54:25,062 - #39 (
+INFO  02:54:25,063 - #49 eol
+INFO  02:54:25,063 - #40 )
+INFO  02:54:25,063 - #35 ;
+INFO  02:54:25,063 - #3 print
+INFO  02:54:25,063 - #39 (
+INFO  02:54:25,063 - #49 sum
+INFO  02:54:25,063 - #39 (
+INFO  02:54:25,063 - #49 sum
+INFO  02:54:25,063 - #39 (
+INFO  02:54:25,063 - #49 niz
+INFO  02:54:25,063 - #41 [
+INFO  02:54:25,063 - #48 0
+INFO  02:54:25,063 - #42 ]
+INFO  02:54:25,063 - #37 ,
+INFO  02:54:25,063 - #49 niz
+INFO  02:54:25,063 - #41 [
+INFO  02:54:25,063 - #48 1
+INFO  02:54:25,064 - #42 ]
+INFO  02:54:25,064 - #40 )
+INFO  02:54:25,064 - #37 ,
+INFO  02:54:25,064 - #49 niz
+INFO  02:54:25,064 - #41 [
+INFO  02:54:25,064 - #48 2
+INFO  02:54:25,064 - #42 ]
+INFO  02:54:25,064 - #40 )
+INFO  02:54:25,064 - #40 )
+INFO  02:54:25,064 - #35 ;
+INFO  02:54:25,064 - #3 print
+INFO  02:54:25,064 - #39 (
+INFO  02:54:25,064 - #49 eol
+INFO  02:54:25,064 - #40 )
+INFO  02:54:25,065 - #35 ;
+INFO  02:54:25,065 - #3 print
+INFO  02:54:25,065 - #39 (
+INFO  02:54:25,065 - #49 inkrement
+INFO  02:54:25,065 - #39 (
+INFO  02:54:25,065 - #49 niz
+INFO  02:54:25,065 - #41 [
+INFO  02:54:25,065 - #48 2
+INFO  02:54:25,065 - #42 ]
+INFO  02:54:25,065 - #37 ,
+INFO  02:54:25,065 - #48 2
+INFO  02:54:25,065 - #40 )
+INFO  02:54:25,065 - #40 )
+INFO  02:54:25,065 - #35 ;
+INFO  02:54:25,065 - #49 a
+INFO  02:54:25,065 - #32 =
+INFO  02:54:25,065 - #48 3
+INFO  02:54:25,065 - #35 ;
+INFO  02:54:25,066 - #49 i
+INFO  02:54:25,066 - #32 =
+INFO  02:54:25,066 - #48 0
+INFO  02:54:25,066 - #35 ;
+INFO  02:54:25,066 - #11 while
+INFO  02:54:25,066 - #39 (
+INFO  02:54:25,066 - #49 i
+INFO  02:54:25,066 - #28 <
+INFO  02:54:25,066 - #48 3
+INFO  02:54:25,066 - #40 )
+INFO  02:54:25,066 - #43 {
+INFO  02:54:25,066 - #49 niz
+INFO  02:54:25,066 - #41 [
+INFO  02:54:25,066 - #49 i
+INFO  02:54:25,066 - #42 ]
+INFO  02:54:25,066 - #32 =
+INFO  02:54:25,066 - #49 niz
+INFO  02:54:25,066 - #41 [
+INFO  02:54:25,066 - #49 i
+INFO  02:54:25,066 - #42 ]
+INFO  02:54:25,066 - #21 *
+INFO  02:54:25,066 - #48 2
+INFO  02:54:25,066 - #21 *
+INFO  02:54:25,066 - #49 a
+INFO  02:54:25,066 - #35 ;
+INFO  02:54:25,066 - #49 i
+INFO  02:54:25,066 - #33 ++
+INFO  02:54:25,066 - #35 ;
+INFO  02:54:25,066 - #44 }
+INFO  02:54:25,066 - #49 niz
+INFO  02:54:25,066 - #38 .
+INFO  02:54:25,066 - #17 foreach
+INFO  02:54:25,066 - #39 (
+INFO  02:54:25,066 - #49 curr
+INFO  02:54:25,067 - #45 =>
+INFO  02:54:25,067 - #3 print
+INFO  02:54:25,067 - #39 (
+INFO  02:54:25,067 - #49 curr
+INFO  02:54:25,067 - #40 )
+INFO  02:54:25,067 - #35 ;
+INFO  02:54:25,067 - #40 )
+INFO  02:54:25,067 - #35 ;
+INFO  02:54:25,067 - #3 print
+INFO  02:54:25,067 - #39 (
+INFO  02:54:25,067 - #49 eol
+INFO  02:54:25,067 - #40 )
+INFO  02:54:25,068 - #35 ;
+INFO  02:54:25,068 - #49 niz2
+INFO  02:54:25,068 - #32 =
+INFO  02:54:25,068 - #48 0
+INFO  02:54:25,068 - #35 ;
+INFO  02:54:25,068 - #49 niz
+INFO  02:54:25,068 - #38 .
+INFO  02:54:25,068 - #17 foreach
+INFO  02:54:25,068 - #39 (
+INFO  02:54:25,068 - #49 curr
+INFO  02:54:25,068 - #45 =>
+INFO  02:54:25,068 - #43 {
+INFO  02:54:25,068 - #49 niz2
+INFO  02:54:25,068 - #32 =
+INFO  02:54:25,068 - #49 niz2
+INFO  02:54:25,068 - #19 +
+INFO  02:54:25,068 - #49 curr
+INFO  02:54:25,068 - #21 *
+INFO  02:54:25,068 - #49 curr
+INFO  02:54:25,068 - #35 ;
+INFO  02:54:25,068 - #44 }
+INFO  02:54:25,069 - #40 )
+INFO  02:54:25,069 - #35 ;
+INFO  02:54:25,069 - #3 print
+INFO  02:54:25,069 - #39 (
+INFO  02:54:25,069 - #49 niz2
+INFO  02:54:25,069 - #40 )
+INFO  02:54:25,069 - #35 ;
+INFO  02:54:25,069 - #44 }
+INFO  02:54:25,069 - #44 }
+INFO  02:54:25,076 - ProgramClass(
+  ProgNameClass(
+   test302
+  ) [ProgNameClass]
+  VarDecListClass(
+    VarDecListClass(
+      VarDecListClass(
+        VarDecListClass(
+          VarDecListClass(
+            ConstDecListClass(
+              NoDecListClass(
+              ) [NoDecListClass]
+              ConstDeclClass(
+                TypeClass(
+                 int
+                ) [TypeClass]
+                ConstDecLastElementClass(
+                  ConstElementNumberLast(
+                   jedan
+                   1
+                  ) [ConstElementNumberLast]
+                ) [ConstDecLastElementClass]
+              ) [ConstDeclClass]
+            ) [ConstDecListClass]
+            VarDeclClass(
+              TypeClass(
+               int
+              ) [TypeClass]
+              VarDecLastListElementClass(
+                VarDecLastElementClass(
+                 i
+                  NoArrayBracketsClass(
+                  ) [NoArrayBracketsClass]
+                ) [VarDecLastElementClass]
+              ) [VarDecLastListElementClass]
+            ) [VarDeclClass]
+          ) [VarDecListClass]
+          VarDeclClass(
+            TypeClass(
+             bool
+            ) [TypeClass]
+            VarDecLastListElementClass(
+              VarDecLastElementClass(
+               ibool
+                NoArrayBracketsClass(
+                ) [NoArrayBracketsClass]
+              ) [VarDecLastElementClass]
+            ) [VarDecLastListElementClass]
+          ) [VarDeclClass]
+        ) [VarDecListClass]
+        VarDeclClass(
+          TypeClass(
+           int
+          ) [TypeClass]
+          VarDecLastListElementClass(
+            VarDecLastElementClass(
+             niz2
+              NoArrayBracketsClass(
+              ) [NoArrayBracketsClass]
+            ) [VarDecLastElementClass]
+          ) [VarDecLastListElementClass]
+        ) [VarDeclClass]
+      ) [VarDecListClass]
+      VarDeclClass(
+        TypeClass(
+         int
+        ) [TypeClass]
+        VarDecLastListElementClass(
+          VarDecLastElementClass(
+           niz
+            ArrayBracketsClass(
+            ) [ArrayBracketsClass]
+          ) [VarDecLastElementClass]
+        ) [VarDecLastListElementClass]
+      ) [VarDeclClass]
+    ) [VarDecListClass]
+    VarDeclClass(
+      TypeClass(
+       int
+      ) [TypeClass]
+      VarDecListElementClass(
+        VarDecElementClass(
+         a
+          NoArrayBracketsClass(
+          ) [NoArrayBracketsClass]
+        ) [VarDecElementClass]
+        VarDecLastListElementClass(
+          VarDecLastElementClass(
+           curr
+            NoArrayBracketsClass(
+            ) [NoArrayBracketsClass]
+          ) [VarDecLastElementClass]
+        ) [VarDecLastListElementClass]
+      ) [VarDecListElementClass]
+    ) [VarDeclClass]
+  ) [VarDecListClass]
+  ListOfMethodDeclClass(
+    ListOfMethodDeclClass(
+      ListOfMethodDeclClass(
+        ListOfMethodDeclClass(
+          EmptyListOfMethodDeclClass(
+          ) [EmptyListOfMethodDeclClass]
+          MethodDeclClass(
+            ReturnMethodClass(
+              TypeClass(
+               int
+              ) [TypeClass]
+             sum
+            ) [ReturnMethodClass]
+            FormParsStartClass(
+              FormParsElement(
+                TypeClass(
+                 int
+                ) [TypeClass]
+               z
+                NoArrayBracketsClass(
+                ) [NoArrayBracketsClass]
+              ) [FormParsElement]
+              FormParsNextElementClass(
+                FormParsElement(
+                  TypeClass(
+                   int
+                  ) [TypeClass]
+                 d
+                  NoArrayBracketsClass(
+                  ) [NoArrayBracketsClass]
+                ) [FormParsElement]
+              ) [FormParsNextElementClass]
+            ) [FormParsStartClass]
+            EmptyListOfVarDeclClass(
+            ) [EmptyListOfVarDeclClass]
+            ListOfStatementsClass(
+              EmptyListOfStatementsClass(
+              ) [EmptyListOfStatementsClass]
+              ReturnExprStatementClass(
+                ExprClass(
+                  PositiveExprClass(
+                    SingleFactorTermClass(
+                      DesignatorFactorClass(
+                        DesignatorClass(
+                         z
+                        ) [DesignatorClass]
+                      ) [DesignatorFactorClass]
+                    ) [SingleFactorTermClass]
+                  ) [PositiveExprClass]
+                  PlusOpClass(
+                  ) [PlusOpClass]
+                  SingleFactorTermClass(
+                    DesignatorFactorClass(
+                      DesignatorClass(
+                       d
+                      ) [DesignatorClass]
+                    ) [DesignatorFactorClass]
+                  ) [SingleFactorTermClass]
+                ) [ExprClass]
+              ) [ReturnExprStatementClass]
+            ) [ListOfStatementsClass]
+          ) [MethodDeclClass]
+        ) [ListOfMethodDeclClass]
+        MethodDeclClass(
+          ReturnMethodClass(
+            TypeClass(
+             int
+            ) [TypeClass]
+           inkrement
+          ) [ReturnMethodClass]
+          FormParsStartClass(
+            FormParsElement(
+              TypeClass(
+               int
+              ) [TypeClass]
+             a
+              NoArrayBracketsClass(
+              ) [NoArrayBracketsClass]
+            ) [FormParsElement]
+            FormParsNextElementClass(
+              FormParsElement(
+                TypeClass(
+                 int
+                ) [TypeClass]
+               inc
+                NoArrayBracketsClass(
+                ) [NoArrayBracketsClass]
+              ) [FormParsElement]
+            ) [FormParsNextElementClass]
+          ) [FormParsStartClass]
+          ListOfVarDeclClass(
+            EmptyListOfVarDeclClass(
+            ) [EmptyListOfVarDeclClass]
+            VarDeclClass(
+              TypeClass(
+               int
+              ) [TypeClass]
+              VarDecLastListElementClass(
+                VarDecLastElementClass(
+                 pom
+                  NoArrayBracketsClass(
+                  ) [NoArrayBracketsClass]
+                ) [VarDecLastElementClass]
+              ) [VarDecLastListElementClass]
+            ) [VarDeclClass]
+          ) [ListOfVarDeclClass]
+          ListOfStatementsClass(
+            ListOfStatementsClass(
+              EmptyListOfStatementsClass(
+              ) [EmptyListOfStatementsClass]
+              IfElseStatementClass(
+                StartIf(
+                ) [StartIf]
+                IfCondClass(
+                  SingleConditionClass(
+                    SingleCondTermClass(
+                      CondFactClass(
+                        PositiveExprClass(
+                          SingleFactorTermClass(
+                            DesignatorFactorClass(
+                              DesignatorClass(
+                               inc
+                              ) [DesignatorClass]
+                            ) [DesignatorFactorClass]
+                          ) [SingleFactorTermClass]
+                        ) [PositiveExprClass]
+                        EqOpClass(
+                        ) [EqOpClass]
+                        PositiveExprClass(
+                          SingleFactorTermClass(
+                            DesignatorFactorClass(
+                              DesignatorClass(
+                               jedan
+                              ) [DesignatorClass]
+                            ) [DesignatorFactorClass]
+                          ) [SingleFactorTermClass]
+                        ) [PositiveExprClass]
+                      ) [CondFactClass]
+                    ) [SingleCondTermClass]
+                  ) [SingleConditionClass]
+                ) [IfCondClass]
+                StartIfStatement(
+                ) [StartIfStatement]
+                DesignatorStatementClass(
+                  DesignatorStatementAssignClass(
+                    DesignatorClass(
+                     pom
+                    ) [DesignatorClass]
+                    PositiveExprClass(
+                      SingleFactorTermClass(
+                        NumberFactorClass(
+                         1
+                        ) [NumberFactorClass]
+                      ) [SingleFactorTermClass]
+                    ) [PositiveExprClass]
+                  ) [DesignatorStatementAssignClass]
+                ) [DesignatorStatementClass]
+                EndIf(
+                ) [EndIf]
+                IfStatementClass(
+                  StartIf(
+                  ) [StartIf]
+                  IfCondClass(
+                    SingleConditionClass(
+                      SingleCondTermClass(
+                        CondFactClass(
+                          PositiveExprClass(
+                            SingleFactorTermClass(
+                              DesignatorFactorClass(
+                                DesignatorClass(
+                                 inc
+                                ) [DesignatorClass]
+                              ) [DesignatorFactorClass]
+                            ) [SingleFactorTermClass]
+                          ) [PositiveExprClass]
+                          EqOpClass(
+                          ) [EqOpClass]
+                          PositiveExprClass(
+                            SingleFactorTermClass(
+                              NumberFactorClass(
+                               2
+                              ) [NumberFactorClass]
+                            ) [SingleFactorTermClass]
+                          ) [PositiveExprClass]
+                        ) [CondFactClass]
+                      ) [SingleCondTermClass]
+                    ) [SingleConditionClass]
+                  ) [IfCondClass]
+                  StartIfStatement(
+                  ) [StartIfStatement]
+                  DesignatorStatementClass(
+                    DesignatorStatementAssignClass(
+                      DesignatorClass(
+                       pom
+                      ) [DesignatorClass]
+                      PositiveExprClass(
+                        SingleFactorTermClass(
+                          DesignatorFactorClass(
+                            DesignatorClass(
+                             a
+                            ) [DesignatorClass]
+                          ) [DesignatorFactorClass]
+                        ) [SingleFactorTermClass]
+                      ) [PositiveExprClass]
+                    ) [DesignatorStatementAssignClass]
+                  ) [DesignatorStatementClass]
+                  EndIf(
+                  ) [EndIf]
+                ) [IfStatementClass]
+              ) [IfElseStatementClass]
+            ) [ListOfStatementsClass]
+            ReturnExprStatementClass(
+              PositiveExprClass(
+                SingleFactorTermClass(
+                  FuncCallDesignatorClass(
+                    DesignatorClass(
+                     sum
+                    ) [DesignatorClass]
+                    ActualParsClass(
+                      ActParsFlag(
+                      ) [ActParsFlag]
+                      ListOfActParExprClass(
+                        EmptyListOfActParClass(
+                          ActParsElement(
+                            PositiveExprClass(
+                              SingleFactorTermClass(
+                                DesignatorFactorClass(
+                                  DesignatorClass(
+                                   a
+                                  ) [DesignatorClass]
+                                ) [DesignatorFactorClass]
+                              ) [SingleFactorTermClass]
+                            ) [PositiveExprClass]
+                          ) [ActParsElement]
+                        ) [EmptyListOfActParClass]
+                        ActParsElement(
+                          PositiveExprClass(
+                            SingleFactorTermClass(
+                              DesignatorFactorClass(
+                                DesignatorClass(
+                                 pom
+                                ) [DesignatorClass]
+                              ) [DesignatorFactorClass]
+                            ) [SingleFactorTermClass]
+                          ) [PositiveExprClass]
+                        ) [ActParsElement]
+                      ) [ListOfActParExprClass]
+                    ) [ActualParsClass]
+                  ) [FuncCallDesignatorClass]
+                ) [SingleFactorTermClass]
+              ) [PositiveExprClass]
+            ) [ReturnExprStatementClass]
+          ) [ListOfStatementsClass]
+        ) [MethodDeclClass]
+      ) [ListOfMethodDeclClass]
+      MethodDeclClass(
+        ReturnMethodClass(
+          TypeClass(
+           bool
+          ) [TypeClass]
+         verify
+        ) [ReturnMethodClass]
+        FormParsEnd(
+        ) [FormParsEnd]
+        EmptyListOfVarDeclClass(
+        ) [EmptyListOfVarDeclClass]
+        ListOfStatementsClass(
+          ListOfStatementsClass(
+            EmptyListOfStatementsClass(
+            ) [EmptyListOfStatementsClass]
+            PrintStatementClass(
+              PositiveExprClass(
+                SingleFactorTermClass(
+                  CharFactorClass(
+                   v
+                  ) [CharFactorClass]
+                ) [SingleFactorTermClass]
+              ) [PositiveExprClass]
+            ) [PrintStatementClass]
+          ) [ListOfStatementsClass]
+          ReturnExprStatementClass(
+            PositiveExprClass(
+              SingleFactorTermClass(
+                BoolFactorClass(
+                 false
+                ) [BoolFactorClass]
+              ) [SingleFactorTermClass]
+            ) [PositiveExprClass]
+          ) [ReturnExprStatementClass]
+        ) [ListOfStatementsClass]
+      ) [MethodDeclClass]
+    ) [ListOfMethodDeclClass]
+    MethodDeclClass(
+      VoidMethodClass(
+       main
+      ) [VoidMethodClass]
+      FormParsEnd(
+      ) [FormParsEnd]
+      EmptyListOfVarDeclClass(
+      ) [EmptyListOfVarDeclClass]
+      ListOfStatementsClass(
+        ListOfStatementsClass(
+          ListOfStatementsClass(
+            ListOfStatementsClass(
+              ListOfStatementsClass(
+                ListOfStatementsClass(
+                  ListOfStatementsClass(
+                    ListOfStatementsClass(
+                      ListOfStatementsClass(
+                        ListOfStatementsClass(
+                          ListOfStatementsClass(
+                            ListOfStatementsClass(
+                              ListOfStatementsClass(
+                                ListOfStatementsClass(
+                                  ListOfStatementsClass(
+                                    ListOfStatementsClass(
+                                      ListOfStatementsClass(
+                                        ListOfStatementsClass(
+                                          ListOfStatementsClass(
+                                            ListOfStatementsClass(
+                                              ListOfStatementsClass(
+                                                ListOfStatementsClass(
+                                                  ListOfStatementsClass(
+                                                    ListOfStatementsClass(
+                                                      ListOfStatementsClass(
+                                                        ListOfStatementsClass(
+                                                          ListOfStatementsClass(
+                                                            ListOfStatementsClass(
+                                                              ListOfStatementsClass(
+                                                                ListOfStatementsClass(
+                                                                  EmptyListOfStatementsClass(
+                                                                  ) [EmptyListOfStatementsClass]
+                                                                  IfElseStatementClass(
+                                                                    StartIf(
+                                                                    ) [StartIf]
+                                                                    IfCondClass(
+                                                                      SingleConditionClass(
+                                                                        SingleCondTermClass(
+                                                                          CondFactClass(
+                                                                            PositiveExprClass(
+                                                                              SingleFactorTermClass(
+                                                                                NumberFactorClass(
+                                                                                 1
+                                                                                ) [NumberFactorClass]
+                                                                              ) [SingleFactorTermClass]
+                                                                            ) [PositiveExprClass]
+                                                                            NeqOpClass(
+                                                                            ) [NeqOpClass]
+                                                                            PositiveExprClass(
+                                                                              SingleFactorTermClass(
+                                                                                NumberFactorClass(
+                                                                                 1
+                                                                                ) [NumberFactorClass]
+                                                                              ) [SingleFactorTermClass]
+                                                                            ) [PositiveExprClass]
+                                                                          ) [CondFactClass]
+                                                                        ) [SingleCondTermClass]
+                                                                      ) [SingleConditionClass]
+                                                                    ) [IfCondClass]
+                                                                    StartIfStatement(
+                                                                    ) [StartIfStatement]
+                                                                    PrintStatementClass(
+                                                                      NegativeExprClass(
+                                                                        SingleFactorTermClass(
+                                                                          NumberFactorClass(
+                                                                           6
+                                                                          ) [NumberFactorClass]
+                                                                        ) [SingleFactorTermClass]
+                                                                      ) [NegativeExprClass]
+                                                                    ) [PrintStatementClass]
+                                                                    EndIf(
+                                                                    ) [EndIf]
+                                                                    PrintStatementClass(
+                                                                      PositiveExprClass(
+                                                                        SingleFactorTermClass(
+                                                                          NumberFactorClass(
+                                                                           0
+                                                                          ) [NumberFactorClass]
+                                                                        ) [SingleFactorTermClass]
+                                                                      ) [PositiveExprClass]
+                                                                    ) [PrintStatementClass]
+                                                                  ) [IfElseStatementClass]
+                                                                ) [ListOfStatementsClass]
+                                                                DesignatorStatementClass(
+                                                                  DesignatorStatementAssignClass(
+                                                                    DesignatorClass(
+                                                                     ibool
+                                                                    ) [DesignatorClass]
+                                                                    PositiveExprClass(
+                                                                      SingleFactorTermClass(
+                                                                        BoolFactorClass(
+                                                                         false
+                                                                        ) [BoolFactorClass]
+                                                                      ) [SingleFactorTermClass]
+                                                                    ) [PositiveExprClass]
+                                                                  ) [DesignatorStatementAssignClass]
+                                                                ) [DesignatorStatementClass]
+                                                              ) [ListOfStatementsClass]
+                                                              DesignatorStatementClass(
+                                                                DesignatorStatementAssignClass(
+                                                                  DesignatorClass(
+                                                                   i
+                                                                  ) [DesignatorClass]
+                                                                  PositiveExprClass(
+                                                                    SingleFactorTermClass(
+                                                                      NumberFactorClass(
+                                                                       0
+                                                                      ) [NumberFactorClass]
+                                                                    ) [SingleFactorTermClass]
+                                                                  ) [PositiveExprClass]
+                                                                ) [DesignatorStatementAssignClass]
+                                                              ) [DesignatorStatementClass]
+                                                            ) [ListOfStatementsClass]
+                                                            WhileStatementClass(
+                                                              WhileFlag(
+                                                              ) [WhileFlag]
+                                                              SingleConditionClass(
+                                                                SingleCondTermClass(
+                                                                  CondFactClass(
+                                                                    PositiveExprClass(
+                                                                      SingleFactorTermClass(
+                                                                        DesignatorFactorClass(
+                                                                          DesignatorClass(
+                                                                           i
+                                                                          ) [DesignatorClass]
+                                                                        ) [DesignatorFactorClass]
+                                                                      ) [SingleFactorTermClass]
+                                                                    ) [PositiveExprClass]
+                                                                    LessOpClass(
+                                                                    ) [LessOpClass]
+                                                                    PositiveExprClass(
+                                                                      SingleFactorTermClass(
+                                                                        NumberFactorClass(
+                                                                         5
+                                                                        ) [NumberFactorClass]
+                                                                      ) [SingleFactorTermClass]
+                                                                    ) [PositiveExprClass]
+                                                                  ) [CondFactClass]
+                                                                ) [SingleCondTermClass]
+                                                              ) [SingleConditionClass]
+                                                              StatementBlock(
+                                                                ListOfStatementsClass(
+                                                                  ListOfStatementsClass(
+                                                                    EmptyListOfStatementsClass(
+                                                                    ) [EmptyListOfStatementsClass]
+                                                                    IfStatementClass(
+                                                                      StartIf(
+                                                                      ) [StartIf]
+                                                                      IfCondClass(
+                                                                        SingleConditionClass(
+                                                                          SingleCondTermClass(
+                                                                            CondFactClass(
+                                                                              PositiveExprClass(
+                                                                                SingleFactorTermClass(
+                                                                                  DesignatorFactorClass(
+                                                                                    DesignatorClass(
+                                                                                     i
+                                                                                    ) [DesignatorClass]
+                                                                                  ) [DesignatorFactorClass]
+                                                                                ) [SingleFactorTermClass]
+                                                                              ) [PositiveExprClass]
+                                                                              EqOpClass(
+                                                                              ) [EqOpClass]
+                                                                              PositiveExprClass(
+                                                                                SingleFactorTermClass(
+                                                                                  NumberFactorClass(
+                                                                                   2
+                                                                                  ) [NumberFactorClass]
+                                                                                ) [SingleFactorTermClass]
+                                                                              ) [PositiveExprClass]
+                                                                            ) [CondFactClass]
+                                                                          ) [SingleCondTermClass]
+                                                                        ) [SingleConditionClass]
+                                                                      ) [IfCondClass]
+                                                                      StartIfStatement(
+                                                                      ) [StartIfStatement]
+                                                                      DesignatorStatementClass(
+                                                                        DesignatorStatementAssignClass(
+                                                                          DesignatorClass(
+                                                                           ibool
+                                                                          ) [DesignatorClass]
+                                                                          PositiveExprClass(
+                                                                            SingleFactorTermClass(
+                                                                              BoolFactorClass(
+                                                                               true
+                                                                              ) [BoolFactorClass]
+                                                                            ) [SingleFactorTermClass]
+                                                                          ) [PositiveExprClass]
+                                                                        ) [DesignatorStatementAssignClass]
+                                                                      ) [DesignatorStatementClass]
+                                                                      EndIf(
+                                                                      ) [EndIf]
+                                                                    ) [IfStatementClass]
+                                                                  ) [ListOfStatementsClass]
+                                                                  DesignatorStatementClass(
+                                                                    DesignatorStatementIncClass(
+                                                                      DesignatorClass(
+                                                                       i
+                                                                      ) [DesignatorClass]
+                                                                    ) [DesignatorStatementIncClass]
+                                                                  ) [DesignatorStatementClass]
+                                                                ) [ListOfStatementsClass]
+                                                              ) [StatementBlock]
+                                                            ) [WhileStatementClass]
+                                                          ) [ListOfStatementsClass]
+                                                          IfStatementClass(
+                                                            StartIf(
+                                                            ) [StartIf]
+                                                            IfCondClass(
+                                                              SingleConditionClass(
+                                                                SingleCondTermClass(
+                                                                  SingleCondFactClass(
+                                                                    PositiveExprClass(
+                                                                      SingleFactorTermClass(
+                                                                        DesignatorFactorClass(
+                                                                          DesignatorClass(
+                                                                           ibool
+                                                                          ) [DesignatorClass]
+                                                                        ) [DesignatorFactorClass]
+                                                                      ) [SingleFactorTermClass]
+                                                                    ) [PositiveExprClass]
+                                                                  ) [SingleCondFactClass]
+                                                                ) [SingleCondTermClass]
+                                                              ) [SingleConditionClass]
+                                                            ) [IfCondClass]
+                                                            StartIfStatement(
+                                                            ) [StartIfStatement]
+                                                            IfElseStatementClass(
+                                                              StartIf(
+                                                              ) [StartIf]
+                                                              IfCondClass(
+                                                                SingleConditionClass(
+                                                                  SingleCondTermClass(
+                                                                    CondFactClass(
+                                                                      PositiveExprClass(
+                                                                        SingleFactorTermClass(
+                                                                          DesignatorFactorClass(
+                                                                            DesignatorClass(
+                                                                             i
+                                                                            ) [DesignatorClass]
+                                                                          ) [DesignatorFactorClass]
+                                                                        ) [SingleFactorTermClass]
+                                                                      ) [PositiveExprClass]
+                                                                      EqOpClass(
+                                                                      ) [EqOpClass]
+                                                                      PositiveExprClass(
+                                                                        SingleFactorTermClass(
+                                                                          NumberFactorClass(
+                                                                           5
+                                                                          ) [NumberFactorClass]
+                                                                        ) [SingleFactorTermClass]
+                                                                      ) [PositiveExprClass]
+                                                                    ) [CondFactClass]
+                                                                  ) [SingleCondTermClass]
+                                                                ) [SingleConditionClass]
+                                                              ) [IfCondClass]
+                                                              StartIfStatement(
+                                                              ) [StartIfStatement]
+                                                              PrintStatementClass(
+                                                                PositiveExprClass(
+                                                                  SingleFactorTermClass(
+                                                                    NumberFactorClass(
+                                                                     1
+                                                                    ) [NumberFactorClass]
+                                                                  ) [SingleFactorTermClass]
+                                                                ) [PositiveExprClass]
+                                                              ) [PrintStatementClass]
+                                                              EndIf(
+                                                              ) [EndIf]
+                                                              PrintStatementClass(
+                                                                NegativeExprClass(
+                                                                  SingleFactorTermClass(
+                                                                    NumberFactorClass(
+                                                                     1
+                                                                    ) [NumberFactorClass]
+                                                                  ) [SingleFactorTermClass]
+                                                                ) [NegativeExprClass]
+                                                              ) [PrintStatementClass]
+                                                            ) [IfElseStatementClass]
+                                                            EndIf(
+                                                            ) [EndIf]
+                                                          ) [IfStatementClass]
+                                                        ) [ListOfStatementsClass]
+                                                        DesignatorStatementClass(
+                                                          DesignatorStatementAssignClass(
+                                                            DesignatorClass(
+                                                             a
+                                                            ) [DesignatorClass]
+                                                            PositiveExprClass(
+                                                              SingleFactorTermClass(
+                                                                NumberFactorClass(
+                                                                 2
+                                                                ) [NumberFactorClass]
+                                                              ) [SingleFactorTermClass]
+                                                            ) [PositiveExprClass]
+                                                          ) [DesignatorStatementAssignClass]
+                                                        ) [DesignatorStatementClass]
+                                                      ) [ListOfStatementsClass]
+                                                      DesignatorStatementClass(
+                                                        DesignatorStatementAssignClass(
+                                                          DesignatorClass(
+                                                           niz
+                                                          ) [DesignatorClass]
+                                                          PositiveExprClass(
+                                                            SingleFactorTermClass(
+                                                              ArrayFactorClass(
+                                                                TypeClass(
+                                                                 int
+                                                                ) [TypeClass]
+                                                                PositiveExprClass(
+                                                                  SingleFactorTermClass(
+                                                                    NumberFactorClass(
+                                                                     3
+                                                                    ) [NumberFactorClass]
+                                                                  ) [SingleFactorTermClass]
+                                                                ) [PositiveExprClass]
+                                                              ) [ArrayFactorClass]
+                                                            ) [SingleFactorTermClass]
+                                                          ) [PositiveExprClass]
+                                                        ) [DesignatorStatementAssignClass]
+                                                      ) [DesignatorStatementClass]
+                                                    ) [ListOfStatementsClass]
+                                                    DesignatorStatementClass(
+                                                      DesignatorStatementAssignClass(
+                                                        ArrayDesignatorClass(
+                                                          ArrDesignator(
+                                                            DesignatorClass(
+                                                             niz
+                                                            ) [DesignatorClass]
+                                                          ) [ArrDesignator]
+                                                          PositiveExprClass(
+                                                            SingleFactorTermClass(
+                                                              NumberFactorClass(
+                                                               0
+                                                              ) [NumberFactorClass]
+                                                            ) [SingleFactorTermClass]
+                                                          ) [PositiveExprClass]
+                                                        ) [ArrayDesignatorClass]
+                                                        PositiveExprClass(
+                                                          MultipleFactorsTermClass(
+                                                            SingleFactorTermClass(
+                                                              NumberFactorClass(
+                                                               1
+                                                              ) [NumberFactorClass]
+                                                            ) [SingleFactorTermClass]
+                                                            MulClass(
+                                                            ) [MulClass]
+                                                            DesignatorFactorClass(
+                                                              DesignatorClass(
+                                                               a
+                                                              ) [DesignatorClass]
+                                                            ) [DesignatorFactorClass]
+                                                          ) [MultipleFactorsTermClass]
+                                                        ) [PositiveExprClass]
+                                                      ) [DesignatorStatementAssignClass]
+                                                    ) [DesignatorStatementClass]
+                                                  ) [ListOfStatementsClass]
+                                                  DesignatorStatementClass(
+                                                    DesignatorStatementAssignClass(
+                                                      ArrayDesignatorClass(
+                                                        ArrDesignator(
+                                                          DesignatorClass(
+                                                           niz
+                                                          ) [DesignatorClass]
+                                                        ) [ArrDesignator]
+                                                        PositiveExprClass(
+                                                          SingleFactorTermClass(
+                                                            NumberFactorClass(
+                                                             1
+                                                            ) [NumberFactorClass]
+                                                          ) [SingleFactorTermClass]
+                                                        ) [PositiveExprClass]
+                                                      ) [ArrayDesignatorClass]
+                                                      PositiveExprClass(
+                                                        MultipleFactorsTermClass(
+                                                          SingleFactorTermClass(
+                                                            NumberFactorClass(
+                                                             2
+                                                            ) [NumberFactorClass]
+                                                          ) [SingleFactorTermClass]
+                                                          MulClass(
+                                                          ) [MulClass]
+                                                          DesignatorFactorClass(
+                                                            DesignatorClass(
+                                                             a
+                                                            ) [DesignatorClass]
+                                                          ) [DesignatorFactorClass]
+                                                        ) [MultipleFactorsTermClass]
+                                                      ) [PositiveExprClass]
+                                                    ) [DesignatorStatementAssignClass]
+                                                  ) [DesignatorStatementClass]
+                                                ) [ListOfStatementsClass]
+                                                DesignatorStatementClass(
+                                                  DesignatorStatementAssignClass(
+                                                    ArrayDesignatorClass(
+                                                      ArrDesignator(
+                                                        DesignatorClass(
+                                                         niz
+                                                        ) [DesignatorClass]
+                                                      ) [ArrDesignator]
+                                                      PositiveExprClass(
+                                                        SingleFactorTermClass(
+                                                          NumberFactorClass(
+                                                           2
+                                                          ) [NumberFactorClass]
+                                                        ) [SingleFactorTermClass]
+                                                      ) [PositiveExprClass]
+                                                    ) [ArrayDesignatorClass]
+                                                    ExprClass(
+                                                      PositiveExprClass(
+                                                        MultipleFactorsTermClass(
+                                                          SingleFactorTermClass(
+                                                            FuncCallDesignatorClass(
+                                                              DesignatorClass(
+                                                               sum
+                                                              ) [DesignatorClass]
+                                                              ActualParsClass(
+                                                                ActParsFlag(
+                                                                ) [ActParsFlag]
+                                                                ListOfActParExprClass(
+                                                                  EmptyListOfActParClass(
+                                                                    ActParsElement(
+                                                                      PositiveExprClass(
+                                                                        SingleFactorTermClass(
+                                                                          DesignatorFactorClass(
+                                                                            ArrayDesignatorClass(
+                                                                              ArrDesignator(
+                                                                                DesignatorClass(
+                                                                                 niz
+                                                                                ) [DesignatorClass]
+                                                                              ) [ArrDesignator]
+                                                                              PositiveExprClass(
+                                                                                SingleFactorTermClass(
+                                                                                  NumberFactorClass(
+                                                                                   1
+                                                                                  ) [NumberFactorClass]
+                                                                                ) [SingleFactorTermClass]
+                                                                              ) [PositiveExprClass]
+                                                                            ) [ArrayDesignatorClass]
+                                                                          ) [DesignatorFactorClass]
+                                                                        ) [SingleFactorTermClass]
+                                                                      ) [PositiveExprClass]
+                                                                    ) [ActParsElement]
+                                                                  ) [EmptyListOfActParClass]
+                                                                  ActParsElement(
+                                                                    PositiveExprClass(
+                                                                      SingleFactorTermClass(
+                                                                        DesignatorFactorClass(
+                                                                          ArrayDesignatorClass(
+                                                                            ArrDesignator(
+                                                                              DesignatorClass(
+                                                                               niz
+                                                                              ) [DesignatorClass]
+                                                                            ) [ArrDesignator]
+                                                                            PositiveExprClass(
+                                                                              SingleFactorTermClass(
+                                                                                NumberFactorClass(
+                                                                                 0
+                                                                                ) [NumberFactorClass]
+                                                                              ) [SingleFactorTermClass]
+                                                                            ) [PositiveExprClass]
+                                                                          ) [ArrayDesignatorClass]
+                                                                        ) [DesignatorFactorClass]
+                                                                      ) [SingleFactorTermClass]
+                                                                    ) [PositiveExprClass]
+                                                                  ) [ActParsElement]
+                                                                ) [ListOfActParExprClass]
+                                                              ) [ActualParsClass]
+                                                            ) [FuncCallDesignatorClass]
+                                                          ) [SingleFactorTermClass]
+                                                          MulClass(
+                                                          ) [MulClass]
+                                                          DesignatorFactorClass(
+                                                            DesignatorClass(
+                                                             a
+                                                            ) [DesignatorClass]
+                                                          ) [DesignatorFactorClass]
+                                                        ) [MultipleFactorsTermClass]
+                                                      ) [PositiveExprClass]
+                                                      PlusOpClass(
+                                                      ) [PlusOpClass]
+                                                      SingleFactorTermClass(
+                                                        NumberFactorClass(
+                                                         1
+                                                        ) [NumberFactorClass]
+                                                      ) [SingleFactorTermClass]
+                                                    ) [ExprClass]
+                                                  ) [DesignatorStatementAssignClass]
+                                                ) [DesignatorStatementClass]
+                                              ) [ListOfStatementsClass]
+                                              IfElseStatementClass(
+                                                StartIf(
+                                                ) [StartIf]
+                                                IfCondClass(
+                                                  ConditionClass(
+                                                    SingleConditionClass(
+                                                      SingleCondTermClass(
+                                                        SingleCondFactClass(
+                                                          PositiveExprClass(
+                                                            SingleFactorTermClass(
+                                                              FuncCallDesignatorClass(
+                                                                DesignatorClass(
+                                                                 verify
+                                                                ) [DesignatorClass]
+                                                                NoActualParsClass(
+                                                                  ActParsFlag(
+                                                                  ) [ActParsFlag]
+                                                                ) [NoActualParsClass]
+                                                              ) [FuncCallDesignatorClass]
+                                                            ) [SingleFactorTermClass]
+                                                          ) [PositiveExprClass]
+                                                        ) [SingleCondFactClass]
+                                                      ) [SingleCondTermClass]
+                                                    ) [SingleConditionClass]
+                                                    OrJump(
+                                                    ) [OrJump]
+                                                    SingleCondTermClass(
+                                                      CondFactClass(
+                                                        PositiveExprClass(
+                                                          SingleFactorTermClass(
+                                                            DesignatorFactorClass(
+                                                              ArrayDesignatorClass(
+                                                                ArrDesignator(
+                                                                  DesignatorClass(
+                                                                   niz
+                                                                  ) [DesignatorClass]
+                                                                ) [ArrDesignator]
+                                                                PositiveExprClass(
+                                                                  SingleFactorTermClass(
+                                                                    NumberFactorClass(
+                                                                     2
+                                                                    ) [NumberFactorClass]
+                                                                  ) [SingleFactorTermClass]
+                                                                ) [PositiveExprClass]
+                                                              ) [ArrayDesignatorClass]
+                                                            ) [DesignatorFactorClass]
+                                                          ) [SingleFactorTermClass]
+                                                        ) [PositiveExprClass]
+                                                        EqOpClass(
+                                                        ) [EqOpClass]
+                                                        PositiveExprClass(
+                                                          SingleFactorTermClass(
+                                                            NumberFactorClass(
+                                                             4
+                                                            ) [NumberFactorClass]
+                                                          ) [SingleFactorTermClass]
+                                                        ) [PositiveExprClass]
+                                                      ) [CondFactClass]
+                                                    ) [SingleCondTermClass]
+                                                  ) [ConditionClass]
+                                                ) [IfCondClass]
+                                                StartIfStatement(
+                                                ) [StartIfStatement]
+                                                PrintStatementClass(
+                                                  PositiveExprClass(
+                                                    SingleFactorTermClass(
+                                                      FuncCallDesignatorClass(
+                                                        DesignatorClass(
+                                                         ord
+                                                        ) [DesignatorClass]
+                                                        ActualParsClass(
+                                                          ActParsFlag(
+                                                          ) [ActParsFlag]
+                                                          EmptyListOfActParClass(
+                                                            ActParsElement(
+                                                              PositiveExprClass(
+                                                                SingleFactorTermClass(
+                                                                  CharFactorClass(
+                                                                   A
+                                                                  ) [CharFactorClass]
+                                                                ) [SingleFactorTermClass]
+                                                              ) [PositiveExprClass]
+                                                            ) [ActParsElement]
+                                                          ) [EmptyListOfActParClass]
+                                                        ) [ActualParsClass]
+                                                      ) [FuncCallDesignatorClass]
+                                                    ) [SingleFactorTermClass]
+                                                  ) [PositiveExprClass]
+                                                ) [PrintStatementClass]
+                                                EndIf(
+                                                ) [EndIf]
+                                                PrintStatementClass(
+                                                  PositiveExprClass(
+                                                    SingleFactorTermClass(
+                                                      FuncCallDesignatorClass(
+                                                        DesignatorClass(
+                                                         ord
+                                                        ) [DesignatorClass]
+                                                        ActualParsClass(
+                                                          ActParsFlag(
+                                                          ) [ActParsFlag]
+                                                          EmptyListOfActParClass(
+                                                            ActParsElement(
+                                                              PositiveExprClass(
+                                                                SingleFactorTermClass(
+                                                                  CharFactorClass(
+                                                                   a
+                                                                  ) [CharFactorClass]
+                                                                ) [SingleFactorTermClass]
+                                                              ) [PositiveExprClass]
+                                                            ) [ActParsElement]
+                                                          ) [EmptyListOfActParClass]
+                                                        ) [ActualParsClass]
+                                                      ) [FuncCallDesignatorClass]
+                                                    ) [SingleFactorTermClass]
+                                                  ) [PositiveExprClass]
+                                                ) [PrintStatementClass]
+                                              ) [IfElseStatementClass]
+                                            ) [ListOfStatementsClass]
+                                            PrintStatementClass(
+                                              PositiveExprClass(
+                                                SingleFactorTermClass(
+                                                  DesignatorFactorClass(
+                                                    DesignatorClass(
+                                                     eol
+                                                    ) [DesignatorClass]
+                                                  ) [DesignatorFactorClass]
+                                                ) [SingleFactorTermClass]
+                                              ) [PositiveExprClass]
+                                            ) [PrintStatementClass]
+                                          ) [ListOfStatementsClass]
+                                          DesignatorStatementClass(
+                                            DesignatorStatementAssignClass(
+                                              DesignatorClass(
+                                               i
+                                              ) [DesignatorClass]
+                                              PositiveExprClass(
+                                                SingleFactorTermClass(
+                                                  NumberFactorClass(
+                                                   0
+                                                  ) [NumberFactorClass]
+                                                ) [SingleFactorTermClass]
+                                              ) [PositiveExprClass]
+                                            ) [DesignatorStatementAssignClass]
+                                          ) [DesignatorStatementClass]
+                                        ) [ListOfStatementsClass]
+                                        WhileStatementClass(
+                                          WhileFlag(
+                                          ) [WhileFlag]
+                                          SingleConditionClass(
+                                            SingleCondTermClass(
+                                              CondFactClass(
+                                                PositiveExprClass(
+                                                  SingleFactorTermClass(
+                                                    DesignatorFactorClass(
+                                                      DesignatorClass(
+                                                       i
+                                                      ) [DesignatorClass]
+                                                    ) [DesignatorFactorClass]
+                                                  ) [SingleFactorTermClass]
+                                                ) [PositiveExprClass]
+                                                LessOpClass(
+                                                ) [LessOpClass]
+                                                PositiveExprClass(
+                                                  SingleFactorTermClass(
+                                                    NumberFactorClass(
+                                                     10
+                                                    ) [NumberFactorClass]
+                                                  ) [SingleFactorTermClass]
+                                                ) [PositiveExprClass]
+                                              ) [CondFactClass]
+                                            ) [SingleCondTermClass]
+                                          ) [SingleConditionClass]
+                                          StatementBlock(
+                                            ListOfStatementsClass(
+                                              ListOfStatementsClass(
+                                                ListOfStatementsClass(
+                                                  EmptyListOfStatementsClass(
+                                                  ) [EmptyListOfStatementsClass]
+                                                  IfStatementClass(
+                                                    StartIf(
+                                                    ) [StartIf]
+                                                    IfCondClass(
+                                                      SingleConditionClass(
+                                                        SingleCondTermClass(
+                                                          CondFactClass(
+                                                            PositiveExprClass(
+                                                              SingleFactorTermClass(
+                                                                DesignatorFactorClass(
+                                                                  DesignatorClass(
+                                                                   i
+                                                                  ) [DesignatorClass]
+                                                                ) [DesignatorFactorClass]
+                                                              ) [SingleFactorTermClass]
+                                                            ) [PositiveExprClass]
+                                                            EqOpClass(
+                                                            ) [EqOpClass]
+                                                            PositiveExprClass(
+                                                              SingleFactorTermClass(
+                                                                NumberFactorClass(
+                                                                 3
+                                                                ) [NumberFactorClass]
+                                                              ) [SingleFactorTermClass]
+                                                            ) [PositiveExprClass]
+                                                          ) [CondFactClass]
+                                                        ) [SingleCondTermClass]
+                                                      ) [SingleConditionClass]
+                                                    ) [IfCondClass]
+                                                    StartIfStatement(
+                                                    ) [StartIfStatement]
+                                                    StatementBlock(
+                                                      ListOfStatementsClass(
+                                                        ListOfStatementsClass(
+                                                          EmptyListOfStatementsClass(
+                                                          ) [EmptyListOfStatementsClass]
+                                                          DesignatorStatementClass(
+                                                            DesignatorStatementIncClass(
+                                                              DesignatorClass(
+                                                               i
+                                                              ) [DesignatorClass]
+                                                            ) [DesignatorStatementIncClass]
+                                                          ) [DesignatorStatementClass]
+                                                        ) [ListOfStatementsClass]
+                                                        ContinueStatementClass(
+                                                        ) [ContinueStatementClass]
+                                                      ) [ListOfStatementsClass]
+                                                    ) [StatementBlock]
+                                                    EndIf(
+                                                    ) [EndIf]
+                                                  ) [IfStatementClass]
+                                                ) [ListOfStatementsClass]
+                                                IfStatementClass(
+                                                  StartIf(
+                                                  ) [StartIf]
+                                                  IfCondClass(
+                                                    SingleConditionClass(
+                                                      SingleCondTermClass(
+                                                        CondFactClass(
+                                                          PositiveExprClass(
+                                                            SingleFactorTermClass(
+                                                              DesignatorFactorClass(
+                                                                DesignatorClass(
+                                                                 i
+                                                                ) [DesignatorClass]
+                                                              ) [DesignatorFactorClass]
+                                                            ) [SingleFactorTermClass]
+                                                          ) [PositiveExprClass]
+                                                          EqOpClass(
+                                                          ) [EqOpClass]
+                                                          PositiveExprClass(
+                                                            SingleFactorTermClass(
+                                                              NumberFactorClass(
+                                                               4
+                                                              ) [NumberFactorClass]
+                                                            ) [SingleFactorTermClass]
+                                                          ) [PositiveExprClass]
+                                                        ) [CondFactClass]
+                                                      ) [SingleCondTermClass]
+                                                    ) [SingleConditionClass]
+                                                  ) [IfCondClass]
+                                                  StartIfStatement(
+                                                  ) [StartIfStatement]
+                                                  BreakStatementClass(
+                                                  ) [BreakStatementClass]
+                                                  EndIf(
+                                                  ) [EndIf]
+                                                ) [IfStatementClass]
+                                              ) [ListOfStatementsClass]
+                                              DesignatorStatementClass(
+                                                DesignatorStatementAssignClass(
+                                                  DesignatorClass(
+                                                   i
+                                                  ) [DesignatorClass]
+                                                  PositiveExprClass(
+                                                    SingleFactorTermClass(
+                                                      FuncCallDesignatorClass(
+                                                        DesignatorClass(
+                                                         inkrement
+                                                        ) [DesignatorClass]
+                                                        ActualParsClass(
+                                                          ActParsFlag(
+                                                          ) [ActParsFlag]
+                                                          ListOfActParExprClass(
+                                                            EmptyListOfActParClass(
+                                                              ActParsElement(
+                                                                PositiveExprClass(
+                                                                  SingleFactorTermClass(
+                                                                    DesignatorFactorClass(
+                                                                      DesignatorClass(
+                                                                       i
+                                                                      ) [DesignatorClass]
+                                                                    ) [DesignatorFactorClass]
+                                                                  ) [SingleFactorTermClass]
+                                                                ) [PositiveExprClass]
+                                                              ) [ActParsElement]
+                                                            ) [EmptyListOfActParClass]
+                                                            ActParsElement(
+                                                              PositiveExprClass(
+                                                                SingleFactorTermClass(
+                                                                  NumberFactorClass(
+                                                                   1
+                                                                  ) [NumberFactorClass]
+                                                                ) [SingleFactorTermClass]
+                                                              ) [PositiveExprClass]
+                                                            ) [ActParsElement]
+                                                          ) [ListOfActParExprClass]
+                                                        ) [ActualParsClass]
+                                                      ) [FuncCallDesignatorClass]
+                                                    ) [SingleFactorTermClass]
+                                                  ) [PositiveExprClass]
+                                                ) [DesignatorStatementAssignClass]
+                                              ) [DesignatorStatementClass]
+                                            ) [ListOfStatementsClass]
+                                          ) [StatementBlock]
+                                        ) [WhileStatementClass]
+                                      ) [ListOfStatementsClass]
+                                      IfElseStatementClass(
+                                        StartIf(
+                                        ) [StartIf]
+                                        IfCondClass(
+                                          SingleConditionClass(
+                                            CondTermClass(
+                                              SingleCondTermClass(
+                                                CondFactClass(
+                                                  PositiveExprClass(
+                                                    SingleFactorTermClass(
+                                                      DesignatorFactorClass(
+                                                        DesignatorClass(
+                                                         i
+                                                        ) [DesignatorClass]
+                                                      ) [DesignatorFactorClass]
+                                                    ) [SingleFactorTermClass]
+                                                  ) [PositiveExprClass]
+                                                  EqOpClass(
+                                                  ) [EqOpClass]
+                                                  PositiveExprClass(
+                                                    SingleFactorTermClass(
+                                                      NumberFactorClass(
+                                                       3
+                                                      ) [NumberFactorClass]
+                                                    ) [SingleFactorTermClass]
+                                                  ) [PositiveExprClass]
+                                                ) [CondFactClass]
+                                              ) [SingleCondTermClass]
+                                              SingleCondFactClass(
+                                                PositiveExprClass(
+                                                  SingleFactorTermClass(
+                                                    FuncCallDesignatorClass(
+                                                      DesignatorClass(
+                                                       verify
+                                                      ) [DesignatorClass]
+                                                      NoActualParsClass(
+                                                        ActParsFlag(
+                                                        ) [ActParsFlag]
+                                                      ) [NoActualParsClass]
+                                                    ) [FuncCallDesignatorClass]
+                                                  ) [SingleFactorTermClass]
+                                                ) [PositiveExprClass]
+                                              ) [SingleCondFactClass]
+                                            ) [CondTermClass]
+                                          ) [SingleConditionClass]
+                                        ) [IfCondClass]
+                                        StartIfStatement(
+                                        ) [StartIfStatement]
+                                        PrintStatementClass(
+                                          NegativeExprClass(
+                                            SingleFactorTermClass(
+                                              NumberFactorClass(
+                                               4
+                                              ) [NumberFactorClass]
+                                            ) [SingleFactorTermClass]
+                                          ) [NegativeExprClass]
+                                        ) [PrintStatementClass]
+                                        EndIf(
+                                        ) [EndIf]
+                                        PrintStatementClass(
+                                          PositiveExprClass(
+                                            SingleFactorTermClass(
+                                              NumberFactorClass(
+                                               4
+                                              ) [NumberFactorClass]
+                                            ) [SingleFactorTermClass]
+                                          ) [PositiveExprClass]
+                                        ) [PrintStatementClass]
+                                      ) [IfElseStatementClass]
+                                    ) [ListOfStatementsClass]
+                                    ReadStatementClass(
+                                      ArrayDesignatorClass(
+                                        ArrDesignator(
+                                          DesignatorClass(
+                                           niz
+                                          ) [DesignatorClass]
+                                        ) [ArrDesignator]
+                                        PositiveExprClass(
+                                          SingleFactorTermClass(
+                                            NumberFactorClass(
+                                             0
+                                            ) [NumberFactorClass]
+                                          ) [SingleFactorTermClass]
+                                        ) [PositiveExprClass]
+                                      ) [ArrayDesignatorClass]
+                                    ) [ReadStatementClass]
+                                  ) [ListOfStatementsClass]
+                                  ReadStatementClass(
+                                    ArrayDesignatorClass(
+                                      ArrDesignator(
+                                        DesignatorClass(
+                                         niz
+                                        ) [DesignatorClass]
+                                      ) [ArrDesignator]
+                                      PositiveExprClass(
+                                        SingleFactorTermClass(
+                                          NumberFactorClass(
+                                           1
+                                          ) [NumberFactorClass]
+                                        ) [SingleFactorTermClass]
+                                      ) [PositiveExprClass]
+                                    ) [ArrayDesignatorClass]
+                                  ) [ReadStatementClass]
+                                ) [ListOfStatementsClass]
+                                ReadStatementClass(
+                                  ArrayDesignatorClass(
+                                    ArrDesignator(
+                                      DesignatorClass(
+                                       niz
+                                      ) [DesignatorClass]
+                                    ) [ArrDesignator]
+                                    PositiveExprClass(
+                                      SingleFactorTermClass(
+                                        NumberFactorClass(
+                                         2
+                                        ) [NumberFactorClass]
+                                      ) [SingleFactorTermClass]
+                                    ) [PositiveExprClass]
+                                  ) [ArrayDesignatorClass]
+                                ) [ReadStatementClass]
+                              ) [ListOfStatementsClass]
+                              PrintStatementClass(
+                                PositiveExprClass(
+                                  SingleFactorTermClass(
+                                    DesignatorFactorClass(
+                                      DesignatorClass(
+                                       eol
+                                      ) [DesignatorClass]
+                                    ) [DesignatorFactorClass]
+                                  ) [SingleFactorTermClass]
+                                ) [PositiveExprClass]
+                              ) [PrintStatementClass]
+                            ) [ListOfStatementsClass]
+                            PrintStatementClass(
+                              PositiveExprClass(
+                                SingleFactorTermClass(
+                                  FuncCallDesignatorClass(
+                                    DesignatorClass(
+                                     sum
+                                    ) [DesignatorClass]
+                                    ActualParsClass(
+                                      ActParsFlag(
+                                      ) [ActParsFlag]
+                                      ListOfActParExprClass(
+                                        EmptyListOfActParClass(
+                                          ActParsElement(
+                                            PositiveExprClass(
+                                              SingleFactorTermClass(
+                                                FuncCallDesignatorClass(
+                                                  DesignatorClass(
+                                                   sum
+                                                  ) [DesignatorClass]
+                                                  ActualParsClass(
+                                                    ActParsFlag(
+                                                    ) [ActParsFlag]
+                                                    ListOfActParExprClass(
+                                                      EmptyListOfActParClass(
+                                                        ActParsElement(
+                                                          PositiveExprClass(
+                                                            SingleFactorTermClass(
+                                                              DesignatorFactorClass(
+                                                                ArrayDesignatorClass(
+                                                                  ArrDesignator(
+                                                                    DesignatorClass(
+                                                                     niz
+                                                                    ) [DesignatorClass]
+                                                                  ) [ArrDesignator]
+                                                                  PositiveExprClass(
+                                                                    SingleFactorTermClass(
+                                                                      NumberFactorClass(
+                                                                       0
+                                                                      ) [NumberFactorClass]
+                                                                    ) [SingleFactorTermClass]
+                                                                  ) [PositiveExprClass]
+                                                                ) [ArrayDesignatorClass]
+                                                              ) [DesignatorFactorClass]
+                                                            ) [SingleFactorTermClass]
+                                                          ) [PositiveExprClass]
+                                                        ) [ActParsElement]
+                                                      ) [EmptyListOfActParClass]
+                                                      ActParsElement(
+                                                        PositiveExprClass(
+                                                          SingleFactorTermClass(
+                                                            DesignatorFactorClass(
+                                                              ArrayDesignatorClass(
+                                                                ArrDesignator(
+                                                                  DesignatorClass(
+                                                                   niz
+                                                                  ) [DesignatorClass]
+                                                                ) [ArrDesignator]
+                                                                PositiveExprClass(
+                                                                  SingleFactorTermClass(
+                                                                    NumberFactorClass(
+                                                                     1
+                                                                    ) [NumberFactorClass]
+                                                                  ) [SingleFactorTermClass]
+                                                                ) [PositiveExprClass]
+                                                              ) [ArrayDesignatorClass]
+                                                            ) [DesignatorFactorClass]
+                                                          ) [SingleFactorTermClass]
+                                                        ) [PositiveExprClass]
+                                                      ) [ActParsElement]
+                                                    ) [ListOfActParExprClass]
+                                                  ) [ActualParsClass]
+                                                ) [FuncCallDesignatorClass]
+                                              ) [SingleFactorTermClass]
+                                            ) [PositiveExprClass]
+                                          ) [ActParsElement]
+                                        ) [EmptyListOfActParClass]
+                                        ActParsElement(
+                                          PositiveExprClass(
+                                            SingleFactorTermClass(
+                                              DesignatorFactorClass(
+                                                ArrayDesignatorClass(
+                                                  ArrDesignator(
+                                                    DesignatorClass(
+                                                     niz
+                                                    ) [DesignatorClass]
+                                                  ) [ArrDesignator]
+                                                  PositiveExprClass(
+                                                    SingleFactorTermClass(
+                                                      NumberFactorClass(
+                                                       2
+                                                      ) [NumberFactorClass]
+                                                    ) [SingleFactorTermClass]
+                                                  ) [PositiveExprClass]
+                                                ) [ArrayDesignatorClass]
+                                              ) [DesignatorFactorClass]
+                                            ) [SingleFactorTermClass]
+                                          ) [PositiveExprClass]
+                                        ) [ActParsElement]
+                                      ) [ListOfActParExprClass]
+                                    ) [ActualParsClass]
+                                  ) [FuncCallDesignatorClass]
+                                ) [SingleFactorTermClass]
+                              ) [PositiveExprClass]
+                            ) [PrintStatementClass]
+                          ) [ListOfStatementsClass]
+                          PrintStatementClass(
+                            PositiveExprClass(
+                              SingleFactorTermClass(
+                                DesignatorFactorClass(
+                                  DesignatorClass(
+                                   eol
+                                  ) [DesignatorClass]
+                                ) [DesignatorFactorClass]
+                              ) [SingleFactorTermClass]
+                            ) [PositiveExprClass]
+                          ) [PrintStatementClass]
+                        ) [ListOfStatementsClass]
+                        PrintStatementClass(
+                          PositiveExprClass(
+                            SingleFactorTermClass(
+                              FuncCallDesignatorClass(
+                                DesignatorClass(
+                                 inkrement
+                                ) [DesignatorClass]
+                                ActualParsClass(
+                                  ActParsFlag(
+                                  ) [ActParsFlag]
+                                  ListOfActParExprClass(
+                                    EmptyListOfActParClass(
+                                      ActParsElement(
+                                        PositiveExprClass(
+                                          SingleFactorTermClass(
+                                            DesignatorFactorClass(
+                                              ArrayDesignatorClass(
+                                                ArrDesignator(
+                                                  DesignatorClass(
+                                                   niz
+                                                  ) [DesignatorClass]
+                                                ) [ArrDesignator]
+                                                PositiveExprClass(
+                                                  SingleFactorTermClass(
+                                                    NumberFactorClass(
+                                                     2
+                                                    ) [NumberFactorClass]
+                                                  ) [SingleFactorTermClass]
+                                                ) [PositiveExprClass]
+                                              ) [ArrayDesignatorClass]
+                                            ) [DesignatorFactorClass]
+                                          ) [SingleFactorTermClass]
+                                        ) [PositiveExprClass]
+                                      ) [ActParsElement]
+                                    ) [EmptyListOfActParClass]
+                                    ActParsElement(
+                                      PositiveExprClass(
+                                        SingleFactorTermClass(
+                                          NumberFactorClass(
+                                           2
+                                          ) [NumberFactorClass]
+                                        ) [SingleFactorTermClass]
+                                      ) [PositiveExprClass]
+                                    ) [ActParsElement]
+                                  ) [ListOfActParExprClass]
+                                ) [ActualParsClass]
+                              ) [FuncCallDesignatorClass]
+                            ) [SingleFactorTermClass]
+                          ) [PositiveExprClass]
+                        ) [PrintStatementClass]
+                      ) [ListOfStatementsClass]
+                      DesignatorStatementClass(
+                        DesignatorStatementAssignClass(
+                          DesignatorClass(
+                           a
+                          ) [DesignatorClass]
+                          PositiveExprClass(
+                            SingleFactorTermClass(
+                              NumberFactorClass(
+                               3
+                              ) [NumberFactorClass]
+                            ) [SingleFactorTermClass]
+                          ) [PositiveExprClass]
+                        ) [DesignatorStatementAssignClass]
+                      ) [DesignatorStatementClass]
+                    ) [ListOfStatementsClass]
+                    DesignatorStatementClass(
+                      DesignatorStatementAssignClass(
+                        DesignatorClass(
+                         i
+                        ) [DesignatorClass]
+                        PositiveExprClass(
+                          SingleFactorTermClass(
+                            NumberFactorClass(
+                             0
+                            ) [NumberFactorClass]
+                          ) [SingleFactorTermClass]
+                        ) [PositiveExprClass]
+                      ) [DesignatorStatementAssignClass]
+                    ) [DesignatorStatementClass]
+                  ) [ListOfStatementsClass]
+                  WhileStatementClass(
+                    WhileFlag(
+                    ) [WhileFlag]
+                    SingleConditionClass(
+                      SingleCondTermClass(
+                        CondFactClass(
+                          PositiveExprClass(
+                            SingleFactorTermClass(
+                              DesignatorFactorClass(
+                                DesignatorClass(
+                                 i
+                                ) [DesignatorClass]
+                              ) [DesignatorFactorClass]
+                            ) [SingleFactorTermClass]
+                          ) [PositiveExprClass]
+                          LessOpClass(
+                          ) [LessOpClass]
+                          PositiveExprClass(
+                            SingleFactorTermClass(
+                              NumberFactorClass(
+                               3
+                              ) [NumberFactorClass]
+                            ) [SingleFactorTermClass]
+                          ) [PositiveExprClass]
+                        ) [CondFactClass]
+                      ) [SingleCondTermClass]
+                    ) [SingleConditionClass]
+                    StatementBlock(
+                      ListOfStatementsClass(
+                        ListOfStatementsClass(
+                          EmptyListOfStatementsClass(
+                          ) [EmptyListOfStatementsClass]
+                          DesignatorStatementClass(
+                            DesignatorStatementAssignClass(
+                              ArrayDesignatorClass(
+                                ArrDesignator(
+                                  DesignatorClass(
+                                   niz
+                                  ) [DesignatorClass]
+                                ) [ArrDesignator]
+                                PositiveExprClass(
+                                  SingleFactorTermClass(
+                                    DesignatorFactorClass(
+                                      DesignatorClass(
+                                       i
+                                      ) [DesignatorClass]
+                                    ) [DesignatorFactorClass]
+                                  ) [SingleFactorTermClass]
+                                ) [PositiveExprClass]
+                              ) [ArrayDesignatorClass]
+                              PositiveExprClass(
+                                MultipleFactorsTermClass(
+                                  MultipleFactorsTermClass(
+                                    SingleFactorTermClass(
+                                      DesignatorFactorClass(
+                                        ArrayDesignatorClass(
+                                          ArrDesignator(
+                                            DesignatorClass(
+                                             niz
+                                            ) [DesignatorClass]
+                                          ) [ArrDesignator]
+                                          PositiveExprClass(
+                                            SingleFactorTermClass(
+                                              DesignatorFactorClass(
+                                                DesignatorClass(
+                                                 i
+                                                ) [DesignatorClass]
+                                              ) [DesignatorFactorClass]
+                                            ) [SingleFactorTermClass]
+                                          ) [PositiveExprClass]
+                                        ) [ArrayDesignatorClass]
+                                      ) [DesignatorFactorClass]
+                                    ) [SingleFactorTermClass]
+                                    MulClass(
+                                    ) [MulClass]
+                                    NumberFactorClass(
+                                     2
+                                    ) [NumberFactorClass]
+                                  ) [MultipleFactorsTermClass]
+                                  MulClass(
+                                  ) [MulClass]
+                                  DesignatorFactorClass(
+                                    DesignatorClass(
+                                     a
+                                    ) [DesignatorClass]
+                                  ) [DesignatorFactorClass]
+                                ) [MultipleFactorsTermClass]
+                              ) [PositiveExprClass]
+                            ) [DesignatorStatementAssignClass]
+                          ) [DesignatorStatementClass]
+                        ) [ListOfStatementsClass]
+                        DesignatorStatementClass(
+                          DesignatorStatementIncClass(
+                            DesignatorClass(
+                             i
+                            ) [DesignatorClass]
+                          ) [DesignatorStatementIncClass]
+                        ) [DesignatorStatementClass]
+                      ) [ListOfStatementsClass]
+                    ) [StatementBlock]
+                  ) [WhileStatementClass]
+                ) [ListOfStatementsClass]
+                ForEachStatementClass(
+                  ForeachFlag(
+                    DesignatorClass(
+                     niz
+                    ) [DesignatorClass]
+                  ) [ForeachFlag]
+                  ForeachIdent(
+                   curr
+                  ) [ForeachIdent]
+                  PrintStatementClass(
+                    PositiveExprClass(
+                      SingleFactorTermClass(
+                        DesignatorFactorClass(
+                          DesignatorClass(
+                           curr
+                          ) [DesignatorClass]
+                        ) [DesignatorFactorClass]
+                      ) [SingleFactorTermClass]
+                    ) [PositiveExprClass]
+                  ) [PrintStatementClass]
+                  TestForEach(
+                  ) [TestForEach]
+                ) [ForEachStatementClass]
+              ) [ListOfStatementsClass]
+              PrintStatementClass(
+                PositiveExprClass(
+                  SingleFactorTermClass(
+                    DesignatorFactorClass(
+                      DesignatorClass(
+                       eol
+                      ) [DesignatorClass]
+                    ) [DesignatorFactorClass]
+                  ) [SingleFactorTermClass]
+                ) [PositiveExprClass]
+              ) [PrintStatementClass]
+            ) [ListOfStatementsClass]
+            DesignatorStatementClass(
+              DesignatorStatementAssignClass(
+                DesignatorClass(
+                 niz2
+                ) [DesignatorClass]
+                PositiveExprClass(
+                  SingleFactorTermClass(
+                    NumberFactorClass(
+                     0
+                    ) [NumberFactorClass]
+                  ) [SingleFactorTermClass]
+                ) [PositiveExprClass]
+              ) [DesignatorStatementAssignClass]
+            ) [DesignatorStatementClass]
+          ) [ListOfStatementsClass]
+          ForEachStatementClass(
+            ForeachFlag(
+              DesignatorClass(
+               niz
+              ) [DesignatorClass]
+            ) [ForeachFlag]
+            ForeachIdent(
+             curr
+            ) [ForeachIdent]
+            StatementBlock(
+              ListOfStatementsClass(
+                EmptyListOfStatementsClass(
+                ) [EmptyListOfStatementsClass]
+                DesignatorStatementClass(
+                  DesignatorStatementAssignClass(
+                    DesignatorClass(
+                     niz2
+                    ) [DesignatorClass]
+                    ExprClass(
+                      PositiveExprClass(
+                        SingleFactorTermClass(
+                          DesignatorFactorClass(
+                            DesignatorClass(
+                             niz2
+                            ) [DesignatorClass]
+                          ) [DesignatorFactorClass]
+                        ) [SingleFactorTermClass]
+                      ) [PositiveExprClass]
+                      PlusOpClass(
+                      ) [PlusOpClass]
+                      MultipleFactorsTermClass(
+                        SingleFactorTermClass(
+                          DesignatorFactorClass(
+                            DesignatorClass(
+                             curr
+                            ) [DesignatorClass]
+                          ) [DesignatorFactorClass]
+                        ) [SingleFactorTermClass]
+                        MulClass(
+                        ) [MulClass]
+                        DesignatorFactorClass(
+                          DesignatorClass(
+                           curr
+                          ) [DesignatorClass]
+                        ) [DesignatorFactorClass]
+                      ) [MultipleFactorsTermClass]
+                    ) [ExprClass]
+                  ) [DesignatorStatementAssignClass]
+                ) [DesignatorStatementClass]
+              ) [ListOfStatementsClass]
+            ) [StatementBlock]
+            TestForEach(
+            ) [TestForEach]
+          ) [ForEachStatementClass]
+        ) [ListOfStatementsClass]
+        PrintStatementClass(
+          PositiveExprClass(
+            SingleFactorTermClass(
+              DesignatorFactorClass(
+                DesignatorClass(
+                 niz2
+                ) [DesignatorClass]
+              ) [DesignatorFactorClass]
+            ) [SingleFactorTermClass]
+          ) [PositiveExprClass]
+        ) [PrintStatementClass]
+      ) [ListOfStatementsClass]
+    ) [MethodDeclClass]
+  ) [ListOfMethodDeclClass]
+) [ProgramClass]
+INFO  02:54:25,080 - ====================================
+INFO  02:54:25,082 - Kreirana je konstanta INT jedan na liniji 8
+INFO  02:54:25,082 - Kreirana je promenjiva INT i na liniji 10
+INFO  02:54:25,082 - Kreirana je promenjiva BOOL ibool na liniji 11
+INFO  02:54:25,082 - Kreirana je promenjiva INT niz2 na liniji 13
+INFO  02:54:25,082 - Kreirana je promenjiva INT niz[] na liniji 15
+INFO  02:54:25,082 - Kreirana je promenjiva INT a na liniji 16
+INFO  02:54:25,082 - Kreirana je promenjiva INT curr na liniji 16
+INFO  02:54:25,082 - Definicija funkcije INT sum na liniji 20
+INFO  02:54:25,082 - Kreirana je lokalna promenjiva INT z na liniji 20
+INFO  02:54:25,082 - Kreirana je lokalna promenjiva INT d na liniji 20
+INFO  02:54:25,082 - Definicija funkcije INT inkrement na liniji 26
+INFO  02:54:25,082 - Kreirana je lokalna promenjiva INT a na liniji 26
+INFO  02:54:25,082 - Kreirana je lokalna promenjiva INT inc na liniji 26
+INFO  02:54:25,082 - Kreirana je promenjiva INT pom na liniji 27
+INFO  02:54:25,082 - Detektovan je pristup simbolickoj konstantni jedan na liniji 29
+INFO  02:54:25,083 - Definicija funkcije BOOL verify na liniji 35
+INFO  02:54:25,083 - Definicija funkcije BOOL main na liniji 40
+INFO  02:54:25,083 - Detektovan je pristup elemntu niza niz na liniji 58
+INFO  02:54:25,083 - Detektovan je pristup elemntu niza niz na liniji 59
+INFO  02:54:25,083 - Detektovan je pristup elemntu niza niz na liniji 60
+INFO  02:54:25,083 - Detektovan je pristup elemntu niza niz na liniji 60
+INFO  02:54:25,083 - Detektovan je pristup elemntu niza niz na liniji 60
+INFO  02:54:25,083 - Detektovan je pristup elemntu niza niz na liniji 61
+INFO  02:54:25,083 - Detektovan je pristup simbolickoj konstantni eol na liniji 64
+INFO  02:54:25,083 - Detektovan je pristup elemntu niza niz na liniji 79
+INFO  02:54:25,083 - Detektovan je pristup elemntu niza niz na liniji 80
+INFO  02:54:25,083 - Detektovan je pristup elemntu niza niz na liniji 81
+INFO  02:54:25,083 - Detektovan je pristup simbolickoj konstantni eol na liniji 82
+INFO  02:54:25,083 - Detektovan je pristup elemntu niza niz na liniji 83
+INFO  02:54:25,083 - Detektovan je pristup elemntu niza niz na liniji 83
+INFO  02:54:25,083 - Detektovan je pristup elemntu niza niz na liniji 83
+INFO  02:54:25,083 - Detektovan je pristup simbolickoj konstantni eol na liniji 85
+INFO  02:54:25,083 - Detektovan je pristup elemntu niza niz na liniji 86
+INFO  02:54:25,083 - Detektovan je pristup elemntu niza niz na liniji 91
+INFO  02:54:25,083 - Detektovan je pristup elemntu niza niz na liniji 91
+INFO  02:54:25,083 - Detektovan je pristup simbolickoj konstantni eol na liniji 96
+INFO  02:54:25,083 - ====================================
+INFO  02:54:25,091 - Parsiranje uspesno zavrseno!

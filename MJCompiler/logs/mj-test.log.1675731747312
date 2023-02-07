@@ -1,0 +1,169 @@
+INFO  02:02:22,249 - Compiling source file: /Users/racicaleksa/Projects/Semestar-7/PP1/MicroJava-Compiler/MJCompiler/test/testDevelop.mj
+INFO  02:02:22,277 - #2 program
+INFO  02:02:22,277 - #49 test302
+INFO  02:02:22,277 - #49 int
+INFO  02:02:22,278 - #49 niz
+INFO  02:02:22,278 - #41 [
+INFO  02:02:22,278 - #42 ]
+INFO  02:02:22,278 - #35 ;
+INFO  02:02:22,278 - #49 int
+INFO  02:02:22,279 - #49 a
+INFO  02:02:22,279 - #37 ,
+INFO  02:02:22,279 - #49 curr
+INFO  02:02:22,279 - #37 ,
+INFO  02:02:22,279 - #49 niz2
+INFO  02:02:22,279 - #35 ;
+INFO  02:02:22,279 - #43 {
+INFO  02:02:22,280 - #14 void
+INFO  02:02:22,280 - #49 main
+INFO  02:02:22,280 - #39 (
+INFO  02:02:22,280 - #40 )
+INFO  02:02:22,280 - #43 {
+INFO  02:02:22,281 - #49 niz
+INFO  02:02:22,281 - #38 .
+INFO  02:02:22,281 - #17 foreach
+INFO  02:02:22,281 - #39 (
+INFO  02:02:22,281 - #49 curr
+INFO  02:02:22,282 - #45 =>
+INFO  02:02:22,282 - #43 {
+INFO  02:02:22,282 - #49 niz2
+INFO  02:02:22,282 - #32 =
+INFO  02:02:22,282 - #49 niz2
+INFO  02:02:22,282 - #19 +
+INFO  02:02:22,282 - #49 curr
+INFO  02:02:22,283 - #21 *
+INFO  02:02:22,283 - #49 curr
+INFO  02:02:22,283 - #35 ;
+INFO  02:02:22,283 - #44 }
+INFO  02:02:22,284 - #40 )
+INFO  02:02:22,284 - #35 ;
+INFO  02:02:22,284 - #44 }
+INFO  02:02:22,284 - #44 }
+INFO  02:02:22,286 - ProgramClass(
+  ProgNameClass(
+   test302
+  ) [ProgNameClass]
+  VarDecListClass(
+    VarDecListClass(
+      NoDecListClass(
+      ) [NoDecListClass]
+      VarDeclClass(
+        TypeClass(
+         int
+        ) [TypeClass]
+        VarDecLastListElementClass(
+          VarDecLastElementClass(
+           niz
+            ArrayBracketsClass(
+            ) [ArrayBracketsClass]
+          ) [VarDecLastElementClass]
+        ) [VarDecLastListElementClass]
+      ) [VarDeclClass]
+    ) [VarDecListClass]
+    VarDeclClass(
+      TypeClass(
+       int
+      ) [TypeClass]
+      VarDecListElementClass(
+        VarDecElementClass(
+         a
+          NoArrayBracketsClass(
+          ) [NoArrayBracketsClass]
+        ) [VarDecElementClass]
+        VarDecListElementClass(
+          VarDecElementClass(
+           curr
+            NoArrayBracketsClass(
+            ) [NoArrayBracketsClass]
+          ) [VarDecElementClass]
+          VarDecLastListElementClass(
+            VarDecLastElementClass(
+             niz2
+              NoArrayBracketsClass(
+              ) [NoArrayBracketsClass]
+            ) [VarDecLastElementClass]
+          ) [VarDecLastListElementClass]
+        ) [VarDecListElementClass]
+      ) [VarDecListElementClass]
+    ) [VarDeclClass]
+  ) [VarDecListClass]
+  ListOfMethodDeclClass(
+    EmptyListOfMethodDeclClass(
+    ) [EmptyListOfMethodDeclClass]
+    MethodDeclClass(
+      VoidMethodClass(
+       main
+      ) [VoidMethodClass]
+      FormParsEnd(
+      ) [FormParsEnd]
+      EmptyListOfVarDeclClass(
+      ) [EmptyListOfVarDeclClass]
+      ListOfStatementsClass(
+        EmptyListOfStatementsClass(
+        ) [EmptyListOfStatementsClass]
+        ForEachStatementClass(
+          ForeachFlag(
+            DesignatorClass(
+             niz
+            ) [DesignatorClass]
+          ) [ForeachFlag]
+          ForeachIdent(
+           curr
+          ) [ForeachIdent]
+          StatementBlock(
+            ListOfStatementsClass(
+              EmptyListOfStatementsClass(
+              ) [EmptyListOfStatementsClass]
+              DesignatorStatementClass(
+                DesignatorStatementAssignClass(
+                  DesignatorClass(
+                   niz2
+                  ) [DesignatorClass]
+                  ExprClass(
+                    PositiveExprClass(
+                      SingleFactorTermClass(
+                        DesignatorFactorClass(
+                          DesignatorClass(
+                           niz2
+                          ) [DesignatorClass]
+                        ) [DesignatorFactorClass]
+                      ) [SingleFactorTermClass]
+                    ) [PositiveExprClass]
+                    PlusOpClass(
+                    ) [PlusOpClass]
+                    MultipleFactorsTermClass(
+                      SingleFactorTermClass(
+                        DesignatorFactorClass(
+                          DesignatorClass(
+                           curr
+                          ) [DesignatorClass]
+                        ) [DesignatorFactorClass]
+                      ) [SingleFactorTermClass]
+                      MulClass(
+                      ) [MulClass]
+                      DesignatorFactorClass(
+                        DesignatorClass(
+                         curr
+                        ) [DesignatorClass]
+                      ) [DesignatorFactorClass]
+                    ) [MultipleFactorsTermClass]
+                  ) [ExprClass]
+                ) [DesignatorStatementAssignClass]
+              ) [DesignatorStatementClass]
+            ) [ListOfStatementsClass]
+          ) [StatementBlock]
+          TestForEach(
+          ) [TestForEach]
+        ) [ForEachStatementClass]
+      ) [ListOfStatementsClass]
+    ) [MethodDeclClass]
+  ) [ListOfMethodDeclClass]
+) [ProgramClass]
+INFO  02:02:22,286 - ====================================
+INFO  02:02:22,288 - Kreirana je promenjiva INT niz[] na liniji 9
+INFO  02:02:22,289 - Kreirana je promenjiva INT a na liniji 10
+INFO  02:02:22,289 - Kreirana je promenjiva INT curr na liniji 10
+INFO  02:02:22,289 - Kreirana je promenjiva INT niz2 na liniji 10
+INFO  02:02:22,289 - Definicija funkcije NONE main na liniji 14
+INFO  02:02:22,289 - ====================================
+INFO  02:02:22,289 - Parsiranje uspesno zavrseno!
