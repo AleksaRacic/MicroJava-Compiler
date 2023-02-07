@@ -1,0 +1,294 @@
+INFO  16:08:59,397 - Compiling source file: /Users/racicaleksa/Projects/Semestar-7/PP1/MicroJava-Compiler/MJCompiler/test/testDevelop.mj
+INFO  16:08:59,411 - #2 program
+INFO  16:08:59,411 - #49 test301
+INFO  16:08:59,411 - #49 int
+INFO  16:08:59,411 - #49 a
+INFO  16:08:59,411 - #37 ,
+INFO  16:08:59,411 - #49 b
+INFO  16:08:59,411 - #41 [
+INFO  16:08:59,411 - #42 ]
+INFO  16:08:59,411 - #35 ;
+INFO  16:08:59,411 - #8 const
+INFO  16:08:59,412 - #49 int
+INFO  16:08:59,412 - #49 c
+INFO  16:08:59,412 - #32 =
+INFO  16:08:59,412 - #48 5
+INFO  16:08:59,412 - #35 ;
+INFO  16:08:59,412 - #8 const
+INFO  16:08:59,412 - #49 bool
+INFO  16:08:59,412 - #49 bol1
+INFO  16:08:59,412 - #32 =
+INFO  16:08:59,412 - #47 true
+INFO  16:08:59,412 - #35 ;
+INFO  16:08:59,412 - #49 char
+INFO  16:08:59,412 - #49 k
+INFO  16:08:59,412 - #35 ;
+INFO  16:08:59,412 - #43 {
+INFO  16:08:59,412 - #14 void
+INFO  16:08:59,412 - #49 main
+INFO  16:08:59,412 - #39 (
+INFO  16:08:59,413 - #40 )
+INFO  16:08:59,413 - #49 int
+INFO  16:08:59,413 - #49 bodovi
+INFO  16:08:59,413 - #35 ;
+INFO  16:08:59,413 - #49 bool
+INFO  16:08:59,413 - #49 bt
+INFO  16:08:59,413 - #35 ;
+INFO  16:08:59,413 - #43 {
+INFO  16:08:59,413 - #49 a
+INFO  16:08:59,413 - #32 =
+INFO  16:08:59,413 - #49 c
+INFO  16:08:59,413 - #35 ;
+INFO  16:08:59,413 - #49 a
+INFO  16:08:59,414 - #32 =
+INFO  16:08:59,414 - #48 6
+INFO  16:08:59,414 - #35 ;
+INFO  16:08:59,414 - #49 a
+INFO  16:08:59,414 - #33 ++
+INFO  16:08:59,414 - #35 ;
+INFO  16:08:59,414 - #41 [
+INFO  16:08:59,414 - #49 a
+INFO  16:08:59,414 - #37 ,
+INFO  16:08:59,414 - #49 a
+INFO  16:08:59,414 - #37 ,
+INFO  16:08:59,414 - #37 ,
+INFO  16:08:59,416 - #49 a
+INFO  16:08:59,416 - #37 ,
+INFO  16:08:59,416 - #49 b
+INFO  16:08:59,416 - #37 ,
+INFO  16:08:59,416 - #49 k
+INFO  16:08:59,416 - #37 ,
+INFO  16:08:59,416 - #49 bol1
+INFO  16:08:59,416 - #42 ]
+INFO  16:08:59,416 - #32 =
+INFO  16:08:59,416 - #49 b
+INFO  16:08:59,416 - #35 ;
+INFO  16:08:59,416 - #44 }
+INFO  16:08:59,416 - #44 }
+INFO  16:08:59,419 - ProgramClass(
+  ProgNameClass(
+   test301
+  ) [ProgNameClass]
+  VarDecListClass(
+    ConstDecListClass(
+      ConstDecListClass(
+        VarDecListClass(
+          NoDecListClass(
+          ) [NoDecListClass]
+          VarDeclClass(
+            TypeClass(
+             int
+            ) [TypeClass]
+            VarDecListElementClass(
+              VarDecElementClass(
+               a
+                NoArrayBracketsClass(
+                ) [NoArrayBracketsClass]
+              ) [VarDecElementClass]
+              VarDecLastListElementClass(
+                VarDecLastElementClass(
+                 b
+                  ArrayBracketsClass(
+                  ) [ArrayBracketsClass]
+                ) [VarDecLastElementClass]
+              ) [VarDecLastListElementClass]
+            ) [VarDecListElementClass]
+          ) [VarDeclClass]
+        ) [VarDecListClass]
+        ConstDeclClass(
+          TypeClass(
+           int
+          ) [TypeClass]
+          ConstDecLastElementClass(
+            ConstElementNumberLast(
+             c
+             5
+            ) [ConstElementNumberLast]
+          ) [ConstDecLastElementClass]
+        ) [ConstDeclClass]
+      ) [ConstDecListClass]
+      ConstDeclClass(
+        TypeClass(
+         bool
+        ) [TypeClass]
+        ConstDecLastElementClass(
+          ConstElementBooleanLast(
+           bol1
+           true
+          ) [ConstElementBooleanLast]
+        ) [ConstDecLastElementClass]
+      ) [ConstDeclClass]
+    ) [ConstDecListClass]
+    VarDeclClass(
+      TypeClass(
+       char
+      ) [TypeClass]
+      VarDecLastListElementClass(
+        VarDecLastElementClass(
+         k
+          NoArrayBracketsClass(
+          ) [NoArrayBracketsClass]
+        ) [VarDecLastElementClass]
+      ) [VarDecLastListElementClass]
+    ) [VarDeclClass]
+  ) [VarDecListClass]
+  ListOfMethodDeclClass(
+    EmptyListOfMethodDeclClass(
+    ) [EmptyListOfMethodDeclClass]
+    MethodDeclClass(
+      VoidMethodClass(
+       main
+      ) [VoidMethodClass]
+      FormParsEnd(
+      ) [FormParsEnd]
+      ListOfVarDeclClass(
+        ListOfVarDeclClass(
+          EmptyListOfVarDeclClass(
+          ) [EmptyListOfVarDeclClass]
+          VarDeclClass(
+            TypeClass(
+             int
+            ) [TypeClass]
+            VarDecLastListElementClass(
+              VarDecLastElementClass(
+               bodovi
+                NoArrayBracketsClass(
+                ) [NoArrayBracketsClass]
+              ) [VarDecLastElementClass]
+            ) [VarDecLastListElementClass]
+          ) [VarDeclClass]
+        ) [ListOfVarDeclClass]
+        VarDeclClass(
+          TypeClass(
+           bool
+          ) [TypeClass]
+          VarDecLastListElementClass(
+            VarDecLastElementClass(
+             bt
+              NoArrayBracketsClass(
+              ) [NoArrayBracketsClass]
+            ) [VarDecLastElementClass]
+          ) [VarDecLastListElementClass]
+        ) [VarDeclClass]
+      ) [ListOfVarDeclClass]
+      ListOfStatementsClass(
+        ListOfStatementsClass(
+          ListOfStatementsClass(
+            ListOfStatementsClass(
+              EmptyListOfStatementsClass(
+              ) [EmptyListOfStatementsClass]
+              DesignatorStatementClass(
+                DesignatorStatementAssignClass(
+                  DesignatorClass(
+                   a
+                  ) [DesignatorClass]
+                  PositiveExprClass(
+                    SingleFactorTermClass(
+                      DesignatorFactorClass(
+                        DesignatorClass(
+                         c
+                        ) [DesignatorClass]
+                      ) [DesignatorFactorClass]
+                    ) [SingleFactorTermClass]
+                  ) [PositiveExprClass]
+                ) [DesignatorStatementAssignClass]
+              ) [DesignatorStatementClass]
+            ) [ListOfStatementsClass]
+            DesignatorStatementClass(
+              DesignatorStatementAssignClass(
+                DesignatorClass(
+                 a
+                ) [DesignatorClass]
+                PositiveExprClass(
+                  SingleFactorTermClass(
+                    NumberFactorClass(
+                     6
+                    ) [NumberFactorClass]
+                  ) [SingleFactorTermClass]
+                ) [PositiveExprClass]
+              ) [DesignatorStatementAssignClass]
+            ) [DesignatorStatementClass]
+          ) [ListOfStatementsClass]
+          DesignatorStatementClass(
+            DesignatorStatementIncClass(
+              DesignatorClass(
+               a
+              ) [DesignatorClass]
+            ) [DesignatorStatementIncClass]
+          ) [DesignatorStatementClass]
+        ) [ListOfStatementsClass]
+        DesignatorStatementClass(
+          DesignatorStatementArrayClass(
+            OptDesignatorListClass(
+              OptDesignatorListClass(
+                OptDesignatorListClass(
+                  OptDesignatorListClass(
+                    OptDesignatorListClass(
+                      OptDesignatorListClass(
+                        SingleOrEndOfListDesignatorClass(
+                          DesignArrAssignmentClass(
+                            DesignatorClass(
+                             a
+                            ) [DesignatorClass]
+                          ) [DesignArrAssignmentClass]
+                        ) [SingleOrEndOfListDesignatorClass]
+                        DesignArrAssignmentClass(
+                          DesignatorClass(
+                           a
+                          ) [DesignatorClass]
+                        ) [DesignArrAssignmentClass]
+                      ) [OptDesignatorListClass]
+                      DesignatorEpsilonClass(
+                      ) [DesignatorEpsilonClass]
+                    ) [OptDesignatorListClass]
+                    DesignArrAssignmentClass(
+                      DesignatorClass(
+                       a
+                      ) [DesignatorClass]
+                    ) [DesignArrAssignmentClass]
+                  ) [OptDesignatorListClass]
+                  DesignArrAssignmentClass(
+                    DesignatorClass(
+                     b
+                    ) [DesignatorClass]
+                  ) [DesignArrAssignmentClass]
+                ) [OptDesignatorListClass]
+                DesignArrAssignmentClass(
+                  DesignatorClass(
+                   k
+                  ) [DesignatorClass]
+                ) [DesignArrAssignmentClass]
+              ) [OptDesignatorListClass]
+              DesignArrAssignmentClass(
+                DesignatorClass(
+                 bol1
+                ) [DesignatorClass]
+              ) [DesignArrAssignmentClass]
+            ) [OptDesignatorListClass]
+            DesignatorClass(
+             b
+            ) [DesignatorClass]
+          ) [DesignatorStatementArrayClass]
+        ) [DesignatorStatementClass]
+      ) [ListOfStatementsClass]
+    ) [MethodDeclClass]
+  ) [ListOfMethodDeclClass]
+) [ProgramClass]
+INFO  16:08:59,419 - ====================================
+INFO  16:08:59,420 - Kreirana je promenjiva INT a na liniji 4
+INFO  16:08:59,420 - Kreirana je promenjiva INT b[] na liniji 4
+INFO  16:08:59,420 - Kreirana je konstanta INT c na liniji 5
+INFO  16:08:59,420 - Kreirana je konstanta BOOL bol1 na liniji 6
+INFO  16:08:59,420 - Kreirana je promenjiva CHAR k na liniji 7
+INFO  16:08:59,421 - Definicija funkcije NONE main na liniji 9
+INFO  16:08:59,421 - Kreirana je promenjiva INT bodovi na liniji 10
+INFO  16:08:59,421 - Kreirana je promenjiva BOOL bt na liniji 11
+INFO  16:08:59,421 - Detektovan je pristup simbolickoj konstantni c na liniji 13
+INFO  16:08:59,421 - Detektovan je pristup simbolickoj konstantni bol1 na liniji 19
+ERROR 16:08:59,421 - SEMANTICKA GRESKA: Designator bol1 mora oznacavati promenljivu, element niza ili polje  na liniji 19
+ERROR 16:08:59,421 - SEMANTICKA GRESKA:b se ne moze dodeliti b na liniji 19
+ERROR 16:08:59,421 - SEMANTICKA GRESKA:b se ne moze dodeliti k na liniji 19
+INFO  16:08:59,421 - ====================================
+
+
+ERROR 16:08:59,421 - Parsiranje NIJE uspesno zavrseno!

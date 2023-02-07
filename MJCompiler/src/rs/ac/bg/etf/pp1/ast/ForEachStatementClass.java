@@ -1,38 +1,42 @@
 // generated with ast extension for cup
 // version 0.8
-// 3/1/2023 1:47:18
+// 7/1/2023 2:0:43
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class ForEachStatementClass extends Statement {
 
-    private Designator Designator;
-    private String feIdent;
+    private ForeachFlag ForeachFlag;
+    private ForeachIdent ForeachIdent;
     private Statement Statement;
+    private TestForEach TestForEach;
 
-    public ForEachStatementClass (Designator Designator, String feIdent, Statement Statement) {
-        this.Designator=Designator;
-        if(Designator!=null) Designator.setParent(this);
-        this.feIdent=feIdent;
+    public ForEachStatementClass (ForeachFlag ForeachFlag, ForeachIdent ForeachIdent, Statement Statement, TestForEach TestForEach) {
+        this.ForeachFlag=ForeachFlag;
+        if(ForeachFlag!=null) ForeachFlag.setParent(this);
+        this.ForeachIdent=ForeachIdent;
+        if(ForeachIdent!=null) ForeachIdent.setParent(this);
         this.Statement=Statement;
         if(Statement!=null) Statement.setParent(this);
+        this.TestForEach=TestForEach;
+        if(TestForEach!=null) TestForEach.setParent(this);
     }
 
-    public Designator getDesignator() {
-        return Designator;
+    public ForeachFlag getForeachFlag() {
+        return ForeachFlag;
     }
 
-    public void setDesignator(Designator Designator) {
-        this.Designator=Designator;
+    public void setForeachFlag(ForeachFlag ForeachFlag) {
+        this.ForeachFlag=ForeachFlag;
     }
 
-    public String getFeIdent() {
-        return feIdent;
+    public ForeachIdent getForeachIdent() {
+        return ForeachIdent;
     }
 
-    public void setFeIdent(String feIdent) {
-        this.feIdent=feIdent;
+    public void setForeachIdent(ForeachIdent ForeachIdent) {
+        this.ForeachIdent=ForeachIdent;
     }
 
     public Statement getStatement() {
@@ -43,24 +47,38 @@ public class ForEachStatementClass extends Statement {
         this.Statement=Statement;
     }
 
+    public TestForEach getTestForEach() {
+        return TestForEach;
+    }
+
+    public void setTestForEach(TestForEach TestForEach) {
+        this.TestForEach=TestForEach;
+    }
+
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(Designator!=null) Designator.accept(visitor);
+        if(ForeachFlag!=null) ForeachFlag.accept(visitor);
+        if(ForeachIdent!=null) ForeachIdent.accept(visitor);
         if(Statement!=null) Statement.accept(visitor);
+        if(TestForEach!=null) TestForEach.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(Designator!=null) Designator.traverseTopDown(visitor);
+        if(ForeachFlag!=null) ForeachFlag.traverseTopDown(visitor);
+        if(ForeachIdent!=null) ForeachIdent.traverseTopDown(visitor);
         if(Statement!=null) Statement.traverseTopDown(visitor);
+        if(TestForEach!=null) TestForEach.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(Designator!=null) Designator.traverseBottomUp(visitor);
+        if(ForeachFlag!=null) ForeachFlag.traverseBottomUp(visitor);
+        if(ForeachIdent!=null) ForeachIdent.traverseBottomUp(visitor);
         if(Statement!=null) Statement.traverseBottomUp(visitor);
+        if(TestForEach!=null) TestForEach.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -69,17 +87,26 @@ public class ForEachStatementClass extends Statement {
         buffer.append(tab);
         buffer.append("ForEachStatementClass(\n");
 
-        if(Designator!=null)
-            buffer.append(Designator.toString("  "+tab));
+        if(ForeachFlag!=null)
+            buffer.append(ForeachFlag.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        buffer.append(" "+tab+feIdent);
+        if(ForeachIdent!=null)
+            buffer.append(ForeachIdent.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
         buffer.append("\n");
 
         if(Statement!=null)
             buffer.append(Statement.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(TestForEach!=null)
+            buffer.append(TestForEach.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

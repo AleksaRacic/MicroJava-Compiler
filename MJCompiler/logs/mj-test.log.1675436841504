@@ -1,0 +1,244 @@
+INFO  16:06:13,611 - Compiling source file: /Users/racicaleksa/Projects/Semestar-7/PP1/MicroJava-Compiler/MJCompiler/test/testDevelop.mj
+INFO  16:06:13,625 - #2 program
+INFO  16:06:13,625 - #49 test301
+INFO  16:06:13,625 - #49 int
+INFO  16:06:13,626 - #49 a
+INFO  16:06:13,626 - #37 ,
+INFO  16:06:13,626 - #49 b
+INFO  16:06:13,626 - #41 [
+INFO  16:06:13,626 - #42 ]
+INFO  16:06:13,626 - #35 ;
+INFO  16:06:13,626 - #8 const
+INFO  16:06:13,626 - #49 int
+INFO  16:06:13,627 - #49 c
+INFO  16:06:13,627 - #32 =
+INFO  16:06:13,627 - #48 5
+INFO  16:06:13,627 - #35 ;
+INFO  16:06:13,627 - #8 const
+INFO  16:06:13,627 - #49 bool
+INFO  16:06:13,627 - #49 bol1
+INFO  16:06:13,627 - #32 =
+INFO  16:06:13,627 - #47 true
+INFO  16:06:13,627 - #35 ;
+INFO  16:06:13,627 - #49 char
+INFO  16:06:13,627 - #49 k
+INFO  16:06:13,627 - #35 ;
+INFO  16:06:13,627 - #43 {
+INFO  16:06:13,627 - #14 void
+INFO  16:06:13,627 - #49 main
+INFO  16:06:13,627 - #39 (
+INFO  16:06:13,628 - #40 )
+INFO  16:06:13,628 - #49 int
+INFO  16:06:13,628 - #49 bodovi
+INFO  16:06:13,628 - #35 ;
+INFO  16:06:13,628 - #49 bool
+INFO  16:06:13,628 - #49 bt
+INFO  16:06:13,628 - #35 ;
+INFO  16:06:13,628 - #43 {
+INFO  16:06:13,628 - #49 a
+INFO  16:06:13,628 - #32 =
+INFO  16:06:13,628 - #49 c
+INFO  16:06:13,628 - #35 ;
+INFO  16:06:13,628 - #49 a
+INFO  16:06:13,629 - #32 =
+INFO  16:06:13,629 - #48 6
+INFO  16:06:13,629 - #35 ;
+INFO  16:06:13,630 - #49 a
+INFO  16:06:13,630 - #33 ++
+INFO  16:06:13,630 - #35 ;
+INFO  16:06:13,630 - #49 bt
+INFO  16:06:13,630 - #33 ++
+INFO  16:06:13,630 - #35 ;
+INFO  16:06:13,630 - #49 k
+INFO  16:06:13,630 - #33 ++
+INFO  16:06:13,630 - #35 ;
+INFO  16:06:13,631 - #44 }
+INFO  16:06:13,631 - #44 }
+INFO  16:06:13,633 - ProgramClass(
+  ProgNameClass(
+   test301
+  ) [ProgNameClass]
+  VarDecListClass(
+    ConstDecListClass(
+      ConstDecListClass(
+        VarDecListClass(
+          NoDecListClass(
+          ) [NoDecListClass]
+          VarDeclClass(
+            TypeClass(
+             int
+            ) [TypeClass]
+            VarDecListElementClass(
+              VarDecElementClass(
+               a
+                NoArrayBracketsClass(
+                ) [NoArrayBracketsClass]
+              ) [VarDecElementClass]
+              VarDecLastListElementClass(
+                VarDecLastElementClass(
+                 b
+                  ArrayBracketsClass(
+                  ) [ArrayBracketsClass]
+                ) [VarDecLastElementClass]
+              ) [VarDecLastListElementClass]
+            ) [VarDecListElementClass]
+          ) [VarDeclClass]
+        ) [VarDecListClass]
+        ConstDeclClass(
+          TypeClass(
+           int
+          ) [TypeClass]
+          ConstDecLastElementClass(
+            ConstElementNumberLast(
+             c
+             5
+            ) [ConstElementNumberLast]
+          ) [ConstDecLastElementClass]
+        ) [ConstDeclClass]
+      ) [ConstDecListClass]
+      ConstDeclClass(
+        TypeClass(
+         bool
+        ) [TypeClass]
+        ConstDecLastElementClass(
+          ConstElementBooleanLast(
+           bol1
+           true
+          ) [ConstElementBooleanLast]
+        ) [ConstDecLastElementClass]
+      ) [ConstDeclClass]
+    ) [ConstDecListClass]
+    VarDeclClass(
+      TypeClass(
+       char
+      ) [TypeClass]
+      VarDecLastListElementClass(
+        VarDecLastElementClass(
+         k
+          NoArrayBracketsClass(
+          ) [NoArrayBracketsClass]
+        ) [VarDecLastElementClass]
+      ) [VarDecLastListElementClass]
+    ) [VarDeclClass]
+  ) [VarDecListClass]
+  ListOfMethodDeclClass(
+    EmptyListOfMethodDeclClass(
+    ) [EmptyListOfMethodDeclClass]
+    MethodDeclClass(
+      VoidMethodClass(
+       main
+      ) [VoidMethodClass]
+      FormParsEnd(
+      ) [FormParsEnd]
+      ListOfVarDeclClass(
+        ListOfVarDeclClass(
+          EmptyListOfVarDeclClass(
+          ) [EmptyListOfVarDeclClass]
+          VarDeclClass(
+            TypeClass(
+             int
+            ) [TypeClass]
+            VarDecLastListElementClass(
+              VarDecLastElementClass(
+               bodovi
+                NoArrayBracketsClass(
+                ) [NoArrayBracketsClass]
+              ) [VarDecLastElementClass]
+            ) [VarDecLastListElementClass]
+          ) [VarDeclClass]
+        ) [ListOfVarDeclClass]
+        VarDeclClass(
+          TypeClass(
+           bool
+          ) [TypeClass]
+          VarDecLastListElementClass(
+            VarDecLastElementClass(
+             bt
+              NoArrayBracketsClass(
+              ) [NoArrayBracketsClass]
+            ) [VarDecLastElementClass]
+          ) [VarDecLastListElementClass]
+        ) [VarDeclClass]
+      ) [ListOfVarDeclClass]
+      ListOfStatementsClass(
+        ListOfStatementsClass(
+          ListOfStatementsClass(
+            ListOfStatementsClass(
+              ListOfStatementsClass(
+                EmptyListOfStatementsClass(
+                ) [EmptyListOfStatementsClass]
+                DesignatorStatementClass(
+                  DesignatorStatementAssignClass(
+                    DesignatorClass(
+                     a
+                    ) [DesignatorClass]
+                    PositiveExprClass(
+                      SingleFactorTermClass(
+                        DesignatorFactorClass(
+                          DesignatorClass(
+                           c
+                          ) [DesignatorClass]
+                        ) [DesignatorFactorClass]
+                      ) [SingleFactorTermClass]
+                    ) [PositiveExprClass]
+                  ) [DesignatorStatementAssignClass]
+                ) [DesignatorStatementClass]
+              ) [ListOfStatementsClass]
+              DesignatorStatementClass(
+                DesignatorStatementAssignClass(
+                  DesignatorClass(
+                   a
+                  ) [DesignatorClass]
+                  PositiveExprClass(
+                    SingleFactorTermClass(
+                      NumberFactorClass(
+                       6
+                      ) [NumberFactorClass]
+                    ) [SingleFactorTermClass]
+                  ) [PositiveExprClass]
+                ) [DesignatorStatementAssignClass]
+              ) [DesignatorStatementClass]
+            ) [ListOfStatementsClass]
+            DesignatorStatementClass(
+              DesignatorStatementIncClass(
+                DesignatorClass(
+                 a
+                ) [DesignatorClass]
+              ) [DesignatorStatementIncClass]
+            ) [DesignatorStatementClass]
+          ) [ListOfStatementsClass]
+          DesignatorStatementClass(
+            DesignatorStatementIncClass(
+              DesignatorClass(
+               bt
+              ) [DesignatorClass]
+            ) [DesignatorStatementIncClass]
+          ) [DesignatorStatementClass]
+        ) [ListOfStatementsClass]
+        DesignatorStatementClass(
+          DesignatorStatementIncClass(
+            DesignatorClass(
+             k
+            ) [DesignatorClass]
+          ) [DesignatorStatementIncClass]
+        ) [DesignatorStatementClass]
+      ) [ListOfStatementsClass]
+    ) [MethodDeclClass]
+  ) [ListOfMethodDeclClass]
+) [ProgramClass]
+INFO  16:06:13,633 - ====================================
+INFO  16:06:13,634 - Kreirana je promenjiva INT a na liniji 4
+INFO  16:06:13,634 - Kreirana je promenjiva INT b[] na liniji 4
+INFO  16:06:13,634 - Kreirana je konstanta INT c na liniji 5
+INFO  16:06:13,634 - Kreirana je konstanta BOOL bol1 na liniji 6
+INFO  16:06:13,635 - Kreirana je promenjiva CHAR k na liniji 7
+INFO  16:06:13,635 - Definicija funkcije NONE main na liniji 9
+INFO  16:06:13,635 - Kreirana je promenjiva INT bodovi na liniji 10
+INFO  16:06:13,635 - Kreirana je promenjiva BOOL bt na liniji 11
+INFO  16:06:13,635 - Detektovan je pristup simbolickoj konstantni c na liniji 13
+ERROR 16:06:13,635 - SEMANTICKA GRESKA: Designator btmora biti tipa INT na liniji 17
+ERROR 16:06:13,635 - SEMANTICKA GRESKA: Designator kmora biti tipa INT na liniji 18
+INFO  16:06:13,635 - ====================================
+
+
+ERROR 16:06:13,635 - Parsiranje NIJE uspesno zavrseno!

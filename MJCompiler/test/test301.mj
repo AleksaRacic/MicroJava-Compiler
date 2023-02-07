@@ -41,6 +41,8 @@ program test301
 
 		niz2 = new int[2];
 		[niz2[0],,niz2[niz[nula]]] = niz;
+		
+		//[niz2[0],,niz[niz[nula]]] = niz;
 
 		print(niz2[0]);	// niz[0] -> 1
 		print(niz2[1]); // niz[2] -> 6 

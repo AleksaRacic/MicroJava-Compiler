@@ -1,0 +1,114 @@
+INFO  18:10:30,799 - Compiling source file: /Users/racicaleksa/Projects/Semestar-7/PP1/MicroJava-Compiler/MJCompiler/test/testDevelop.mj
+INFO  18:10:30,813 - #2 program
+INFO  18:10:30,813 - #49 test301
+INFO  18:10:30,813 - #8 const
+INFO  18:10:30,813 - #49 bool
+INFO  18:10:30,813 - #49 h
+INFO  18:10:30,813 - #32 =
+INFO  18:10:30,813 - #47 true
+INFO  18:10:30,813 - #37 ,
+INFO  18:10:30,813 - #49 b
+INFO  18:10:30,813 - #32 =
+INFO  18:10:30,813 - #48 1
+INFO  18:10:30,813 - #37 ,
+INFO  18:10:30,813 - #49 c
+INFO  18:10:30,813 - #32 =
+INFO  18:10:30,813 - #47 false
+INFO  18:10:30,814 - #35 ;
+INFO  18:10:30,814 - #8 const
+INFO  18:10:30,814 - #49 int
+INFO  18:10:30,814 - #49 nula
+INFO  18:10:30,814 - #32 =
+INFO  18:10:30,814 - #48 0
+INFO  18:10:30,814 - #35 ;
+INFO  18:10:30,814 - #8 const
+INFO  18:10:30,814 - #49 int
+INFO  18:10:30,814 - #49 jedan
+INFO  18:10:30,814 - #32 =
+INFO  18:10:30,814 - #48 1
+INFO  18:10:30,814 - #35 ;
+INFO  18:10:30,814 - #8 const
+INFO  18:10:30,814 - #49 int
+INFO  18:10:30,814 - #49 pet
+INFO  18:10:30,814 - #32 =
+INFO  18:10:30,814 - #48 5
+INFO  18:10:30,814 - #35 ;
+INFO  18:10:30,814 - #43 {
+INFO  18:10:30,814 - #44 }
+INFO  18:10:30,816 - ProgramClass(
+  ProgNameClass(
+   test301
+  ) [ProgNameClass]
+  ConstDecListClass(
+    ConstDecListClass(
+      ConstDecListClass(
+        ConstDecListClass(
+          NoDecListClass(
+          ) [NoDecListClass]
+          ConstDeclClass(
+            TypeClass(
+             bool
+            ) [TypeClass]
+            ConstDecListElementClass(
+              ConstElementBoolean(
+               h
+               true
+              ) [ConstElementBoolean]
+              ConstDecListElementClass(
+                ConstElementNumber(
+                 b
+                 1
+                ) [ConstElementNumber]
+                ConstDecLastElementClass(
+                  ConstElementBooleanLast(
+                   c
+                   false
+                  ) [ConstElementBooleanLast]
+                ) [ConstDecLastElementClass]
+              ) [ConstDecListElementClass]
+            ) [ConstDecListElementClass]
+          ) [ConstDeclClass]
+        ) [ConstDecListClass]
+        ConstDeclClass(
+          TypeClass(
+           int
+          ) [TypeClass]
+          ConstDecLastElementClass(
+            ConstElementNumberLast(
+             nula
+             0
+            ) [ConstElementNumberLast]
+          ) [ConstDecLastElementClass]
+        ) [ConstDeclClass]
+      ) [ConstDecListClass]
+      ConstDeclClass(
+        TypeClass(
+         int
+        ) [TypeClass]
+        ConstDecLastElementClass(
+          ConstElementNumberLast(
+           jedan
+           1
+          ) [ConstElementNumberLast]
+        ) [ConstDecLastElementClass]
+      ) [ConstDeclClass]
+    ) [ConstDecListClass]
+    ConstDeclClass(
+      TypeClass(
+       int
+      ) [TypeClass]
+      ConstDecLastElementClass(
+        ConstElementNumberLast(
+         pet
+         5
+        ) [ConstElementNumberLast]
+      ) [ConstDecLastElementClass]
+    ) [ConstDeclClass]
+  ) [ConstDecListClass]
+  EmptyListOfMethodDeclClass(
+  ) [EmptyListOfMethodDeclClass]
+) [ProgramClass]
+INFO  18:10:30,816 - ====================================
+ERROR 18:10:30,819 - SEMANTICKA GRESKA[5]: Tip INT nije isti tip vrednosti kao i BOOL na liniji 5
+INFO  18:10:30,819 - ====================================
+INFO  18:10:30,819 - Parsiranje uspesno zavrseno!

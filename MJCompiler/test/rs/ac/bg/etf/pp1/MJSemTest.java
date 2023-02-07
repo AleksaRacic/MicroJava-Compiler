@@ -28,7 +28,7 @@ public class MJSemTest {
 		Reader br = null;
 		try {
 			
-			File sourceCode = new File("test/testDevelop.mj");	
+			File sourceCode = new File("test/test302.mj");	
 			log.info("Compiling source file: " + sourceCode.getAbsolutePath());
 			
 			br = new BufferedReader(new FileReader(sourceCode));
@@ -38,16 +38,8 @@ public class MJSemTest {
 			Symbol s = p.parse();
 			
 			Program prog = (Program)(s.value);
-			Tab.init();
 			log.info(prog.toString(""));
-			log.info("====================================");
-			
-			SemanticAnalyzer v = new SemanticAnalyzer();
-			prog.traverseBottomUp(v);
-			
-			log.info("====================================");
-			Tab.dump();
-			
+
 			
 			if(!p.errorDetected) {
 				log.info("Parsiranje uspesno zavrseno!");

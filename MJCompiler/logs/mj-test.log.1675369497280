@@ -1,0 +1,248 @@
+INFO  21:10:03,057 - Compiling source file: /Users/racicaleksa/Projects/Semestar-7/PP1/MicroJava-Compiler/MJCompiler/test/testDevelop.mj
+INFO  21:10:03,072 - #2 program
+INFO  21:10:03,072 - #49 test301
+INFO  21:10:03,072 - #8 const
+INFO  21:10:03,073 - #49 bool
+INFO  21:10:03,073 - #49 h
+INFO  21:10:03,073 - #32 =
+INFO  21:10:03,073 - #47 true
+INFO  21:10:03,073 - #37 ,
+INFO  21:10:03,073 - #49 b
+INFO  21:10:03,073 - #32 =
+INFO  21:10:03,073 - #48 1
+INFO  21:10:03,073 - #37 ,
+INFO  21:10:03,073 - #49 c
+INFO  21:10:03,073 - #32 =
+INFO  21:10:03,073 - #47 false
+INFO  21:10:03,073 - #35 ;
+INFO  21:10:03,073 - #8 const
+INFO  21:10:03,073 - #49 int
+INFO  21:10:03,073 - #49 nula
+INFO  21:10:03,074 - #32 =
+INFO  21:10:03,074 - #48 0
+INFO  21:10:03,074 - #37 ,
+INFO  21:10:03,074 - #49 int
+INFO  21:10:03,074 - #32 =
+INFO  21:10:03,074 - #48 7
+INFO  21:10:03,074 - #35 ;
+INFO  21:10:03,074 - #8 const
+INFO  21:10:03,074 - #49 int
+INFO  21:10:03,074 - #49 jedan
+INFO  21:10:03,074 - #32 =
+INFO  21:10:03,074 - #48 1
+INFO  21:10:03,074 - #35 ;
+INFO  21:10:03,074 - #8 const
+INFO  21:10:03,074 - #49 int
+INFO  21:10:03,074 - #49 pet
+INFO  21:10:03,074 - #32 =
+INFO  21:10:03,074 - #48 5
+INFO  21:10:03,074 - #35 ;
+INFO  21:10:03,074 - #49 int
+INFO  21:10:03,074 - #49 a1
+INFO  21:10:03,074 - #37 ,
+INFO  21:10:03,075 - #49 b
+INFO  21:10:03,075 - #37 ,
+INFO  21:10:03,075 - #49 c
+INFO  21:10:03,075 - #35 ;
+INFO  21:10:03,075 - #49 char
+INFO  21:10:03,075 - #49 a
+INFO  21:10:03,075 - #37 ,
+INFO  21:10:03,075 - #49 d
+INFO  21:10:03,075 - #37 ,
+INFO  21:10:03,075 - #49 g
+INFO  21:10:03,075 - #35 ;
+INFO  21:10:03,075 - #49 int
+INFO  21:10:03,075 - #49 a2
+INFO  21:10:03,075 - #41 [
+INFO  21:10:03,075 - #42 ]
+INFO  21:10:03,075 - #37 ,
+INFO  21:10:03,076 - #49 b
+INFO  21:10:03,076 - #41 [
+INFO  21:10:03,076 - #42 ]
+INFO  21:10:03,076 - #37 ,
+INFO  21:10:03,076 - #49 b2
+INFO  21:10:03,076 - #35 ;
+INFO  21:10:03,076 - #43 {
+INFO  21:10:03,076 - #44 }
+INFO  21:10:03,079 - ProgramClass(
+  ProgNameClass(
+   test301
+  ) [ProgNameClass]
+  VarDecListClass(
+    VarDecListClass(
+      VarDecListClass(
+        ConstDecListClass(
+          ConstDecListClass(
+            ConstDecListClass(
+              ConstDecListClass(
+                NoDecListClass(
+                ) [NoDecListClass]
+                ConstDeclClass(
+                  TypeClass(
+                   bool
+                  ) [TypeClass]
+                  ConstDecListElementClass(
+                    ConstElementBoolean(
+                     h
+                     true
+                    ) [ConstElementBoolean]
+                    ConstDecListElementClass(
+                      ConstElementNumber(
+                       b
+                       1
+                      ) [ConstElementNumber]
+                      ConstDecLastElementClass(
+                        ConstElementBooleanLast(
+                         c
+                         false
+                        ) [ConstElementBooleanLast]
+                      ) [ConstDecLastElementClass]
+                    ) [ConstDecListElementClass]
+                  ) [ConstDecListElementClass]
+                ) [ConstDeclClass]
+              ) [ConstDecListClass]
+              ConstDeclClass(
+                TypeClass(
+                 int
+                ) [TypeClass]
+                ConstDecListElementClass(
+                  ConstElementNumber(
+                   nula
+                   0
+                  ) [ConstElementNumber]
+                  ConstDecLastElementClass(
+                    ConstElementNumberLast(
+                     int
+                     7
+                    ) [ConstElementNumberLast]
+                  ) [ConstDecLastElementClass]
+                ) [ConstDecListElementClass]
+              ) [ConstDeclClass]
+            ) [ConstDecListClass]
+            ConstDeclClass(
+              TypeClass(
+               int
+              ) [TypeClass]
+              ConstDecLastElementClass(
+                ConstElementNumberLast(
+                 jedan
+                 1
+                ) [ConstElementNumberLast]
+              ) [ConstDecLastElementClass]
+            ) [ConstDeclClass]
+          ) [ConstDecListClass]
+          ConstDeclClass(
+            TypeClass(
+             int
+            ) [TypeClass]
+            ConstDecLastElementClass(
+              ConstElementNumberLast(
+               pet
+               5
+              ) [ConstElementNumberLast]
+            ) [ConstDecLastElementClass]
+          ) [ConstDeclClass]
+        ) [ConstDecListClass]
+        VarDeclClass(
+          TypeClass(
+           int
+          ) [TypeClass]
+          VarDecListElementClass(
+            VarDecElementClass(
+             a1
+              NoArrayBracketsClass(
+              ) [NoArrayBracketsClass]
+            ) [VarDecElementClass]
+            VarDecListElementClass(
+              VarDecElementClass(
+               b
+                NoArrayBracketsClass(
+                ) [NoArrayBracketsClass]
+              ) [VarDecElementClass]
+              VarDecLastListElementClass(
+                VarDecLastElementClass(
+                 c
+                  NoArrayBracketsClass(
+                  ) [NoArrayBracketsClass]
+                ) [VarDecLastElementClass]
+              ) [VarDecLastListElementClass]
+            ) [VarDecListElementClass]
+          ) [VarDecListElementClass]
+        ) [VarDeclClass]
+      ) [VarDecListClass]
+      VarDeclClass(
+        TypeClass(
+         char
+        ) [TypeClass]
+        VarDecListElementClass(
+          VarDecElementClass(
+           a
+            NoArrayBracketsClass(
+            ) [NoArrayBracketsClass]
+          ) [VarDecElementClass]
+          VarDecListElementClass(
+            VarDecElementClass(
+             d
+              NoArrayBracketsClass(
+              ) [NoArrayBracketsClass]
+            ) [VarDecElementClass]
+            VarDecLastListElementClass(
+              VarDecLastElementClass(
+               g
+                NoArrayBracketsClass(
+                ) [NoArrayBracketsClass]
+              ) [VarDecLastElementClass]
+            ) [VarDecLastListElementClass]
+          ) [VarDecListElementClass]
+        ) [VarDecListElementClass]
+      ) [VarDeclClass]
+    ) [VarDecListClass]
+    VarDeclClass(
+      TypeClass(
+       int
+      ) [TypeClass]
+      VarDecListElementClass(
+        VarDecElementClass(
+         a2
+          ArrayBracketsClass(
+          ) [ArrayBracketsClass]
+        ) [VarDecElementClass]
+        VarDecListElementClass(
+          VarDecElementClass(
+           b
+            ArrayBracketsClass(
+            ) [ArrayBracketsClass]
+          ) [VarDecElementClass]
+          VarDecLastListElementClass(
+            VarDecLastElementClass(
+             b2
+              NoArrayBracketsClass(
+              ) [NoArrayBracketsClass]
+            ) [VarDecLastElementClass]
+          ) [VarDecLastListElementClass]
+        ) [VarDecListElementClass]
+      ) [VarDecListElementClass]
+    ) [VarDeclClass]
+  ) [VarDecListClass]
+  EmptyListOfMethodDeclClass(
+  ) [EmptyListOfMethodDeclClass]
+) [ProgramClass]
+INFO  21:10:03,080 - ====================================
+INFO  21:10:03,081 - Kreirana je konstanta BOOL h na liniji 5
+ERROR 21:10:03,081 - SEMANTICKA GRESKA[5]: Tip INT nije isti tip vrednosti kao i BOOL na liniji 5
+INFO  21:10:03,081 - Kreirana je konstanta BOOL c na liniji 5
+INFO  21:10:03,081 - Kreirana je konstanta INT nula na liniji 7
+ERROR 21:10:03,081 - SEMANTICKA GRESKA[7]: Ime int je vec deklarisano na liniji 7
+INFO  21:10:03,081 - Kreirana je konstanta INT jedan na liniji 8
+INFO  21:10:03,081 - Kreirana je konstanta INT pet na liniji 9
+INFO  21:10:03,081 - Kreirana je promenjiva INT a1 na liniji 11
+INFO  21:10:03,081 - Kreirana je promenjiva INT b na liniji 11
+ERROR 21:10:03,081 - SEMANTICKA GRESKA: Ime promenljive c je vec deklarisano na liniji 11
+INFO  21:10:03,081 - Kreirana je promenjiva CHAR a na liniji 12
+INFO  21:10:03,081 - Kreirana je promenjiva CHAR d na liniji 12
+INFO  21:10:03,081 - Kreirana je promenjiva CHAR g na liniji 12
+INFO  21:10:03,081 - Kreirana je promenjiva INT a2[] na liniji 13
+ERROR 21:10:03,081 - SEMANTICKA GRESKA: Ime promenljive b je vec deklarisano na liniji 13
+INFO  21:10:03,081 - Kreirana je promenjiva INT b2[] na liniji 13
+INFO  21:10:03,081 - ====================================
+ERROR 21:10:03,082 - Parsiranje NIJE uspesno zavrseno!

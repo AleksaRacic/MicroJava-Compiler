@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 3/1/2023 1:47:18
+// 7/1/2023 2:0:43
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -19,8 +19,8 @@ public interface Visitor {
     public void visit(Addop Addop);
     public void visit(Factor Factor);
     public void visit(CondTerm CondTerm);
-    public void visit(VarDecElement VarDecElement);
     public void visit(Designator Designator);
+    public void visit(VarDecElement VarDecElement);
     public void visit(Term Term);
     public void visit(ClassBody ClassBody);
     public void visit(FormParsList FormParsList);
@@ -35,6 +35,7 @@ public interface Visitor {
     public void visit(ListOfMethodDecl ListOfMethodDecl);
     public void visit(ListOfVarDecl ListOfVarDecl);
     public void visit(Expr Expr);
+    public void visit(ArrDsignator ArrDsignator);
     public void visit(ActPars ActPars);
     public void visit(MethodTypeName MethodTypeName);
     public void visit(DesignatorStatement DesignatorStatement);
@@ -55,13 +56,16 @@ public interface Visitor {
     public void visit(GrOpClass GrOpClass);
     public void visit(NeqOpClass NeqOpClass);
     public void visit(EqOpClass EqOpClass);
+    public void visit(ArrDesignator ArrDesignator);
     public void visit(DesignatorClass DesignatorClass);
     public void visit(ArrayDesignatorClass ArrayDesignatorClass);
     public void visit(ClassDesignatorClass ClassDesignatorClass);
     public void visit(MinusOpClass MinusOpClass);
     public void visit(PlusOpClass PlusOpClass);
+    public void visit(ActParsElement ActParsElement);
     public void visit(EmptyListOfActParClass EmptyListOfActParClass);
     public void visit(ListOfActParExprClass ListOfActParExprClass);
+    public void visit(ActParsFlag ActParsFlag);
     public void visit(NoActualParsClass NoActualParsClass);
     public void visit(ActualParsClass ActualParsClass);
     public void visit(ModClass ModClass);
@@ -84,6 +88,7 @@ public interface Visitor {
     public void visit(CondFactClass CondFactClass);
     public void visit(SingleCondTermClass SingleCondTermClass);
     public void visit(CondTermClass CondTermClass);
+    public void visit(OrJump OrJump);
     public void visit(SingleConditionClass SingleConditionClass);
     public void visit(ConditionClass ConditionClass);
     public void visit(DesignatorEpsilonClass DesignatorEpsilonClass);
@@ -98,6 +103,13 @@ public interface Visitor {
     public void visit(DesignatorStatementAssignClass DesignatorStatementAssignClass);
     public void visit(ErrIfCondClass ErrIfCondClass);
     public void visit(IfCondClass IfCondClass);
+    public void visit(TestForEach TestForEach);
+    public void visit(ForeachIdent ForeachIdent);
+    public void visit(ForeachFlag ForeachFlag);
+    public void visit(WhileFlag WhileFlag);
+    public void visit(StartIfStatement StartIfStatement);
+    public void visit(EndIf EndIf);
+    public void visit(StartIf StartIf);
     public void visit(StatementBlock StatementBlock);
     public void visit(ForEachStatementClass ForEachStatementClass);
     public void visit(PrintStatementWidthClass PrintStatementWidthClass);

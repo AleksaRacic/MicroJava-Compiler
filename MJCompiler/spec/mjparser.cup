@@ -89,7 +89,8 @@ nonterminal VarDecl, ConstDecl, ClassDecl;
 	nonterminal ListOfVarDecl, ConstructorDecList, ConstructorDecl;
 	
 	//Method
-	nonterminal MethodDecl, MethodDecList, ListOfMethodDecl, MethodTypeName;
+	nonterminal MethodDecl, MethodDecList, ListOfMethodDecl;
+	nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodTypeName;
 	
 	//FormPairs
 	nonterminal FormParsList, FormParsElement;
@@ -104,19 +105,27 @@ nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
 //Statement
 nonterminal ListOfStatements, Statement;
 
+//LOOPS
+
+nonterminal WhileFlag, TestForEach;
+
 //Designator
-nonterminal DesignatorStatement, ActPars, ListOfActPars, OptDesignatorList, DesignatorOrEpsilon;
-nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator;
+nonterminal DesignatorStatement, ActPars, ListOfActPars, OptDesignatorList, ActParsFlag;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator, DesignatorOrEpsilon, ArrDsignator, ForeachIdent, ForeachFlag;
 
 //Condition
-nonterminal IfCond, Condition, CondTerm, CondFact;
+nonterminal IfCond, Condition, CondTerm;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct CondFact;
 
 //Expr
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Expr, Term, Factor;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Expr, Term, Factor, ActParsElement;
 
 
 //Operators
 nonterminal Relop, Mulop, Addop;
+
+//IF ELSE HELP
+nonterminal StartIf, EndIf, OrJump, StartIfStatement;
 
 //---ListOf... - 0 or more  ...List - 1 or more
 
@@ -232,9 +241,9 @@ ListOfStatements ::= (ListOfStatementsClass) ListOfStatements Statement
 
 
 Statement ::= 	(DesignatorStatementClass) DesignatorStatement
-			|	(IfStatementClass) IF LPAREN IfCond Statement
-			|	(IfElseStatementClass) IF LPAREN IfCond Statement ELSE Statement
-			|	(WhileStatementClass) WHILE LPAREN Condition RPAREN Statement
+			|	(IfStatementClass) StartIf IF LPAREN IfCond StartIfStatement Statement EndIf
+			|	(IfElseStatementClass) StartIf IF LPAREN IfCond StartIfStatement Statement EndIf ELSE Statement
+			|	(WhileStatementClass) WhileFlag LPAREN Condition RPAREN Statement
 			|	(BreakStatementClass) BREAK SEMI
 			|	(ContinueStatementClass) CONTINUE SEMI
 			|	(ReturnStatementClass) RETURN SEMI
@@ -242,11 +251,23 @@ Statement ::= 	(DesignatorStatementClass) DesignatorStatement
 			|	(ReadStatementClass) READ LPAREN Designator RPAREN SEMI
 			|	(PrintStatementClass) PRINT LPAREN Expr RPAREN SEMI
 			|	(PrintStatementWidthClass) PRINT LPAREN Expr COMMA NUMBER:width RPAREN SEMI
-			|	(ForEachStatementClass) Designator DOT FOREACH LPAREN IDENT:feIdent LAMBDA Statement RPAREN SEMI
+			|	(ForEachStatementClass) ForeachFlag ForeachIdent LAMBDA Statement RPAREN SEMI TestForEach
 			|	(StatementBlock) LBRACE ListOfStatements RBRACE
 			;
+//Push vars stack
+StartIf ::= (StartIf);
 
+//Fixup 
+EndIf ::= (EndIf);
+StartIfStatement ::= (StartIfStatement);
 
+WhileFlag ::= (WhileFlag) WHILE;
+
+ForeachFlag ::= (ForeachFlag) Designator DOT FOREACH LPAREN;
+
+ForeachIdent ::= (ForeachIdent) IDENT:feIdent;
+
+TestForEach ::= (TestForEach);
 	
 IfCond ::= 	(IfCondClass) Condition RPAREN
 		|	(ErrIfCondClass) error RPAREN:l 
@@ -270,10 +291,12 @@ DesignatorOrEpsilon ::=	(DesignArrAssignmentClass) Designator
 					|	(DesignatorEpsilonClass) /* epsilon */
 					;
 
-Condition ::= 	(ConditionClass) Condition OR CondTerm
+Condition ::= 	(ConditionClass) Condition OrJump OR CondTerm
 			|	(SingleConditionClass) CondTerm
 			;
-			
+//If you have successfully reached end of term or and terms jump to if statement
+OrJump ::= (OrJump);
+
 CondTerm ::= 	(CondTermClass) CondTerm AND CondFact
 			|	(SingleCondTermClass) CondFact
 			;
@@ -305,25 +328,28 @@ Mulop ::=	(MulClass) MUL
 		|	(DivClass) DIV
 		|	(ModClass) MOD
 		;	
-ActPars ::= (ActualParsClass) ListOfActPars
-		| 	(NoActualParsClass) /* epsilon */
+ActPars ::= (ActualParsClass) ActParsFlag ListOfActPars
+		| 	(NoActualParsClass) ActParsFlag /* epsilon */
 		;
 
+ActParsFlag ::= (ActParsFlag);
 
-//dodaj nove akcije da detektujes parametre u func call
-
-ListOfActPars ::= 	(ListOfActParExprClass) ListOfActPars COMMA Expr
-				|	(EmptyListOfActParClass) Expr
+ListOfActPars ::= 	(ListOfActParExprClass) ListOfActPars COMMA ActParsElement
+				|	(EmptyListOfActParClass) ActParsElement
 				;
+				
+ActParsElement ::= (ActParsElement) Expr;
 					
 Addop ::= 	(PlusOpClass) PLUS
 		|	(MinusOpClass) MINUS
 		;
 		
 Designator ::=	(ClassDesignatorClass) Designator DOT IDENT:name
-			|	(ArrayDesignatorClass) Designator LBRACKET Expr RBRACKET
+			|	(ArrayDesignatorClass) ArrDsignator LBRACKET Expr RBRACKET
 			|	(DesignatorClass) IDENT:name 
 			;
+
+ArrDsignator ::= (ArrDesignator) Designator;
 
 Relop ::= 	(EqOpClass) EQ
 		| 	(NeqOpClass) NEQ

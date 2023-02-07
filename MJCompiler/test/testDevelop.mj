@@ -1,30 +1,23 @@
-// Test301
 
-program test301
-	const int cinilac = 4, delilac = 3;
-	int r;
-	const int pet = 6;
-	const int jedan = 1;
+
+
+//Test 302
+
+program test302
+
+
+int niz[];
+int a, curr, niz2;
+
 {
 
-	int zapremina()
-			int z;
-		{
-			z = cinilac;
-			return z *(r/delilac);
-		}
-		
-	void main()	
-		int bodovi;
-		bool bt;
+	void main()
 	{
-		bodovi = 0;
-		bodovi++;
-		bodovi = bodovi + jedan;
-		bodovi = bodovi * pet;
-		bodovi--;
-		print(bodovi);
+		
+		niz.foreach(curr => {
+			niz2 = niz2 + curr * curr;
+		});
+
+	
 	}
 }
-
-

@@ -1,0 +1,552 @@
+INFO  01:47:39,366 - Compiling source file: /Users/racicaleksa/Projects/Semestar-7/PP1/MicroJava-Compiler/MJCompiler/test/testDevelop.mj
+INFO  01:47:39,378 - #2 program
+INFO  01:47:39,378 - #49 test301
+INFO  01:47:39,378 - #8 const
+INFO  01:47:39,378 - #49 bool
+INFO  01:47:39,378 - #49 h
+INFO  01:47:39,378 - #32 =
+INFO  01:47:39,378 - #47 true
+INFO  01:47:39,378 - #37 ,
+INFO  01:47:39,378 - #49 b
+INFO  01:47:39,378 - #32 =
+INFO  01:47:39,378 - #48 1
+INFO  01:47:39,378 - #37 ,
+INFO  01:47:39,378 - #49 c
+INFO  01:47:39,378 - #32 =
+INFO  01:47:39,378 - #47 false
+INFO  01:47:39,378 - #35 ;
+INFO  01:47:39,378 - #8 const
+INFO  01:47:39,379 - #49 int
+INFO  01:47:39,379 - #49 nula
+INFO  01:47:39,379 - #32 =
+INFO  01:47:39,379 - #48 0
+INFO  01:47:39,379 - #37 ,
+INFO  01:47:39,379 - #49 int
+INFO  01:47:39,379 - #32 =
+INFO  01:47:39,379 - #48 7
+INFO  01:47:39,379 - #35 ;
+INFO  01:47:39,379 - #8 const
+INFO  01:47:39,379 - #49 int
+INFO  01:47:39,379 - #49 jedan
+INFO  01:47:39,379 - #32 =
+INFO  01:47:39,379 - #48 1
+INFO  01:47:39,379 - #35 ;
+INFO  01:47:39,379 - #8 const
+INFO  01:47:39,379 - #49 int
+INFO  01:47:39,379 - #49 pet
+INFO  01:47:39,379 - #32 =
+INFO  01:47:39,379 - #48 5
+INFO  01:47:39,379 - #35 ;
+INFO  01:47:39,379 - #49 int
+INFO  01:47:39,379 - #49 a1
+INFO  01:47:39,379 - #37 ,
+INFO  01:47:39,379 - #49 b
+INFO  01:47:39,380 - #37 ,
+INFO  01:47:39,380 - #49 c
+INFO  01:47:39,380 - #35 ;
+INFO  01:47:39,380 - #49 char
+INFO  01:47:39,381 - #49 a
+INFO  01:47:39,381 - #37 ,
+INFO  01:47:39,381 - #49 d
+INFO  01:47:39,381 - #37 ,
+INFO  01:47:39,381 - #49 g
+INFO  01:47:39,381 - #35 ;
+INFO  01:47:39,381 - #49 int
+INFO  01:47:39,381 - #49 a2
+INFO  01:47:39,381 - #41 [
+INFO  01:47:39,381 - #42 ]
+INFO  01:47:39,381 - #37 ,
+INFO  01:47:39,382 - #49 b
+INFO  01:47:39,382 - #41 [
+INFO  01:47:39,382 - #42 ]
+INFO  01:47:39,382 - #37 ,
+INFO  01:47:39,382 - #49 b2
+INFO  01:47:39,382 - #35 ;
+INFO  01:47:39,382 - #43 {
+INFO  01:47:39,382 - #49 int
+INFO  01:47:39,382 - #49 zapremina
+INFO  01:47:39,382 - #39 (
+INFO  01:47:39,382 - #40 )
+INFO  01:47:39,382 - #49 int
+INFO  01:47:39,382 - #49 z
+INFO  01:47:39,382 - #35 ;
+INFO  01:47:39,382 - #43 {
+INFO  01:47:39,383 - #49 z
+INFO  01:47:39,383 - #32 =
+INFO  01:47:39,383 - #49 cinilac
+INFO  01:47:39,383 - #35 ;
+INFO  01:47:39,383 - #4 return
+INFO  01:47:39,383 - #49 z
+INFO  01:47:39,383 - #21 *
+INFO  01:47:39,383 - #39 (
+INFO  01:47:39,383 - #49 r
+INFO  01:47:39,383 - #22 /
+INFO  01:47:39,383 - #49 delilac
+INFO  01:47:39,384 - #40 )
+INFO  01:47:39,384 - #35 ;
+INFO  01:47:39,384 - #44 }
+INFO  01:47:39,384 - #14 void
+INFO  01:47:39,384 - #49 main
+INFO  01:47:39,384 - #39 (
+INFO  01:47:39,384 - #40 )
+INFO  01:47:39,384 - #49 int
+INFO  01:47:39,384 - #49 bodovi
+INFO  01:47:39,384 - #35 ;
+INFO  01:47:39,384 - #49 bool
+INFO  01:47:39,384 - #49 bt
+INFO  01:47:39,384 - #35 ;
+INFO  01:47:39,384 - #43 {
+INFO  01:47:39,384 - #49 bodovi
+INFO  01:47:39,384 - #32 =
+INFO  01:47:39,384 - #48 0
+INFO  01:47:39,384 - #35 ;
+INFO  01:47:39,384 - #49 bodovi
+INFO  01:47:39,384 - #33 ++
+INFO  01:47:39,384 - #35 ;
+INFO  01:47:39,384 - #49 bodovi
+INFO  01:47:39,384 - #32 =
+INFO  01:47:39,384 - #49 bodovi
+INFO  01:47:39,384 - #19 +
+INFO  01:47:39,385 - #49 jedan
+INFO  01:47:39,385 - #35 ;
+INFO  01:47:39,385 - #49 bodovi
+INFO  01:47:39,385 - #32 =
+INFO  01:47:39,385 - #49 bodovi
+INFO  01:47:39,385 - #21 *
+INFO  01:47:39,385 - #49 pet
+INFO  01:47:39,385 - #35 ;
+INFO  01:47:39,385 - #49 bodovi
+INFO  01:47:39,385 - #34 --
+INFO  01:47:39,385 - #35 ;
+INFO  01:47:39,385 - #3 print
+INFO  01:47:39,385 - #39 (
+INFO  01:47:39,385 - #49 bodovi
+INFO  01:47:39,385 - #40 )
+INFO  01:47:39,385 - #35 ;
+INFO  01:47:39,385 - #44 }
+INFO  01:47:39,385 - #44 }
+INFO  01:47:39,387 - ProgramClass(
+  ProgNameClass(
+   test301
+  ) [ProgNameClass]
+  VarDecListClass(
+    VarDecListClass(
+      VarDecListClass(
+        ConstDecListClass(
+          ConstDecListClass(
+            ConstDecListClass(
+              ConstDecListClass(
+                NoDecListClass(
+                ) [NoDecListClass]
+                ConstDeclClass(
+                  TypeClass(
+                   bool
+                  ) [TypeClass]
+                  ConstDecListElementClass(
+                    ConstElementBoolean(
+                     h
+                     true
+                    ) [ConstElementBoolean]
+                    ConstDecListElementClass(
+                      ConstElementNumber(
+                       b
+                       1
+                      ) [ConstElementNumber]
+                      ConstDecLastElementClass(
+                        ConstElementBooleanLast(
+                         c
+                         false
+                        ) [ConstElementBooleanLast]
+                      ) [ConstDecLastElementClass]
+                    ) [ConstDecListElementClass]
+                  ) [ConstDecListElementClass]
+                ) [ConstDeclClass]
+              ) [ConstDecListClass]
+              ConstDeclClass(
+                TypeClass(
+                 int
+                ) [TypeClass]
+                ConstDecListElementClass(
+                  ConstElementNumber(
+                   nula
+                   0
+                  ) [ConstElementNumber]
+                  ConstDecLastElementClass(
+                    ConstElementNumberLast(
+                     int
+                     7
+                    ) [ConstElementNumberLast]
+                  ) [ConstDecLastElementClass]
+                ) [ConstDecListElementClass]
+              ) [ConstDeclClass]
+            ) [ConstDecListClass]
+            ConstDeclClass(
+              TypeClass(
+               int
+              ) [TypeClass]
+              ConstDecLastElementClass(
+                ConstElementNumberLast(
+                 jedan
+                 1
+                ) [ConstElementNumberLast]
+              ) [ConstDecLastElementClass]
+            ) [ConstDeclClass]
+          ) [ConstDecListClass]
+          ConstDeclClass(
+            TypeClass(
+             int
+            ) [TypeClass]
+            ConstDecLastElementClass(
+              ConstElementNumberLast(
+               pet
+               5
+              ) [ConstElementNumberLast]
+            ) [ConstDecLastElementClass]
+          ) [ConstDeclClass]
+        ) [ConstDecListClass]
+        VarDeclClass(
+          TypeClass(
+           int
+          ) [TypeClass]
+          VarDecListElementClass(
+            VarDecElementClass(
+             a1
+              NoArrayBracketsClass(
+              ) [NoArrayBracketsClass]
+            ) [VarDecElementClass]
+            VarDecListElementClass(
+              VarDecElementClass(
+               b
+                NoArrayBracketsClass(
+                ) [NoArrayBracketsClass]
+              ) [VarDecElementClass]
+              VarDecLastListElementClass(
+                VarDecLastElementClass(
+                 c
+                  NoArrayBracketsClass(
+                  ) [NoArrayBracketsClass]
+                ) [VarDecLastElementClass]
+              ) [VarDecLastListElementClass]
+            ) [VarDecListElementClass]
+          ) [VarDecListElementClass]
+        ) [VarDeclClass]
+      ) [VarDecListClass]
+      VarDeclClass(
+        TypeClass(
+         char
+        ) [TypeClass]
+        VarDecListElementClass(
+          VarDecElementClass(
+           a
+            NoArrayBracketsClass(
+            ) [NoArrayBracketsClass]
+          ) [VarDecElementClass]
+          VarDecListElementClass(
+            VarDecElementClass(
+             d
+              NoArrayBracketsClass(
+              ) [NoArrayBracketsClass]
+            ) [VarDecElementClass]
+            VarDecLastListElementClass(
+              VarDecLastElementClass(
+               g
+                NoArrayBracketsClass(
+                ) [NoArrayBracketsClass]
+              ) [VarDecLastElementClass]
+            ) [VarDecLastListElementClass]
+          ) [VarDecListElementClass]
+        ) [VarDecListElementClass]
+      ) [VarDeclClass]
+    ) [VarDecListClass]
+    VarDeclClass(
+      TypeClass(
+       int
+      ) [TypeClass]
+      VarDecListElementClass(
+        VarDecElementClass(
+         a2
+          ArrayBracketsClass(
+          ) [ArrayBracketsClass]
+        ) [VarDecElementClass]
+        VarDecListElementClass(
+          VarDecElementClass(
+           b
+            ArrayBracketsClass(
+            ) [ArrayBracketsClass]
+          ) [VarDecElementClass]
+          VarDecLastListElementClass(
+            VarDecLastElementClass(
+             b2
+              NoArrayBracketsClass(
+              ) [NoArrayBracketsClass]
+            ) [VarDecLastElementClass]
+          ) [VarDecLastListElementClass]
+        ) [VarDecListElementClass]
+      ) [VarDecListElementClass]
+    ) [VarDeclClass]
+  ) [VarDecListClass]
+  ListOfMethodDeclClass(
+    ListOfMethodDeclClass(
+      EmptyListOfMethodDeclClass(
+      ) [EmptyListOfMethodDeclClass]
+      MethodDeclClass(
+        ReturnMethodClass(
+          TypeClass(
+           int
+          ) [TypeClass]
+         zapremina
+        ) [ReturnMethodClass]
+        FormParsEnd(
+        ) [FormParsEnd]
+        ListOfVarDeclClass(
+          EmptyListOfVarDeclClass(
+          ) [EmptyListOfVarDeclClass]
+          VarDeclClass(
+            TypeClass(
+             int
+            ) [TypeClass]
+            VarDecLastListElementClass(
+              VarDecLastElementClass(
+               z
+                NoArrayBracketsClass(
+                ) [NoArrayBracketsClass]
+              ) [VarDecLastElementClass]
+            ) [VarDecLastListElementClass]
+          ) [VarDeclClass]
+        ) [ListOfVarDeclClass]
+        ListOfStatementsClass(
+          ListOfStatementsClass(
+            EmptyListOfStatementsClass(
+            ) [EmptyListOfStatementsClass]
+            DesignatorStatementClass(
+              DesignatorStatementAssignClass(
+                DesignatorClass(
+                 z
+                ) [DesignatorClass]
+                PositiveExprClass(
+                  SingleFactorTermClass(
+                    DesignatorFactorClass(
+                      DesignatorClass(
+                       cinilac
+                      ) [DesignatorClass]
+                    ) [DesignatorFactorClass]
+                  ) [SingleFactorTermClass]
+                ) [PositiveExprClass]
+              ) [DesignatorStatementAssignClass]
+            ) [DesignatorStatementClass]
+          ) [ListOfStatementsClass]
+          ReturnExprStatementClass(
+            PositiveExprClass(
+              MultipleFactorsTermClass(
+                SingleFactorTermClass(
+                  DesignatorFactorClass(
+                    DesignatorClass(
+                     z
+                    ) [DesignatorClass]
+                  ) [DesignatorFactorClass]
+                ) [SingleFactorTermClass]
+                MulClass(
+                ) [MulClass]
+                ExpFactorClass(
+                  PositiveExprClass(
+                    MultipleFactorsTermClass(
+                      SingleFactorTermClass(
+                        DesignatorFactorClass(
+                          DesignatorClass(
+                           r
+                          ) [DesignatorClass]
+                        ) [DesignatorFactorClass]
+                      ) [SingleFactorTermClass]
+                      DivClass(
+                      ) [DivClass]
+                      DesignatorFactorClass(
+                        DesignatorClass(
+                         delilac
+                        ) [DesignatorClass]
+                      ) [DesignatorFactorClass]
+                    ) [MultipleFactorsTermClass]
+                  ) [PositiveExprClass]
+                ) [ExpFactorClass]
+              ) [MultipleFactorsTermClass]
+            ) [PositiveExprClass]
+          ) [ReturnExprStatementClass]
+        ) [ListOfStatementsClass]
+      ) [MethodDeclClass]
+    ) [ListOfMethodDeclClass]
+    MethodDeclClass(
+      VoidMethodClass(
+       main
+      ) [VoidMethodClass]
+      FormParsEnd(
+      ) [FormParsEnd]
+      ListOfVarDeclClass(
+        ListOfVarDeclClass(
+          EmptyListOfVarDeclClass(
+          ) [EmptyListOfVarDeclClass]
+          VarDeclClass(
+            TypeClass(
+             int
+            ) [TypeClass]
+            VarDecLastListElementClass(
+              VarDecLastElementClass(
+               bodovi
+                NoArrayBracketsClass(
+                ) [NoArrayBracketsClass]
+              ) [VarDecLastElementClass]
+            ) [VarDecLastListElementClass]
+          ) [VarDeclClass]
+        ) [ListOfVarDeclClass]
+        VarDeclClass(
+          TypeClass(
+           bool
+          ) [TypeClass]
+          VarDecLastListElementClass(
+            VarDecLastElementClass(
+             bt
+              NoArrayBracketsClass(
+              ) [NoArrayBracketsClass]
+            ) [VarDecLastElementClass]
+          ) [VarDecLastListElementClass]
+        ) [VarDeclClass]
+      ) [ListOfVarDeclClass]
+      ListOfStatementsClass(
+        ListOfStatementsClass(
+          ListOfStatementsClass(
+            ListOfStatementsClass(
+              ListOfStatementsClass(
+                ListOfStatementsClass(
+                  EmptyListOfStatementsClass(
+                  ) [EmptyListOfStatementsClass]
+                  DesignatorStatementClass(
+                    DesignatorStatementAssignClass(
+                      DesignatorClass(
+                       bodovi
+                      ) [DesignatorClass]
+                      PositiveExprClass(
+                        SingleFactorTermClass(
+                          NumberFactorClass(
+                           0
+                          ) [NumberFactorClass]
+                        ) [SingleFactorTermClass]
+                      ) [PositiveExprClass]
+                    ) [DesignatorStatementAssignClass]
+                  ) [DesignatorStatementClass]
+                ) [ListOfStatementsClass]
+                DesignatorStatementClass(
+                  DesignatorStatementIncClass(
+                    DesignatorClass(
+                     bodovi
+                    ) [DesignatorClass]
+                  ) [DesignatorStatementIncClass]
+                ) [DesignatorStatementClass]
+              ) [ListOfStatementsClass]
+              DesignatorStatementClass(
+                DesignatorStatementAssignClass(
+                  DesignatorClass(
+                   bodovi
+                  ) [DesignatorClass]
+                  ExprClass(
+                    PositiveExprClass(
+                      SingleFactorTermClass(
+                        DesignatorFactorClass(
+                          DesignatorClass(
+                           bodovi
+                          ) [DesignatorClass]
+                        ) [DesignatorFactorClass]
+                      ) [SingleFactorTermClass]
+                    ) [PositiveExprClass]
+                    PlusOpClass(
+                    ) [PlusOpClass]
+                    SingleFactorTermClass(
+                      DesignatorFactorClass(
+                        DesignatorClass(
+                         jedan
+                        ) [DesignatorClass]
+                      ) [DesignatorFactorClass]
+                    ) [SingleFactorTermClass]
+                  ) [ExprClass]
+                ) [DesignatorStatementAssignClass]
+              ) [DesignatorStatementClass]
+            ) [ListOfStatementsClass]
+            DesignatorStatementClass(
+              DesignatorStatementAssignClass(
+                DesignatorClass(
+                 bodovi
+                ) [DesignatorClass]
+                PositiveExprClass(
+                  MultipleFactorsTermClass(
+                    SingleFactorTermClass(
+                      DesignatorFactorClass(
+                        DesignatorClass(
+                         bodovi
+                        ) [DesignatorClass]
+                      ) [DesignatorFactorClass]
+                    ) [SingleFactorTermClass]
+                    MulClass(
+                    ) [MulClass]
+                    DesignatorFactorClass(
+                      DesignatorClass(
+                       pet
+                      ) [DesignatorClass]
+                    ) [DesignatorFactorClass]
+                  ) [MultipleFactorsTermClass]
+                ) [PositiveExprClass]
+              ) [DesignatorStatementAssignClass]
+            ) [DesignatorStatementClass]
+          ) [ListOfStatementsClass]
+          DesignatorStatementClass(
+            DesignatorStatementDecClass(
+              DesignatorClass(
+               bodovi
+              ) [DesignatorClass]
+            ) [DesignatorStatementDecClass]
+          ) [DesignatorStatementClass]
+        ) [ListOfStatementsClass]
+        PrintStatementClass(
+          PositiveExprClass(
+            SingleFactorTermClass(
+              DesignatorFactorClass(
+                DesignatorClass(
+                 bodovi
+                ) [DesignatorClass]
+              ) [DesignatorFactorClass]
+            ) [SingleFactorTermClass]
+          ) [PositiveExprClass]
+        ) [PrintStatementClass]
+      ) [ListOfStatementsClass]
+    ) [MethodDeclClass]
+  ) [ListOfMethodDeclClass]
+) [ProgramClass]
+INFO  01:47:39,387 - ====================================
+INFO  01:47:39,389 - Kreirana je konstanta BOOL h na liniji 5
+ERROR 01:47:39,389 - SEMANTICKA GRESKA[5]: Tip INT nije isti tip vrednosti kao i BOOL na liniji 5
+INFO  01:47:39,389 - Kreirana je konstanta BOOL c na liniji 5
+INFO  01:47:39,389 - Kreirana je konstanta INT nula na liniji 7
+ERROR 01:47:39,389 - SEMANTICKA GRESKA[7]: Ime int je vec deklarisano na liniji 7
+INFO  01:47:39,389 - Kreirana je konstanta INT jedan na liniji 8
+INFO  01:47:39,389 - Kreirana je konstanta INT pet na liniji 9
+INFO  01:47:39,389 - Kreirana je promenjiva INT a1 na liniji 11
+INFO  01:47:39,389 - Kreirana je promenjiva INT b na liniji 11
+ERROR 01:47:39,389 - SEMANTICKA GRESKA: Ime promenljive c je vec deklarisano na liniji 11
+INFO  01:47:39,389 - Kreirana je promenjiva CHAR a na liniji 12
+INFO  01:47:39,389 - Kreirana je promenjiva CHAR d na liniji 12
+INFO  01:47:39,389 - Kreirana je promenjiva CHAR g na liniji 12
+INFO  01:47:39,389 - Kreirana je promenjiva INT a2[] na liniji 13
+ERROR 01:47:39,389 - SEMANTICKA GRESKA: Ime promenljive b je vec deklarisano na liniji 13
+INFO  01:47:39,389 - Kreirana je promenjiva INT b2[] na liniji 13
+INFO  01:47:39,389 - Definicija funkcije INTzapremina na liniji 17
+INFO  01:47:39,389 - Kreirana je promenjiva INT z na liniji 18
+ERROR 01:47:39,389 - SEMANTICKA GRESKA: Nije deklarisana promenljiva cinilac na liniji 20
+ERROR 01:47:39,389 - SEMANTICKA GRESKA: Nije deklarisana promenljiva r na liniji 21
+ERROR 01:47:39,389 - SEMANTICKA GRESKA: Nije deklarisana promenljiva delilac na liniji 21
+ERROR 01:47:39,389 - SEMANTICKA GRESKA: Tip term i factor mora biti INT na liniji 21
+ERROR 01:47:39,389 - SEMANTICKA GRESKA: Tip term i factor mora biti INT na liniji 21
+ERROR 01:47:39,389 - SEMANTICKA GRESKA: Funcija zapremina nema return na liniji 17
+INFO  01:47:39,389 - Definicija funkcije NONEmain na liniji 24
+INFO  01:47:39,389 - Kreirana je promenjiva INT bodovi na liniji 25
+INFO  01:47:39,389 - Kreirana je promenjiva BOOL bt na liniji 26
+INFO  01:47:39,389 - Detektovan je pristup simbolickoj konstantni jedan na liniji 30
+ERROR 01:47:39,389 - SEMANTICKA GRESKA: Sabirci nisu kompatibilni  na liniji 30
+INFO  01:47:39,389 - Detektovan je pristup simbolickoj konstantni pet na liniji 31
+INFO  01:47:39,389 - ====================================
+INFO  01:47:39,390 - Parsiranje uspesno zavrseno!

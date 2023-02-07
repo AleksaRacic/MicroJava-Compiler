@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 3/1/2023 1:47:18
+// 7/1/2023 2:0:43
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -19,8 +19,8 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Addop Addop) { }
     public void visit(Factor Factor) { }
     public void visit(CondTerm CondTerm) { }
-    public void visit(VarDecElement VarDecElement) { }
     public void visit(Designator Designator) { }
+    public void visit(VarDecElement VarDecElement) { }
     public void visit(Term Term) { }
     public void visit(ClassBody ClassBody) { }
     public void visit(FormParsList FormParsList) { }
@@ -35,6 +35,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ListOfMethodDecl ListOfMethodDecl) { }
     public void visit(ListOfVarDecl ListOfVarDecl) { }
     public void visit(Expr Expr) { }
+    public void visit(ArrDsignator ArrDsignator) { }
     public void visit(ActPars ActPars) { }
     public void visit(MethodTypeName MethodTypeName) { }
     public void visit(DesignatorStatement DesignatorStatement) { }
@@ -55,13 +56,16 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(GrOpClass GrOpClass) { visit(); }
     public void visit(NeqOpClass NeqOpClass) { visit(); }
     public void visit(EqOpClass EqOpClass) { visit(); }
+    public void visit(ArrDesignator ArrDesignator) { visit(); }
     public void visit(DesignatorClass DesignatorClass) { visit(); }
     public void visit(ArrayDesignatorClass ArrayDesignatorClass) { visit(); }
     public void visit(ClassDesignatorClass ClassDesignatorClass) { visit(); }
     public void visit(MinusOpClass MinusOpClass) { visit(); }
     public void visit(PlusOpClass PlusOpClass) { visit(); }
+    public void visit(ActParsElement ActParsElement) { visit(); }
     public void visit(EmptyListOfActParClass EmptyListOfActParClass) { visit(); }
     public void visit(ListOfActParExprClass ListOfActParExprClass) { visit(); }
+    public void visit(ActParsFlag ActParsFlag) { visit(); }
     public void visit(NoActualParsClass NoActualParsClass) { visit(); }
     public void visit(ActualParsClass ActualParsClass) { visit(); }
     public void visit(ModClass ModClass) { visit(); }
@@ -84,6 +88,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(CondFactClass CondFactClass) { visit(); }
     public void visit(SingleCondTermClass SingleCondTermClass) { visit(); }
     public void visit(CondTermClass CondTermClass) { visit(); }
+    public void visit(OrJump OrJump) { visit(); }
     public void visit(SingleConditionClass SingleConditionClass) { visit(); }
     public void visit(ConditionClass ConditionClass) { visit(); }
     public void visit(DesignatorEpsilonClass DesignatorEpsilonClass) { visit(); }
@@ -98,6 +103,13 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(DesignatorStatementAssignClass DesignatorStatementAssignClass) { visit(); }
     public void visit(ErrIfCondClass ErrIfCondClass) { visit(); }
     public void visit(IfCondClass IfCondClass) { visit(); }
+    public void visit(TestForEach TestForEach) { visit(); }
+    public void visit(ForeachIdent ForeachIdent) { visit(); }
+    public void visit(ForeachFlag ForeachFlag) { visit(); }
+    public void visit(WhileFlag WhileFlag) { visit(); }
+    public void visit(StartIfStatement StartIfStatement) { visit(); }
+    public void visit(EndIf EndIf) { visit(); }
+    public void visit(StartIf StartIf) { visit(); }
     public void visit(StatementBlock StatementBlock) { visit(); }
     public void visit(ForEachStatementClass ForEachStatementClass) { visit(); }
     public void visit(PrintStatementWidthClass PrintStatementWidthClass) { visit(); }

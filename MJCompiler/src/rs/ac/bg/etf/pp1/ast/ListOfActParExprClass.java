@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 3/1/2023 1:47:18
+// 7/1/2023 2:0:43
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,13 +8,13 @@ package rs.ac.bg.etf.pp1.ast;
 public class ListOfActParExprClass extends ListOfActPars {
 
     private ListOfActPars ListOfActPars;
-    private Expr Expr;
+    private ActParsElement ActParsElement;
 
-    public ListOfActParExprClass (ListOfActPars ListOfActPars, Expr Expr) {
+    public ListOfActParExprClass (ListOfActPars ListOfActPars, ActParsElement ActParsElement) {
         this.ListOfActPars=ListOfActPars;
         if(ListOfActPars!=null) ListOfActPars.setParent(this);
-        this.Expr=Expr;
-        if(Expr!=null) Expr.setParent(this);
+        this.ActParsElement=ActParsElement;
+        if(ActParsElement!=null) ActParsElement.setParent(this);
     }
 
     public ListOfActPars getListOfActPars() {
@@ -25,12 +25,12 @@ public class ListOfActParExprClass extends ListOfActPars {
         this.ListOfActPars=ListOfActPars;
     }
 
-    public Expr getExpr() {
-        return Expr;
+    public ActParsElement getActParsElement() {
+        return ActParsElement;
     }
 
-    public void setExpr(Expr Expr) {
-        this.Expr=Expr;
+    public void setActParsElement(ActParsElement ActParsElement) {
+        this.ActParsElement=ActParsElement;
     }
 
     public void accept(Visitor visitor) {
@@ -39,18 +39,18 @@ public class ListOfActParExprClass extends ListOfActPars {
 
     public void childrenAccept(Visitor visitor) {
         if(ListOfActPars!=null) ListOfActPars.accept(visitor);
-        if(Expr!=null) Expr.accept(visitor);
+        if(ActParsElement!=null) ActParsElement.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(ListOfActPars!=null) ListOfActPars.traverseTopDown(visitor);
-        if(Expr!=null) Expr.traverseTopDown(visitor);
+        if(ActParsElement!=null) ActParsElement.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(ListOfActPars!=null) ListOfActPars.traverseBottomUp(visitor);
-        if(Expr!=null) Expr.traverseBottomUp(visitor);
+        if(ActParsElement!=null) ActParsElement.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -65,8 +65,8 @@ public class ListOfActParExprClass extends ListOfActPars {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        if(Expr!=null)
-            buffer.append(Expr.toString("  "+tab));
+        if(ActParsElement!=null)
+            buffer.append(ActParsElement.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

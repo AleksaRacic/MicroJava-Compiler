@@ -1,0 +1,548 @@
+INFO  22:28:52,961 - Compiling source file: /Users/racicaleksa/Projects/Semestar-7/PP1/MicroJava-Compiler/MJCompiler/test/testDevelop.mj
+INFO  22:28:52,983 - #2 program
+INFO  22:28:52,983 - #49 test301
+INFO  22:28:52,983 - #49 int
+INFO  22:28:52,983 - #49 a
+INFO  22:28:52,983 - #37 ,
+INFO  22:28:52,984 - #49 b
+INFO  22:28:52,984 - #41 [
+INFO  22:28:52,984 - #42 ]
+INFO  22:28:52,984 - #35 ;
+INFO  22:28:52,984 - #8 const
+INFO  22:28:52,984 - #49 int
+INFO  22:28:52,984 - #49 c
+INFO  22:28:52,984 - #32 =
+INFO  22:28:52,984 - #48 5
+INFO  22:28:52,984 - #35 ;
+INFO  22:28:52,984 - #8 const
+INFO  22:28:52,985 - #49 bool
+INFO  22:28:52,985 - #49 bol1
+INFO  22:28:52,985 - #32 =
+INFO  22:28:52,985 - #47 true
+INFO  22:28:52,985 - #35 ;
+INFO  22:28:52,985 - #49 char
+INFO  22:28:52,985 - #49 k
+INFO  22:28:52,985 - #35 ;
+INFO  22:28:52,985 - #49 bool
+INFO  22:28:52,985 - #49 bol2
+INFO  22:28:52,985 - #35 ;
+INFO  22:28:52,985 - #43 {
+INFO  22:28:52,985 - #49 int
+INFO  22:28:52,985 - #49 test5
+INFO  22:28:52,985 - #39 (
+INFO  22:28:52,985 - #49 int
+INFO  22:28:52,985 - #49 a
+INFO  22:28:52,985 - #37 ,
+INFO  22:28:52,986 - #49 int
+INFO  22:28:52,986 - #49 b
+INFO  22:28:52,986 - #40 )
+INFO  22:28:52,986 - #49 int
+INFO  22:28:52,986 - #49 a1
+INFO  22:28:52,986 - #35 ;
+INFO  22:28:52,986 - #49 int
+INFO  22:28:52,986 - #49 b1
+INFO  22:28:52,986 - #35 ;
+INFO  22:28:52,986 - #43 {
+INFO  22:28:52,986 - #4 return
+INFO  22:28:52,986 - #49 a
+INFO  22:28:52,986 - #19 +
+INFO  22:28:52,986 - #49 b
+INFO  22:28:52,987 - #35 ;
+INFO  22:28:52,987 - #44 }
+INFO  22:28:52,987 - #49 int
+INFO  22:28:52,987 - #49 test1
+INFO  22:28:52,987 - #39 (
+INFO  22:28:52,987 - #49 int
+INFO  22:28:52,987 - #49 a
+INFO  22:28:52,987 - #37 ,
+INFO  22:28:52,987 - #49 int
+INFO  22:28:52,987 - #49 b
+INFO  22:28:52,987 - #40 )
+INFO  22:28:52,987 - #43 {
+INFO  22:28:52,987 - #4 return
+INFO  22:28:52,987 - #49 a
+INFO  22:28:52,987 - #19 +
+INFO  22:28:52,987 - #49 b
+INFO  22:28:52,987 - #35 ;
+INFO  22:28:52,987 - #44 }
+INFO  22:28:52,987 - #14 void
+INFO  22:28:52,987 - #49 main
+INFO  22:28:52,988 - #39 (
+INFO  22:28:52,988 - #40 )
+INFO  22:28:52,988 - #49 int
+INFO  22:28:52,988 - #49 bodovi
+INFO  22:28:52,988 - #35 ;
+INFO  22:28:52,988 - #49 int
+INFO  22:28:52,988 - #49 bt
+INFO  22:28:52,988 - #35 ;
+INFO  22:28:52,988 - #43 {
+INFO  22:28:52,988 - #13 read
+INFO  22:28:52,988 - #39 (
+INFO  22:28:52,988 - #49 bodovi
+INFO  22:28:52,988 - #40 )
+INFO  22:28:52,988 - #35 ;
+INFO  22:28:52,988 - #49 bt
+INFO  22:28:52,988 - #32 =
+INFO  22:28:52,988 - #49 test5
+INFO  22:28:52,988 - #39 (
+INFO  22:28:52,988 - #49 bodovi
+INFO  22:28:52,989 - #37 ,
+INFO  22:28:52,989 - #49 bodovi
+INFO  22:28:52,989 - #40 )
+INFO  22:28:52,989 - #35 ;
+INFO  22:28:52,989 - #49 bt
+INFO  22:28:52,989 - #32 =
+INFO  22:28:52,989 - #49 test5
+INFO  22:28:52,989 - #39 (
+INFO  22:28:52,989 - #49 test1
+INFO  22:28:52,989 - #39 (
+INFO  22:28:52,989 - #49 bt
+INFO  22:28:52,989 - #37 ,
+INFO  22:28:52,989 - #49 bodovi
+INFO  22:28:52,989 - #40 )
+INFO  22:28:52,989 - #37 ,
+INFO  22:28:52,990 - #49 bodovi
+INFO  22:28:52,990 - #40 )
+INFO  22:28:52,990 - #35 ;
+INFO  22:28:52,990 - #3 print
+INFO  22:28:52,990 - #39 (
+INFO  22:28:52,990 - #49 bt
+INFO  22:28:52,990 - #40 )
+INFO  22:28:52,990 - #35 ;
+INFO  22:28:52,990 - #44 }
+INFO  22:28:52,990 - #44 }
+INFO  22:28:52,992 - ProgramClass(
+  ProgNameClass(
+   test301
+  ) [ProgNameClass]
+  VarDecListClass(
+    VarDecListClass(
+      ConstDecListClass(
+        ConstDecListClass(
+          VarDecListClass(
+            NoDecListClass(
+            ) [NoDecListClass]
+            VarDeclClass(
+              TypeClass(
+               int
+              ) [TypeClass]
+              VarDecListElementClass(
+                VarDecElementClass(
+                 a
+                  NoArrayBracketsClass(
+                  ) [NoArrayBracketsClass]
+                ) [VarDecElementClass]
+                VarDecLastListElementClass(
+                  VarDecLastElementClass(
+                   b
+                    ArrayBracketsClass(
+                    ) [ArrayBracketsClass]
+                  ) [VarDecLastElementClass]
+                ) [VarDecLastListElementClass]
+              ) [VarDecListElementClass]
+            ) [VarDeclClass]
+          ) [VarDecListClass]
+          ConstDeclClass(
+            TypeClass(
+             int
+            ) [TypeClass]
+            ConstDecLastElementClass(
+              ConstElementNumberLast(
+               c
+               5
+              ) [ConstElementNumberLast]
+            ) [ConstDecLastElementClass]
+          ) [ConstDeclClass]
+        ) [ConstDecListClass]
+        ConstDeclClass(
+          TypeClass(
+           bool
+          ) [TypeClass]
+          ConstDecLastElementClass(
+            ConstElementBooleanLast(
+             bol1
+             true
+            ) [ConstElementBooleanLast]
+          ) [ConstDecLastElementClass]
+        ) [ConstDeclClass]
+      ) [ConstDecListClass]
+      VarDeclClass(
+        TypeClass(
+         char
+        ) [TypeClass]
+        VarDecLastListElementClass(
+          VarDecLastElementClass(
+           k
+            NoArrayBracketsClass(
+            ) [NoArrayBracketsClass]
+          ) [VarDecLastElementClass]
+        ) [VarDecLastListElementClass]
+      ) [VarDeclClass]
+    ) [VarDecListClass]
+    VarDeclClass(
+      TypeClass(
+       bool
+      ) [TypeClass]
+      VarDecLastListElementClass(
+        VarDecLastElementClass(
+         bol2
+          NoArrayBracketsClass(
+          ) [NoArrayBracketsClass]
+        ) [VarDecLastElementClass]
+      ) [VarDecLastListElementClass]
+    ) [VarDeclClass]
+  ) [VarDecListClass]
+  ListOfMethodDeclClass(
+    ListOfMethodDeclClass(
+      ListOfMethodDeclClass(
+        EmptyListOfMethodDeclClass(
+        ) [EmptyListOfMethodDeclClass]
+        MethodDeclClass(
+          ReturnMethodClass(
+            TypeClass(
+             int
+            ) [TypeClass]
+           test5
+          ) [ReturnMethodClass]
+          FormParsStartClass(
+            FormParsElement(
+              TypeClass(
+               int
+              ) [TypeClass]
+             a
+              NoArrayBracketsClass(
+              ) [NoArrayBracketsClass]
+            ) [FormParsElement]
+            FormParsNextElementClass(
+              FormParsElement(
+                TypeClass(
+                 int
+                ) [TypeClass]
+               b
+                NoArrayBracketsClass(
+                ) [NoArrayBracketsClass]
+              ) [FormParsElement]
+            ) [FormParsNextElementClass]
+          ) [FormParsStartClass]
+          ListOfVarDeclClass(
+            ListOfVarDeclClass(
+              EmptyListOfVarDeclClass(
+              ) [EmptyListOfVarDeclClass]
+              VarDeclClass(
+                TypeClass(
+                 int
+                ) [TypeClass]
+                VarDecLastListElementClass(
+                  VarDecLastElementClass(
+                   a1
+                    NoArrayBracketsClass(
+                    ) [NoArrayBracketsClass]
+                  ) [VarDecLastElementClass]
+                ) [VarDecLastListElementClass]
+              ) [VarDeclClass]
+            ) [ListOfVarDeclClass]
+            VarDeclClass(
+              TypeClass(
+               int
+              ) [TypeClass]
+              VarDecLastListElementClass(
+                VarDecLastElementClass(
+                 b1
+                  NoArrayBracketsClass(
+                  ) [NoArrayBracketsClass]
+                ) [VarDecLastElementClass]
+              ) [VarDecLastListElementClass]
+            ) [VarDeclClass]
+          ) [ListOfVarDeclClass]
+          ListOfStatementsClass(
+            EmptyListOfStatementsClass(
+            ) [EmptyListOfStatementsClass]
+            ReturnExprStatementClass(
+              ExprClass(
+                PositiveExprClass(
+                  SingleFactorTermClass(
+                    DesignatorFactorClass(
+                      DesignatorClass(
+                       a
+                      ) [DesignatorClass]
+                    ) [DesignatorFactorClass]
+                  ) [SingleFactorTermClass]
+                ) [PositiveExprClass]
+                PlusOpClass(
+                ) [PlusOpClass]
+                SingleFactorTermClass(
+                  DesignatorFactorClass(
+                    DesignatorClass(
+                     b
+                    ) [DesignatorClass]
+                  ) [DesignatorFactorClass]
+                ) [SingleFactorTermClass]
+              ) [ExprClass]
+            ) [ReturnExprStatementClass]
+          ) [ListOfStatementsClass]
+        ) [MethodDeclClass]
+      ) [ListOfMethodDeclClass]
+      MethodDeclClass(
+        ReturnMethodClass(
+          TypeClass(
+           int
+          ) [TypeClass]
+         test1
+        ) [ReturnMethodClass]
+        FormParsStartClass(
+          FormParsElement(
+            TypeClass(
+             int
+            ) [TypeClass]
+           a
+            NoArrayBracketsClass(
+            ) [NoArrayBracketsClass]
+          ) [FormParsElement]
+          FormParsNextElementClass(
+            FormParsElement(
+              TypeClass(
+               int
+              ) [TypeClass]
+             b
+              NoArrayBracketsClass(
+              ) [NoArrayBracketsClass]
+            ) [FormParsElement]
+          ) [FormParsNextElementClass]
+        ) [FormParsStartClass]
+        EmptyListOfVarDeclClass(
+        ) [EmptyListOfVarDeclClass]
+        ListOfStatementsClass(
+          EmptyListOfStatementsClass(
+          ) [EmptyListOfStatementsClass]
+          ReturnExprStatementClass(
+            ExprClass(
+              PositiveExprClass(
+                SingleFactorTermClass(
+                  DesignatorFactorClass(
+                    DesignatorClass(
+                     a
+                    ) [DesignatorClass]
+                  ) [DesignatorFactorClass]
+                ) [SingleFactorTermClass]
+              ) [PositiveExprClass]
+              PlusOpClass(
+              ) [PlusOpClass]
+              SingleFactorTermClass(
+                DesignatorFactorClass(
+                  DesignatorClass(
+                   b
+                  ) [DesignatorClass]
+                ) [DesignatorFactorClass]
+              ) [SingleFactorTermClass]
+            ) [ExprClass]
+          ) [ReturnExprStatementClass]
+        ) [ListOfStatementsClass]
+      ) [MethodDeclClass]
+    ) [ListOfMethodDeclClass]
+    MethodDeclClass(
+      VoidMethodClass(
+       main
+      ) [VoidMethodClass]
+      FormParsEnd(
+      ) [FormParsEnd]
+      ListOfVarDeclClass(
+        ListOfVarDeclClass(
+          EmptyListOfVarDeclClass(
+          ) [EmptyListOfVarDeclClass]
+          VarDeclClass(
+            TypeClass(
+             int
+            ) [TypeClass]
+            VarDecLastListElementClass(
+              VarDecLastElementClass(
+               bodovi
+                NoArrayBracketsClass(
+                ) [NoArrayBracketsClass]
+              ) [VarDecLastElementClass]
+            ) [VarDecLastListElementClass]
+          ) [VarDeclClass]
+        ) [ListOfVarDeclClass]
+        VarDeclClass(
+          TypeClass(
+           int
+          ) [TypeClass]
+          VarDecLastListElementClass(
+            VarDecLastElementClass(
+             bt
+              NoArrayBracketsClass(
+              ) [NoArrayBracketsClass]
+            ) [VarDecLastElementClass]
+          ) [VarDecLastListElementClass]
+        ) [VarDeclClass]
+      ) [ListOfVarDeclClass]
+      ListOfStatementsClass(
+        ListOfStatementsClass(
+          ListOfStatementsClass(
+            ListOfStatementsClass(
+              EmptyListOfStatementsClass(
+              ) [EmptyListOfStatementsClass]
+              ReadStatementClass(
+                DesignatorClass(
+                 bodovi
+                ) [DesignatorClass]
+              ) [ReadStatementClass]
+            ) [ListOfStatementsClass]
+            DesignatorStatementClass(
+              DesignatorStatementAssignClass(
+                DesignatorClass(
+                 bt
+                ) [DesignatorClass]
+                PositiveExprClass(
+                  SingleFactorTermClass(
+                    FuncCallDesignatorClass(
+                      DesignatorClass(
+                       test5
+                      ) [DesignatorClass]
+                      ActualParsClass(
+                        ActParsFlag(
+                        ) [ActParsFlag]
+                        ListOfActParExprClass(
+                          EmptyListOfActParClass(
+                            ActParsElement(
+                              PositiveExprClass(
+                                SingleFactorTermClass(
+                                  DesignatorFactorClass(
+                                    DesignatorClass(
+                                     bodovi
+                                    ) [DesignatorClass]
+                                  ) [DesignatorFactorClass]
+                                ) [SingleFactorTermClass]
+                              ) [PositiveExprClass]
+                            ) [ActParsElement]
+                          ) [EmptyListOfActParClass]
+                          ActParsElement(
+                            PositiveExprClass(
+                              SingleFactorTermClass(
+                                DesignatorFactorClass(
+                                  DesignatorClass(
+                                   bodovi
+                                  ) [DesignatorClass]
+                                ) [DesignatorFactorClass]
+                              ) [SingleFactorTermClass]
+                            ) [PositiveExprClass]
+                          ) [ActParsElement]
+                        ) [ListOfActParExprClass]
+                      ) [ActualParsClass]
+                    ) [FuncCallDesignatorClass]
+                  ) [SingleFactorTermClass]
+                ) [PositiveExprClass]
+              ) [DesignatorStatementAssignClass]
+            ) [DesignatorStatementClass]
+          ) [ListOfStatementsClass]
+          DesignatorStatementClass(
+            DesignatorStatementAssignClass(
+              DesignatorClass(
+               bt
+              ) [DesignatorClass]
+              PositiveExprClass(
+                SingleFactorTermClass(
+                  FuncCallDesignatorClass(
+                    DesignatorClass(
+                     test5
+                    ) [DesignatorClass]
+                    ActualParsClass(
+                      ActParsFlag(
+                      ) [ActParsFlag]
+                      ListOfActParExprClass(
+                        EmptyListOfActParClass(
+                          ActParsElement(
+                            PositiveExprClass(
+                              SingleFactorTermClass(
+                                FuncCallDesignatorClass(
+                                  DesignatorClass(
+                                   test1
+                                  ) [DesignatorClass]
+                                  ActualParsClass(
+                                    ActParsFlag(
+                                    ) [ActParsFlag]
+                                    ListOfActParExprClass(
+                                      EmptyListOfActParClass(
+                                        ActParsElement(
+                                          PositiveExprClass(
+                                            SingleFactorTermClass(
+                                              DesignatorFactorClass(
+                                                DesignatorClass(
+                                                 bt
+                                                ) [DesignatorClass]
+                                              ) [DesignatorFactorClass]
+                                            ) [SingleFactorTermClass]
+                                          ) [PositiveExprClass]
+                                        ) [ActParsElement]
+                                      ) [EmptyListOfActParClass]
+                                      ActParsElement(
+                                        PositiveExprClass(
+                                          SingleFactorTermClass(
+                                            DesignatorFactorClass(
+                                              DesignatorClass(
+                                               bodovi
+                                              ) [DesignatorClass]
+                                            ) [DesignatorFactorClass]
+                                          ) [SingleFactorTermClass]
+                                        ) [PositiveExprClass]
+                                      ) [ActParsElement]
+                                    ) [ListOfActParExprClass]
+                                  ) [ActualParsClass]
+                                ) [FuncCallDesignatorClass]
+                              ) [SingleFactorTermClass]
+                            ) [PositiveExprClass]
+                          ) [ActParsElement]
+                        ) [EmptyListOfActParClass]
+                        ActParsElement(
+                          PositiveExprClass(
+                            SingleFactorTermClass(
+                              DesignatorFactorClass(
+                                DesignatorClass(
+                                 bodovi
+                                ) [DesignatorClass]
+                              ) [DesignatorFactorClass]
+                            ) [SingleFactorTermClass]
+                          ) [PositiveExprClass]
+                        ) [ActParsElement]
+                      ) [ListOfActParExprClass]
+                    ) [ActualParsClass]
+                  ) [FuncCallDesignatorClass]
+                ) [SingleFactorTermClass]
+              ) [PositiveExprClass]
+            ) [DesignatorStatementAssignClass]
+          ) [DesignatorStatementClass]
+        ) [ListOfStatementsClass]
+        PrintStatementClass(
+          PositiveExprClass(
+            SingleFactorTermClass(
+              DesignatorFactorClass(
+                DesignatorClass(
+                 bt
+                ) [DesignatorClass]
+              ) [DesignatorFactorClass]
+            ) [SingleFactorTermClass]
+          ) [PositiveExprClass]
+        ) [PrintStatementClass]
+      ) [ListOfStatementsClass]
+    ) [MethodDeclClass]
+  ) [ListOfMethodDeclClass]
+) [ProgramClass]
+INFO  22:28:52,993 - ====================================
+INFO  22:28:52,995 - Kreirana je promenjiva INT a na liniji 4
+INFO  22:28:52,995 - Kreirana je promenjiva INT b[] na liniji 4
+INFO  22:28:52,995 - Kreirana je konstanta INT c na liniji 5
+INFO  22:28:52,995 - Kreirana je konstanta BOOL bol1 na liniji 6
+INFO  22:28:52,995 - Kreirana je promenjiva CHAR k na liniji 7
+INFO  22:28:52,995 - Kreirana je promenjiva BOOL bol2 na liniji 8
+INFO  22:28:52,995 - Definicija funkcije INT test5 na liniji 12
+INFO  22:28:52,995 - Kreirana je lokalna promenjiva INT a na liniji 12
+INFO  22:28:52,995 - Kreirana je lokalna promenjiva INT b na liniji 12
+INFO  22:28:52,995 - Kreirana je promenjiva INT a1 na liniji 13
+INFO  22:28:52,995 - Kreirana je promenjiva INT b1 na liniji 14
+INFO  22:28:52,995 - Definicija funkcije INT test1 na liniji 19
+INFO  22:28:52,995 - Kreirana je lokalna promenjiva INT a na liniji 19
+INFO  22:28:52,995 - Kreirana je lokalna promenjiva INT b na liniji 19
+INFO  22:28:52,995 - Definicija funkcije INT main na liniji 26
+INFO  22:28:52,995 - Kreirana je promenjiva INT bodovi na liniji 27
+INFO  22:28:52,995 - Kreirana je promenjiva INT bt na liniji 28
+INFO  22:28:52,996 - ====================================
+INFO  22:28:52,997 - Parsiranje uspesno zavrseno!

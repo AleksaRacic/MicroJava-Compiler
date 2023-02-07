@@ -1,0 +1,209 @@
+INFO  16:02:34,446 - Compiling source file: /Users/racicaleksa/Projects/Semestar-7/PP1/MicroJava-Compiler/MJCompiler/test/testDevelop.mj
+INFO  16:02:34,468 - #2 program
+INFO  16:02:34,468 - #49 test301
+INFO  16:02:34,468 - #49 int
+INFO  16:02:34,468 - #49 a
+INFO  16:02:34,468 - #37 ,
+INFO  16:02:34,469 - #49 b
+INFO  16:02:34,469 - #41 [
+INFO  16:02:34,469 - #42 ]
+INFO  16:02:34,469 - #35 ;
+INFO  16:02:34,469 - #8 const
+INFO  16:02:34,469 - #49 int
+INFO  16:02:34,469 - #49 c
+INFO  16:02:34,469 - #32 =
+INFO  16:02:34,469 - #48 5
+INFO  16:02:34,469 - #35 ;
+INFO  16:02:34,469 - #49 bool
+INFO  16:02:34,470 - #49 bol1
+INFO  16:02:34,470 - #32 =
+ERROR 16:02:34,470 - 
+Sintaksna greska na liniji 6
+INFO  16:02:34,470 - #47 true
+INFO  16:02:34,470 - #35 ;
+INFO  16:02:34,470 - #43 {
+INFO  16:02:34,470 - #14 void
+INFO  16:02:34,470 - #49 main
+ERROR 16:02:34,470 - Izvrsen oporavak do ; u liniji 6
+INFO  16:02:34,471 - #39 (
+INFO  16:02:34,471 - #40 )
+INFO  16:02:34,471 - #49 int
+INFO  16:02:34,471 - #49 bodovi
+INFO  16:02:34,471 - #35 ;
+INFO  16:02:34,471 - #49 bool
+INFO  16:02:34,471 - #49 bt
+INFO  16:02:34,471 - #35 ;
+INFO  16:02:34,471 - #43 {
+INFO  16:02:34,471 - #49 a
+INFO  16:02:34,472 - #32 =
+INFO  16:02:34,472 - #49 c
+INFO  16:02:34,472 - #35 ;
+INFO  16:02:34,472 - #49 a
+INFO  16:02:34,472 - #32 =
+INFO  16:02:34,472 - #48 6
+INFO  16:02:34,472 - #35 ;
+INFO  16:02:34,472 - #49 a
+INFO  16:02:34,472 - #32 =
+INFO  16:02:34,472 - #49 bol1
+INFO  16:02:34,472 - #35 ;
+INFO  16:02:34,472 - #44 }
+INFO  16:02:34,472 - #44 }
+INFO  16:02:34,474 - ProgramClass(
+  ProgNameClass(
+   test301
+  ) [ProgNameClass]
+  VarDecListClass(
+    ConstDecListClass(
+      VarDecListClass(
+        NoDecListClass(
+        ) [NoDecListClass]
+        VarDeclClass(
+          TypeClass(
+           int
+          ) [TypeClass]
+          VarDecListElementClass(
+            VarDecElementClass(
+             a
+              NoArrayBracketsClass(
+              ) [NoArrayBracketsClass]
+            ) [VarDecElementClass]
+            VarDecLastListElementClass(
+              VarDecLastElementClass(
+               b
+                ArrayBracketsClass(
+                ) [ArrayBracketsClass]
+              ) [VarDecLastElementClass]
+            ) [VarDecLastListElementClass]
+          ) [VarDecListElementClass]
+        ) [VarDeclClass]
+      ) [VarDecListClass]
+      ConstDeclClass(
+        TypeClass(
+         int
+        ) [TypeClass]
+        ConstDecLastElementClass(
+          ConstElementNumberLast(
+           c
+           5
+          ) [ConstElementNumberLast]
+        ) [ConstDecLastElementClass]
+      ) [ConstDeclClass]
+    ) [ConstDecListClass]
+    VarDeclClass(
+      TypeClass(
+       bool
+      ) [TypeClass]
+      VarDecLastListElementClass(
+        VarDecLastElementErrClass(
+        ) [VarDecLastElementErrClass]
+      ) [VarDecLastListElementClass]
+    ) [VarDeclClass]
+  ) [VarDecListClass]
+  ListOfMethodDeclClass(
+    EmptyListOfMethodDeclClass(
+    ) [EmptyListOfMethodDeclClass]
+    MethodDeclClass(
+      VoidMethodClass(
+       main
+      ) [VoidMethodClass]
+      FormParsEnd(
+      ) [FormParsEnd]
+      ListOfVarDeclClass(
+        ListOfVarDeclClass(
+          EmptyListOfVarDeclClass(
+          ) [EmptyListOfVarDeclClass]
+          VarDeclClass(
+            TypeClass(
+             int
+            ) [TypeClass]
+            VarDecLastListElementClass(
+              VarDecLastElementClass(
+               bodovi
+                NoArrayBracketsClass(
+                ) [NoArrayBracketsClass]
+              ) [VarDecLastElementClass]
+            ) [VarDecLastListElementClass]
+          ) [VarDeclClass]
+        ) [ListOfVarDeclClass]
+        VarDeclClass(
+          TypeClass(
+           bool
+          ) [TypeClass]
+          VarDecLastListElementClass(
+            VarDecLastElementClass(
+             bt
+              NoArrayBracketsClass(
+              ) [NoArrayBracketsClass]
+            ) [VarDecLastElementClass]
+          ) [VarDecLastListElementClass]
+        ) [VarDeclClass]
+      ) [ListOfVarDeclClass]
+      ListOfStatementsClass(
+        ListOfStatementsClass(
+          ListOfStatementsClass(
+            EmptyListOfStatementsClass(
+            ) [EmptyListOfStatementsClass]
+            DesignatorStatementClass(
+              DesignatorStatementAssignClass(
+                DesignatorClass(
+                 a
+                ) [DesignatorClass]
+                PositiveExprClass(
+                  SingleFactorTermClass(
+                    DesignatorFactorClass(
+                      DesignatorClass(
+                       c
+                      ) [DesignatorClass]
+                    ) [DesignatorFactorClass]
+                  ) [SingleFactorTermClass]
+                ) [PositiveExprClass]
+              ) [DesignatorStatementAssignClass]
+            ) [DesignatorStatementClass]
+          ) [ListOfStatementsClass]
+          DesignatorStatementClass(
+            DesignatorStatementAssignClass(
+              DesignatorClass(
+               a
+              ) [DesignatorClass]
+              PositiveExprClass(
+                SingleFactorTermClass(
+                  NumberFactorClass(
+                   6
+                  ) [NumberFactorClass]
+                ) [SingleFactorTermClass]
+              ) [PositiveExprClass]
+            ) [DesignatorStatementAssignClass]
+          ) [DesignatorStatementClass]
+        ) [ListOfStatementsClass]
+        DesignatorStatementClass(
+          DesignatorStatementAssignClass(
+            DesignatorClass(
+             a
+            ) [DesignatorClass]
+            PositiveExprClass(
+              SingleFactorTermClass(
+                DesignatorFactorClass(
+                  DesignatorClass(
+                   bol1
+                  ) [DesignatorClass]
+                ) [DesignatorFactorClass]
+              ) [SingleFactorTermClass]
+            ) [PositiveExprClass]
+          ) [DesignatorStatementAssignClass]
+        ) [DesignatorStatementClass]
+      ) [ListOfStatementsClass]
+    ) [MethodDeclClass]
+  ) [ListOfMethodDeclClass]
+) [ProgramClass]
+INFO  16:02:34,475 - ====================================
+INFO  16:02:34,477 - Kreirana je promenjiva INT a na liniji 4
+INFO  16:02:34,477 - Kreirana je promenjiva INT b[] na liniji 4
+INFO  16:02:34,477 - Kreirana je konstanta INT c na liniji 5
+INFO  16:02:34,477 - Definicija funkcije NONE main na liniji 8
+INFO  16:02:34,477 - Kreirana je promenjiva INT bodovi na liniji 9
+INFO  16:02:34,477 - Kreirana je promenjiva BOOL bt na liniji 10
+INFO  16:02:34,477 - Detektovan je pristup simbolickoj konstantni c na liniji 12
+ERROR 16:02:34,477 - SEMANTICKA GRESKA: Nije deklarisana promenljiva bol1 na liniji 14
+ERROR 16:02:34,477 - SEMANTICKA GRESKA: Leva strana nije kompatibilna desnoj strani pri dodeli na liniji 14
+INFO  16:02:34,477 - ====================================
+ERROR 16:02:34,477 - Parsiranje NIJE uspesno zavrseno!

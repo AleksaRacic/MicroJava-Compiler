@@ -1,6 +1,7 @@
 package rs.ac.bg.etf.pp1;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -16,6 +17,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 
 	boolean errorDetected = false;
 	Struct curType = Tab.noType;
+	
+	static int nVars;
 
 	Logger log = Logger.getLogger(getClass());
 
@@ -87,8 +90,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 
 	@Override
 	public void visit(ProgramClass program) {
+		nVars = MyTab.currentScope.getnVars();
 		Tab.chainLocalSymbols(program.getProgName().obj);
 		Tab.closeScope();
+		
+		if(!hasMain) {
+			report_error("SEMANTICKA GRESKA: ne postoji main funkcija", program);
+		}
 	}
 
 	@Override
@@ -309,8 +317,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 
 	Obj curClass = MyTab.noObj;
 
-	Map<Obj, List<Struct>> methods = new HashMap<Obj, List<Struct>>();
-
 	Stack<Obj> methodsDeclStack = new Stack<Obj>();
 
 	Stack<Obj> methodsCallStack = new Stack<Obj>();
@@ -329,12 +335,12 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			if (!curClass.equals(MyTab.noObj)) {
 				Tab.insert(Obj.Var, "this", curClass.getType());
 			}
-
-			methods.put(node, new ArrayList<>());
 			// curMethod = node;
 			methodsDeclStack.push(node);
 			report_info("Definicija " + (curClass.equals(MyTab.noObj) ? "funkcije " : "metode ") + getCurType() + " "
 					+ name, methDecl);
+			
+			methDecl.obj = node;
 		}
 	}
 
@@ -354,16 +360,17 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 				numOfFormPars++;
 			}
 
-			methods.put(node, new ArrayList<>());
 			// curMethod = node;
 			methodsDeclStack.push(node);
 			report_info("Definicija " + (curClass.equals(MyTab.noObj) ? "funkcije " : "metode ") + getCurType() + " "
 					+ name, methDecl);
+			
+			methDecl.obj = node;
 		}
 	}
 
 	int numOfFormPars = 0;
-	boolean hasMain;
+	boolean hasMain = false;
 	boolean hasReturn = false;
 
 	@Override
@@ -402,7 +409,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			report_info("Kreirana je lokalna promenjiva " + getCurType() + " " + formPar.getNameForm()
 					+ (isArray ? "[]" : ""), formPar);
 
-			methods.get(curMethod).add(tmp);
 		}
 		isArray = false;
 	}
@@ -419,10 +425,15 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
 
 	}
+	
+	@Override
+	public void visit(ArrDesignator designator) {
+		designator.obj = designator.getDesignator().obj;
+	}
 
 	@Override
 	public void visit(ArrayDesignatorClass designator) {
-		Obj arrObj = designator.getDesignator().obj;
+		Obj arrObj = designator.getArrDsignator().obj;
 		if (arrObj.getType().getKind() != Struct.Array) {
 			report_error("SEMANTICKA GRESKA: " + arrObj.getName() + " mora bit niz nekog tipa", designator);
 			designator.obj = Tab.noObj;
@@ -462,21 +473,26 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	@Override
 	public void visit(FuncCallDesignatorClass factor) {
 		Obj designator = factor.getDesignator().obj;
+
 		if (designator.getKind() != Obj.Meth) {
 			report_error("SEMANTICKA GRESKA: " + factor.getDesignator().obj.getName() + " nije funkcija", factor);
 			factor.struct = MyTab.noType;
 		} else {
 			factor.struct = factor.getDesignator().obj.getType();
-			
+
 			List<Struct> actParsList = actParsListStack.pop();
-			List<Struct> formParList = methods.get(designator);
-			
-			if (formParList.size() != actParsList.size()) {
+			List<Obj> formParList = new ArrayList<Obj>(designator.getLocalSymbols());
+
+			int num_of_formal_parameters = designator.getLevel();
+
+			if (num_of_formal_parameters != actParsList.size()) {
 				report_error("SEMANTICKA GRESKA: " + designator.getName() + " broj formalnih parametara: "
-						+ formParList.size() + "broj stvarnih parametara: " + actParsList.size(), factor);
-				for (int i = 0; i < formParList.size(); i++) {
+						+ num_of_formal_parameters + "broj stvarnih parametara: " + actParsList.size(), factor);
+
+			} else {
+				for (int i = 0; i < num_of_formal_parameters; i++) {
 					Struct rhs = actParsList.get(i);
-					Struct lhs = formParList.get(i);
+					Struct lhs = formParList.get(i).getType();
 					if (!rhs.assignableTo(lhs)) {
 						report_error("SEMANTICKA GRESKA: Nepodudaranje tipova: " + getTypeOf(lhs.getKind()) + " = "
 								+ getTypeOf(rhs.getKind()), factor);
@@ -484,8 +500,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 
 				}
 			}
-			actParsList.clear();
+
 		}
+		actParsList.clear();
 	}
 
 	@Override
@@ -523,9 +540,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 
 	@Override
 	public void visit(ExprClass expr) {
-		// TODO ovo kompatibilno ne valja nesto
-		Struct tmp1 = expr.getExpr().struct;
-		Struct tmp2 = expr.getTerm().struct;
 		if (!expr.getExpr().struct.compatibleWith(expr.getTerm().struct)) {
 			expr.struct = Tab.noType;
 			report_error("SEMANTICKA GRESKA: Sabirci nisu kompatibilni ", expr);
@@ -583,19 +597,28 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		if (designator.getKind() != Obj.Meth) {
 			report_error("SEMANTICKA GRESKA: " + designator.getName() + " nije funkcija", statement);
 		} else {
-			List<Struct> formParList = methods.get(designator);
-			if (formParList.size() != actParsList.size()) {
-				report_error("SEMANTICKA GRESKA: " + designator.getName() + " broj formalnih parametara: "
-						+ formParList.size() + "broj stvarnih parametara: " + actParsList.size(), statement);
-				for (int i = 0; i < formParList.size(); i++) {
+			List<Obj> formParList = new ArrayList<Obj>(designator.getLocalSymbols());
+
+			int num_of_formal_parameters = designator.getLevel();
+
+			if (num_of_formal_parameters != actParsList.size()) {
+				report_error(
+						"SEMANTICKA GRESKA: " + designator.getName() + " broj formalnih parametara: "
+								+ num_of_formal_parameters + "broj stvarnih parametara: " + actParsList.size(),
+						statement);
+
+			} else {
+				for (int i = 0; i < num_of_formal_parameters; i++) {
 					Struct rhs = actParsList.get(i);
-					Struct lhs = formParList.get(i);
+					Struct lhs = formParList.get(i).getType();
 					if (!rhs.assignableTo(lhs)) {
 						report_error("SEMANTICKA GRESKA: Nepodudaranje tipova: " + getTypeOf(lhs.getKind()) + " = "
 								+ getTypeOf(rhs.getKind()), statement);
 					}
+
 				}
 			}
+
 		}
 		actParsList.clear();
 	}
@@ -787,12 +810,14 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	@Override
 	public void visit(ForEachStatementClass stm) {
 		loop_depth--;
-		Obj designator = stm.getDesignator().obj;
+		Obj designator = stm.getForeachFlag().getDesignator().obj;
+		stm.getForeachFlag().obj = designator;
 
 		if (designator.getType().getKind() != Struct.Array) {
 			report_error("SEMANTICKA GRESKA: Designator u foreach petlje treba biti niz proizvoljnog tipa", stm);
 		} else {
-			Obj varNode = Tab.find(stm.getFeIdent());
+			Obj varNode = Tab.find(stm.getForeachIdent().getFeIdent());
+			stm.getForeachIdent().obj = varNode;
 			if (varNode.getKind() != Obj.Var) {
 				report_error("SEMANTICKA GRESKA: Identifikator u foreach pelji mora biti promenljiva", stm);
 			} else {
@@ -802,6 +827,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			}
 		}
 	}
+	
 
 	public boolean errorDetected() {
 		return errorDetected;

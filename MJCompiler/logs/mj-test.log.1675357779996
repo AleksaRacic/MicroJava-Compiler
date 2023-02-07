@@ -1,0 +1,93 @@
+INFO  18:00:47,967 - Compiling source file: /Users/racicaleksa/Projects/Semestar-7/PP1/MicroJava-Compiler/MJCompiler/test/testDevelop.mj
+INFO  18:00:47,989 - #2 program
+INFO  18:00:47,989 - #49 test301
+INFO  18:00:47,989 - #8 const
+INFO  18:00:47,989 - #49 bool
+INFO  18:00:47,989 - #49 h
+INFO  18:00:47,989 - #32 =
+INFO  18:00:47,989 - #47 true
+INFO  18:00:47,989 - #35 ;
+INFO  18:00:47,989 - #8 const
+INFO  18:00:47,990 - #49 int
+INFO  18:00:47,990 - #49 nula
+INFO  18:00:47,990 - #32 =
+INFO  18:00:47,990 - #48 0
+INFO  18:00:47,990 - #35 ;
+INFO  18:00:47,990 - #8 const
+INFO  18:00:47,990 - #49 int
+INFO  18:00:47,990 - #49 jedan
+INFO  18:00:47,990 - #32 =
+INFO  18:00:47,990 - #48 1
+INFO  18:00:47,990 - #35 ;
+INFO  18:00:47,990 - #8 const
+INFO  18:00:47,990 - #49 int
+INFO  18:00:47,990 - #49 pet
+INFO  18:00:47,990 - #32 =
+INFO  18:00:47,990 - #48 5
+INFO  18:00:47,990 - #35 ;
+INFO  18:00:47,990 - #43 {
+INFO  18:00:47,990 - #44 }
+INFO  18:00:47,992 - ProgramClass(
+  ProgNameClass(
+   test301
+  ) [ProgNameClass]
+  ConstDecListClass(
+    ConstDecListClass(
+      ConstDecListClass(
+        ConstDecListClass(
+          NoDecListClass(
+          ) [NoDecListClass]
+          ConstDeclClass(
+            TypeClass(
+             bool
+            ) [TypeClass]
+            ConstDecLastElementClass(
+              ConstElementBooleanLast(
+               h
+               true
+              ) [ConstElementBooleanLast]
+            ) [ConstDecLastElementClass]
+          ) [ConstDeclClass]
+        ) [ConstDecListClass]
+        ConstDeclClass(
+          TypeClass(
+           int
+          ) [TypeClass]
+          ConstDecLastElementClass(
+            ConstElementNumberLast(
+             nula
+             0
+            ) [ConstElementNumberLast]
+          ) [ConstDecLastElementClass]
+        ) [ConstDeclClass]
+      ) [ConstDecListClass]
+      ConstDeclClass(
+        TypeClass(
+         int
+        ) [TypeClass]
+        ConstDecLastElementClass(
+          ConstElementNumberLast(
+           jedan
+           1
+          ) [ConstElementNumberLast]
+        ) [ConstDecLastElementClass]
+      ) [ConstDeclClass]
+    ) [ConstDecListClass]
+    ConstDeclClass(
+      TypeClass(
+       int
+      ) [TypeClass]
+      ConstDecLastElementClass(
+        ConstElementNumberLast(
+         pet
+         5
+        ) [ConstElementNumberLast]
+      ) [ConstDecLastElementClass]
+    ) [ConstDeclClass]
+  ) [ConstDecListClass]
+  EmptyListOfMethodDeclClass(
+  ) [EmptyListOfMethodDeclClass]
+) [ProgramClass]
+INFO  18:00:47,993 - ====================================
+INFO  18:00:47,994 - ====================================
+INFO  18:00:47,994 - Parsiranje uspesno zavrseno!

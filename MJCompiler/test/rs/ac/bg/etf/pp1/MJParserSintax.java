@@ -35,7 +35,7 @@ public class MJParserSintax {
 			Yylex lexer = new Yylex(br);
 			
 			MJParser p = new MJParser(lexer);
-			Symbol s = p.parse(); //pocetak parsiranja
+			Symbol s = p.debug_parse(); //pocetak parsiranja
 			
 			Program prog = (Program)(s.value);
 			Tab.init();

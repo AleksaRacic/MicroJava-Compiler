@@ -101,7 +101,7 @@ nonterminal ConstructorDecl ConstructorDecl;
 	nonterminal MethodDecl MethodDecl;
 nonterminal MethodDecList MethodDecList;
 nonterminal ListOfMethodDecl ListOfMethodDecl;
-nonterminal MethodTypeName MethodTypeName;
+	nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodTypeName;
 	
 	//FormPairs
 	nonterminal FormParsList FormParsList;
@@ -118,28 +118,39 @@ nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
 nonterminal ListOfStatements ListOfStatements;
 nonterminal Statement Statement;
 
+//LOOPS
+
+nonterminal WhileFlag WhileFlag;
+nonterminal TestForEach TestForEach;
+
 //Designator
 nonterminal DesignatorStatement DesignatorStatement;
 nonterminal ActPars ActPars;
 nonterminal ListOfActPars ListOfActPars;
 nonterminal OptDesignatorList OptDesignatorList;
-nonterminal DesignatorOrEpsilon DesignatorOrEpsilon;
-nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator;
+nonterminal ActParsFlag ActParsFlag;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator, DesignatorOrEpsilon, ArrDsignator, ForeachIdent, ForeachFlag;
 
 //Condition
 nonterminal IfCond IfCond;
 nonterminal Condition Condition;
 nonterminal CondTerm CondTerm;
-nonterminal CondFact CondFact;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct CondFact;
 
 //Expr
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Expr, Term, Factor;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Expr, Term, Factor, ActParsElement;
 
 
 //Operators
 nonterminal Relop Relop;
 nonterminal Mulop Mulop;
 nonterminal Addop Addop;
+
+//IF ELSE HELP
+nonterminal StartIf StartIf;
+nonterminal EndIf EndIf;
+nonterminal OrJump OrJump;
+nonterminal StartIfStatement StartIfStatement;
 
 //---ListOf... - 0 or more  ...List - 1 or more
 
@@ -255,9 +266,9 @@ ListOfStatements ::= (ListOfStatementsClass) ListOfStatements:L1 Statement:S2 {:
 
 
 Statement ::= 	(DesignatorStatementClass) DesignatorStatement:D1 {: RESULT=new DesignatorStatementClass(D1); RESULT.setLine(D1left); :}
-			|	(IfStatementClass) IF LPAREN IfCond:I1 Statement:S2 {: RESULT=new IfStatementClass(I1, S2); RESULT.setLine(I1left); :}
-			|	(IfElseStatementClass) IF LPAREN IfCond:I1 Statement:S2 ELSE Statement:S3 {: RESULT=new IfElseStatementClass(I1, S2, S3); RESULT.setLine(I1left); :}
-			|	(WhileStatementClass) WHILE LPAREN Condition:C1 RPAREN Statement:S2 {: RESULT=new WhileStatementClass(C1, S2); RESULT.setLine(C1left); :}
+			|	(IfStatementClass) StartIf:S1 IF LPAREN IfCond:I2 StartIfStatement:S3 Statement:S4 EndIf:E5 {: RESULT=new IfStatementClass(S1, I2, S3, S4, E5); RESULT.setLine(S1left); :}
+			|	(IfElseStatementClass) StartIf:S1 IF LPAREN IfCond:I2 StartIfStatement:S3 Statement:S4 EndIf:E5 ELSE Statement:S6 {: RESULT=new IfElseStatementClass(S1, I2, S3, S4, E5, S6); RESULT.setLine(S1left); :}
+			|	(WhileStatementClass) WhileFlag:W1 LPAREN Condition:C2 RPAREN Statement:S3 {: RESULT=new WhileStatementClass(W1, C2, S3); RESULT.setLine(W1left); :}
 			|	(BreakStatementClass) BREAK SEMI {: RESULT=new BreakStatementClass(); :}
 			|	(ContinueStatementClass) CONTINUE SEMI {: RESULT=new ContinueStatementClass(); :}
 			|	(ReturnStatementClass) RETURN SEMI {: RESULT=new ReturnStatementClass(); :}
@@ -265,11 +276,23 @@ Statement ::= 	(DesignatorStatementClass) DesignatorStatement:D1 {: RESULT=new D
 			|	(ReadStatementClass) READ LPAREN Designator:D1 RPAREN SEMI {: RESULT=new ReadStatementClass(D1); RESULT.setLine(D1left); :}
 			|	(PrintStatementClass) PRINT LPAREN Expr:E1 RPAREN SEMI {: RESULT=new PrintStatementClass(E1); RESULT.setLine(E1left); :}
 			|	(PrintStatementWidthClass) PRINT LPAREN Expr:E1 COMMA NUMBER:width RPAREN SEMI {: RESULT=new PrintStatementWidthClass(E1, width); RESULT.setLine(E1left); :}
-			|	(ForEachStatementClass) Designator:D1 DOT FOREACH LPAREN IDENT:feIdent LAMBDA Statement:S2 RPAREN SEMI {: RESULT=new ForEachStatementClass(D1, feIdent, S2); RESULT.setLine(D1left); :}
+			|	(ForEachStatementClass) ForeachFlag:F1 ForeachIdent:F2 LAMBDA Statement:S3 RPAREN SEMI TestForEach:T4 {: RESULT=new ForEachStatementClass(F1, F2, S3, T4); RESULT.setLine(F1left); :}
 			|	(StatementBlock) LBRACE ListOfStatements:L1 RBRACE {: RESULT=new StatementBlock(L1); RESULT.setLine(L1left); :}
 			;
+//Push vars stack
+StartIf ::= (StartIf) {: RESULT=new StartIf(); :};
 
+//Fixup 
+EndIf ::= (EndIf) {: RESULT=new EndIf(); :};
+StartIfStatement ::= (StartIfStatement) {: RESULT=new StartIfStatement(); :};
 
+WhileFlag ::= (WhileFlag) WHILE {: RESULT=new WhileFlag(); :};
+
+ForeachFlag ::= (ForeachFlag) Designator:D1 DOT FOREACH LPAREN {: RESULT=new ForeachFlag(D1); RESULT.setLine(D1left); :};
+
+ForeachIdent ::= (ForeachIdent) IDENT:feIdent {: RESULT=new ForeachIdent(feIdent); RESULT.setLine(feIdentleft); :};
+
+TestForEach ::= (TestForEach) {: RESULT=new TestForEach(); :};
 	
 IfCond ::= 	(IfCondClass) Condition:C1 RPAREN {: RESULT=new IfCondClass(C1); RESULT.setLine(C1left); :}
 		|	(ErrIfCondClass) error RPAREN:l 
@@ -293,10 +316,12 @@ DesignatorOrEpsilon ::=	(DesignArrAssignmentClass) Designator:D1 {: RESULT=new D
 					|	(DesignatorEpsilonClass) {: RESULT=new DesignatorEpsilonClass(); :} /* epsilon */
 					;
 
-Condition ::= 	(ConditionClass) Condition:C1 OR CondTerm:C2 {: RESULT=new ConditionClass(C1, C2); RESULT.setLine(C1left); :}
+Condition ::= 	(ConditionClass) Condition:C1 OrJump:O2 OR CondTerm:C3 {: RESULT=new ConditionClass(C1, O2, C3); RESULT.setLine(C1left); :}
 			|	(SingleConditionClass) CondTerm:C1 {: RESULT=new SingleConditionClass(C1); RESULT.setLine(C1left); :}
 			;
-			
+//If you have successfully reached end of term or and terms jump to if statement
+OrJump ::= (OrJump) {: RESULT=new OrJump(); :};
+
 CondTerm ::= 	(CondTermClass) CondTerm:C1 AND CondFact:C2 {: RESULT=new CondTermClass(C1, C2); RESULT.setLine(C1left); :}
 			|	(SingleCondTermClass) CondFact:C1 {: RESULT=new SingleCondTermClass(C1); RESULT.setLine(C1left); :}
 			;
@@ -328,25 +353,28 @@ Mulop ::=	(MulClass) MUL {: RESULT=new MulClass(); :}
 		|	(DivClass) DIV {: RESULT=new DivClass(); :}
 		|	(ModClass) MOD {: RESULT=new ModClass(); :}
 		;	
-ActPars ::= (ActualParsClass) ListOfActPars:L1 {: RESULT=new ActualParsClass(L1); RESULT.setLine(L1left); :}
-		| 	(NoActualParsClass) {: RESULT=new NoActualParsClass(); :} /* epsilon */
+ActPars ::= (ActualParsClass) ActParsFlag:A1 ListOfActPars:L2 {: RESULT=new ActualParsClass(A1, L2); RESULT.setLine(A1left); :}
+		| 	(NoActualParsClass) ActParsFlag:A1 {: RESULT=new NoActualParsClass(A1); RESULT.setLine(A1left); :} /* epsilon */
 		;
 
+ActParsFlag ::= (ActParsFlag) {: RESULT=new ActParsFlag(); :};
 
-//dodaj nove akcije da detektujes parametre u func call
-
-ListOfActPars ::= 	(ListOfActParExprClass) ListOfActPars:L1 COMMA Expr:E2 {: RESULT=new ListOfActParExprClass(L1, E2); RESULT.setLine(L1left); :}
-				|	(EmptyListOfActParClass) Expr:E1 {: RESULT=new EmptyListOfActParClass(E1); RESULT.setLine(E1left); :}
+ListOfActPars ::= 	(ListOfActParExprClass) ListOfActPars:L1 COMMA ActParsElement:A2 {: RESULT=new ListOfActParExprClass(L1, A2); RESULT.setLine(L1left); :}
+				|	(EmptyListOfActParClass) ActParsElement:A1 {: RESULT=new EmptyListOfActParClass(A1); RESULT.setLine(A1left); :}
 				;
+				
+ActParsElement ::= (ActParsElement) Expr:E1 {: RESULT=new ActParsElement(E1); RESULT.setLine(E1left); :};
 					
 Addop ::= 	(PlusOpClass) PLUS {: RESULT=new PlusOpClass(); :}
 		|	(MinusOpClass) MINUS {: RESULT=new MinusOpClass(); :}
 		;
 		
 Designator ::=	(ClassDesignatorClass) Designator:D1 DOT IDENT:name {: RESULT=new ClassDesignatorClass(D1, name); RESULT.setLine(D1left); :}
-			|	(ArrayDesignatorClass) Designator:D1 LBRACKET Expr:E2 RBRACKET {: RESULT=new ArrayDesignatorClass(D1, E2); RESULT.setLine(D1left); :}
+			|	(ArrayDesignatorClass) ArrDsignator:A1 LBRACKET Expr:E2 RBRACKET {: RESULT=new ArrayDesignatorClass(A1, E2); RESULT.setLine(A1left); :}
 			|	(DesignatorClass) IDENT:name {: RESULT=new DesignatorClass(name); RESULT.setLine(nameleft); :} 
 			;
+
+ArrDsignator ::= (ArrDesignator) Designator:D1 {: RESULT=new ArrDesignator(D1); RESULT.setLine(D1left); :};
 
 Relop ::= 	(EqOpClass) EQ {: RESULT=new EqOpClass(); :}
 		| 	(NeqOpClass) NEQ {: RESULT=new NeqOpClass(); :}
